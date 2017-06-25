@@ -1,0 +1,25 @@
+{
+    "cacheExpiry": 0,
+    "enable": true,
+    "enableCacheAutoClean": false,
+    "enableDynamicSkull": true,
+    "enableLocalProfileCache": false,
+    "enableSkull": true,
+    "enableTransparentSkin": true,
+    "enableUpdateSkull": false,
+    "ignoreHttpsCertificate": false,
+    "loadlist": [
+        {
+            "cape": "http://unionlu-svalero.rhcloud.com/getcape.php?user={USERNAME}",
+            "checkPNG": true,
+            "name": "unionlu",
+            "skin": "http://unionlu-svalero.rhcloud.com/getskin.php?user={USERNAME}",
+            "type": "Legacy"
+        },
+        {
+            "name": "Mojang",
+            "type": "MojangAPI"
+        }
+    ],
+    "version": "14.6"
+}
