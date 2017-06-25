@@ -3451,43 +3451,43 @@ Genetics:labMachine:2, Incubator
 Genetics:labMachine:3, Genepool
 Genetics:labMachine:4, Acclimatiser
 Genetics:advMachine:0, Splicer
+ThaumicTinkerer:fireOrder, Ordo Imbued Fire
+ThaumicTinkerer:Levitational Locomotive Relay, Levitational Locomotive Relay
+ThaumicTinkerer:fireAir, Aer Imbued Fire
+ThaumicTinkerer:repairer, Thaumic Restorer
+ThaumicTinkerer:dislocator, Transvector Dislocator
+ThaumicTinkerer:darkQuartzStairs, Smokey Quartz Stairs
+ThaumicTinkerer:gaseousLight, tile.gaseousLight.name
+ThaumicTinkerer:infusedGrainBlock, tile.infusedGrainBlock.name
+ThaumicTinkerer:funnel, Essentia Funnel
+ThaumicTinkerer:forcefield, Forcefield
+ThaumicTinkerer:fireChaos, Perditio Imbued Fire
+ThaumicTinkerer:travelStairs, Paving Stair of Travel
+ThaumicTinkerer:bedrockPortal, Bedrock Portal
+ThaumicTinkerer:spawner, Tablet of Necromancy
+ThaumicTinkerer:infusedFarmland, tile.infusedFarmland.name
 ThaumicTinkerer:fireEarth, Terra Imbued Fire
-ThaumicTinkerer:Levitational Locomotive, Levitational Locomotive
+ThaumicTinkerer:warpGate, Celestial Gateway
+ThaumicTinkerer:wardSlab:0, Paving Slab of Warding
+ThaumicTinkerer:wardSlabFull:0, Paving Slab of Warding
 ThaumicTinkerer:travelSlab:0, Paving Slab of Travel
 ThaumicTinkerer:travelSlabFull:0, Paving Slab of Travel
-ThaumicTinkerer:travelStairs, Paving Stair of Travel
-ThaumicTinkerer:fireWater, Aqua Imbued Fire
-ThaumicTinkerer:fireFire, Ignis Imbued Fire
-ThaumicTinkerer:Levitational Locomotive Relay, Levitational Locomotive Relay
-ThaumicTinkerer:infusedGrainBlock, tile.infusedGrainBlock.name
-ThaumicTinkerer:interface, Transvector Interface
-ThaumicTinkerer:repairer, Thaumic Restorer
-ThaumicTinkerer:infusedFarmland, tile.infusedFarmland.name
-ThaumicTinkerer:bedrockPortal, Bedrock Portal
-ThaumicTinkerer:gaseousShadow, tile.gaseousShadow.name
 ThaumicTinkerer:animationTablet, Dynamism Tablet
-ThaumicTinkerer:fireOrder, Ordo Imbued Fire
-ThaumicTinkerer:warpGate, Celestial Gateway
-ThaumicTinkerer:forcefield, Forcefield
+ThaumicTinkerer:Levitational Locomotive, Levitational Locomotive
+ThaumicTinkerer:nitorGas, tile.nitorGas.name
 ThaumicTinkerer:magnet:0, Kinetic Attractor
 ThaumicTinkerer:magnet:1, Corporeal Attractor
-ThaumicTinkerer:darkQuartzStairs, Smokey Quartz Stairs
+ThaumicTinkerer:platform, Ethereal Platform
+ThaumicTinkerer:darkQuartzSlab:0, Smokey Quartz Slab
+ThaumicTinkerer:darkQuartzSlabFull:0, Smokey Quartz Slab
+ThaumicTinkerer:gaseousShadow, tile.gaseousShadow.name
+ThaumicTinkerer:interface, Transvector Interface
+ThaumicTinkerer:fireWater, Aqua Imbued Fire
+ThaumicTinkerer:enchanter, Osmotic Enchanter
+ThaumicTinkerer:fireFire, Ignis Imbued Fire
 ThaumicTinkerer:darkQuartz:0, Block of Smokey Quartz
 ThaumicTinkerer:darkQuartz:1, Chiseled Smokey Quartz Block
 ThaumicTinkerer:darkQuartz:2, Pillar Smokey Quartz Block
-ThaumicTinkerer:wardSlab:0, Paving Slab of Warding
-ThaumicTinkerer:wardSlabFull:0, Paving Slab of Warding
-ThaumicTinkerer:gaseousLight, tile.gaseousLight.name
-ThaumicTinkerer:fireAir, Aer Imbued Fire
-ThaumicTinkerer:nitorGas, tile.nitorGas.name
-ThaumicTinkerer:fireChaos, Perditio Imbued Fire
-ThaumicTinkerer:funnel, Essentia Funnel
-ThaumicTinkerer:platform, Ethereal Platform
-ThaumicTinkerer:enchanter, Osmotic Enchanter
-ThaumicTinkerer:darkQuartzSlab:0, Smokey Quartz Slab
-ThaumicTinkerer:darkQuartzSlabFull:0, Smokey Quartz Slab
-ThaumicTinkerer:dislocator, Transvector Dislocator
-ThaumicTinkerer:spawner, Tablet of Necromancy
 ForbiddenMagic:ArcaneCake, Thaumic Cake
 ForbiddenMagic:WrathCage, Wrath Cage
 ForbiddenMagic:InkFlower, Umbral Rose
@@ -3511,7 +3511,7 @@ BuildCraft|Core:pathMarkerBlock, Path Mark
 ExtraUtilities:chestMini, Mini-Chest
 ExtraUtilities:chestFull, Slightly Larger Chest
 ExtraUtilities:enderCollector, Ender Collector
-ExtraUtilities:endConstructor:0, QED (Quantum Ender Device)
+ExtraUtilities:endConstructor:0, QED (Quod Erat Demonstrandum)
 ExtraUtilities:endConstructor:2, Ender-Flux Crystal
 ExtraUtilities:endMarker, Ender-Marker
 ExtraUtilities:curtains, Blackout Curtains
@@ -4173,26 +4173,6 @@ BloodArsenal:compacter, Soul Compacter
 BloodArsenal:lp_materializer, Life Essence Materializer
 BloodArsenal:compacted_mrs, Compacted Master Ritual Stone
 BloodArsenal:block_burned_string, Blood Burned String
-BuildCraft|Silicon:laserBlock, Laser
-BuildCraft|Silicon:laserTableBlock:0, Assembly Table
-BuildCraft|Silicon:laserTableBlock:1, Advanced Crafting Table
-BuildCraft|Silicon:laserTableBlock:2, Integration Table
-BuildCraft|Silicon:laserTableBlock:3, Charging Table
-BuildCraft|Silicon:laserTableBlock:4, Programming Table
-BuildCraft|Silicon:laserTableBlock:5, Stamping Table
-BuildCraft|Silicon:packagerBlock, Recipe Packager
-BuildCraft|Transport:filteredBufferBlock, Filtered Buffer
-BuildCraft|Transport:pipeBlock, tile.pipeBlock.name
-BuildCraft|Builders:machineBlock, Quarry
-BuildCraft|Builders:fillerBlock, Filler
-BuildCraft|Builders:frameBlock, Frame
-BuildCraft|Builders:builderBlock, Builder
-BuildCraft|Builders:architectBlock, Architect Table
-BuildCraft|Builders:libraryBlock, Electronic Library
-BuildCraft|Builders:constructionMarkerBlock, Construction Mark
-BuildCraft|Energy:blockOil, Oil
-BuildCraft|Energy:blockFuel, Fuel
-BuildCraft|Energy:blockRedPlasma, tile.blockRedPlasma.name
 BuildCraft|Robotics:zonePlan, Zone Planner
 BuildCraft|Robotics:requester, Requester
 BuildCraft|Factory:miningWellBlock, Mining Well
@@ -4203,6 +4183,26 @@ BuildCraft|Factory:pumpBlock, Pump
 BuildCraft|Factory:floodGateBlock, Flood Gate
 BuildCraft|Factory:refineryBlock, Refinery
 BuildCraft|Factory:blockHopper, Chute
+BuildCraft|Transport:filteredBufferBlock, Filtered Buffer
+BuildCraft|Transport:pipeBlock, tile.pipeBlock.name
+BuildCraft|Energy:blockOil, Oil
+BuildCraft|Energy:blockFuel, Fuel
+BuildCraft|Energy:blockRedPlasma, tile.blockRedPlasma.name
+BuildCraft|Silicon:laserBlock, Laser
+BuildCraft|Silicon:laserTableBlock:0, Assembly Table
+BuildCraft|Silicon:laserTableBlock:1, Advanced Crafting Table
+BuildCraft|Silicon:laserTableBlock:2, Integration Table
+BuildCraft|Silicon:laserTableBlock:3, Charging Table
+BuildCraft|Silicon:laserTableBlock:4, Programming Table
+BuildCraft|Silicon:laserTableBlock:5, Stamping Table
+BuildCraft|Silicon:packagerBlock, Recipe Packager
+BuildCraft|Builders:machineBlock, Quarry
+BuildCraft|Builders:fillerBlock, Filler
+BuildCraft|Builders:frameBlock, Frame
+BuildCraft|Builders:builderBlock, Builder
+BuildCraft|Builders:architectBlock, Architect Table
+BuildCraft|Builders:libraryBlock, Electronic Library
+BuildCraft|Builders:constructionMarkerBlock, Construction Mark
 Railcraft:fluid.creosote, Creosote
 Railcraft:fluid.steam, Steam
 Railcraft:cube:0, Block of Coal Coke
@@ -5962,89 +5962,6 @@ chisel:woolen_clay:12, Woolen Clay
 chisel:woolen_clay:13, Woolen Clay
 chisel:woolen_clay:14, Woolen Clay
 chisel:woolen_clay:15, Woolen Clay
-CarpentersBlocks:blockCarpentersBlock, Carpenter's Block
-CarpentersBlocks:blockCarpentersBarrier, Carpenter's Barrier
-CarpentersBlocks:blockCarpentersBed, Carpenter's Bed
-CarpentersBlocks:blockCarpentersButton, Carpenter's Button
-CarpentersBlocks:blockCarpentersCollapsibleBlock, Carpenter's Collapsible Block
-CarpentersBlocks:blockCarpentersDaylightSensor, Carpenter's Daylight Sensor
-CarpentersBlocks:blockCarpentersDoor, Carpenter's Door
-CarpentersBlocks:blockCarpentersFlowerPot, Carpenter's Flower Pot
-CarpentersBlocks:blockCarpentersGarageDoor, Carpenter's Garage Door
-CarpentersBlocks:blockCarpentersGate, Carpenter's Gate
-CarpentersBlocks:blockCarpentersHatch, Carpenter's Hatch
-CarpentersBlocks:blockCarpentersLadder, Carpenter's Ladder
-CarpentersBlocks:blockCarpentersLever, Carpenter's Lever
-CarpentersBlocks:blockCarpentersPressurePlate, Carpenter's Pressure Plate
-CarpentersBlocks:blockCarpentersSafe, Carpenter's Safe
-CarpentersBlocks:blockCarpentersSlope:0, Carpenter's Wedge Slope
-CarpentersBlocks:blockCarpentersSlope:1, Carpenter's Oblique Interior Slope
-CarpentersBlocks:blockCarpentersSlope:2, Carpenter's Oblique Exterior Slope
-CarpentersBlocks:blockCarpentersSlope:3, Carpenter's Prism Slope
-CarpentersBlocks:blockCarpentersSlope:4, Carpenter's Prism Wedge Slope
-CarpentersBlocks:blockCarpentersStairs, Carpenter's Stairs
-CarpentersBlocks:blockCarpentersTorch, Carpenter's Torch
-catwalks:sturdy_rail, Sturdy Rail
-catwalks:sturdy_rail_powered, Sturdy Powered Rail
-catwalks:sturdy_rail_detector, Sturdy Detector Rail
-catwalks:sturdy_rail_activator, Sturdy Activator Rail
-catwalks:support_column, Support Column
-catwalks:scaffold:0, Scaffold
-catwalks:scaffold:1, Builder's Scaffold
-catwalks:catwalk_lit_tape, Catwalk
-catwalks:catwalk_lit, Catwalk
-catwalks:catwalk_lit_nobottom_tape, Catwalk
-catwalks:catwalk_lit_nobottom, Catwalk
-catwalks:catwalk_unlit_tape, Catwalk
-catwalks:catwalk_unlit, Catwalk
-catwalks:catwalk_unlit_nobottom_tape, Catwalk
-catwalks:catwalk_unlit_nobottom, Catwalk
-catwalks:cagedLadder_north_lit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_north_lit_nobottom, Caged Ladder
-catwalks:cagedLadder_north_lit_tape, Caged Ladder
-catwalks:cagedLadder_north_lit, Caged Ladder
-catwalks:cagedLadder_north_unlit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_north_unlit_nobottom, Caged Ladder
-catwalks:cagedLadder_north_unlit_tape, Caged Ladder
-catwalks:cagedLadder_north_unlit, Caged Ladder
-catwalks:cagedLadder_south_lit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_south_lit_nobottom, Caged Ladder
-catwalks:cagedLadder_south_lit_tape, Caged Ladder
-catwalks:cagedLadder_south_lit, Caged Ladder
-catwalks:cagedLadder_south_unlit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_south_unlit_nobottom, Caged Ladder
-catwalks:cagedLadder_south_unlit_tape, Caged Ladder
-catwalks:cagedLadder_south_unlit, Caged Ladder
-catwalks:cagedLadder_west_lit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_west_lit_nobottom, Caged Ladder
-catwalks:cagedLadder_west_lit_tape, Caged Ladder
-catwalks:cagedLadder_west_lit, Caged Ladder
-catwalks:cagedLadder_west_unlit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_west_unlit_nobottom, Caged Ladder
-catwalks:cagedLadder_west_unlit_tape, Caged Ladder
-catwalks:cagedLadder_west_unlit, Caged Ladder
-catwalks:cagedLadder_east_lit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_east_lit_nobottom, Caged Ladder
-catwalks:cagedLadder_east_lit_tape, Caged Ladder
-catwalks:cagedLadder_east_lit, Caged Ladder
-catwalks:cagedLadder_east_unlit_nobottom_tape, Caged Ladder
-catwalks:cagedLadder_east_unlit_nobottom, Caged Ladder
-catwalks:cagedLadder_east_unlit_tape, Caged Ladder
-catwalks:cagedLadder_east_unlit, Caged Ladder
-catwalkmod:scaffold, Catwalk
-catwalkmod:cagedLadder, Caged Ladder
-compactkineticgenerators:BlockCkg:0, Low Kinetic Wind Generator
-compactkineticgenerators:BlockCkg:1, Medium Kinetic Wind Generator
-compactkineticgenerators:BlockCkg:2, High Kinetic Wind Generator
-compactkineticgenerators:BlockCkg:3, Extreme Kinetic Wind Generator
-compactkineticgenerators:BlockCkg:4, Low Kinetic Water Generator
-compactkineticgenerators:BlockCkg:5, Medium Kinetic Water Generator
-compactkineticgenerators:BlockCkg:6, High Kinetic Water Generator
-compactkineticgenerators:BlockCkg:7, Extreme Kinetic Water Generator
-compactkineticgenerators:BlockCkg:8, Low Kinetic Generator
-compactkineticgenerators:BlockCkg:9, Medium Kinetic Generator
-compactkineticgenerators:BlockCkg:10, High Kinetic Generator
-compactkineticgenerators:BlockCkg:11, Extreme Kinetic Generator
 EnderIO:blockStirlingGenerator, Stirling Generator
 EnderIO:blockCombustionGenerator, Combustion Generator
 EnderIO:blockZombieGenerator, Zombie Generator
@@ -6138,6 +6055,89 @@ EnderIO:blockIngotStorage:5, Pulsating Iron Block
 EnderIO:blockIngotStorage:6, Dark Steel Block
 EnderIO:blockIngotStorage:7, Soularium Block
 EnderIO:blockDarkIronBars, Dark Iron Bars
+CarpentersBlocks:blockCarpentersBlock, Carpenter's Block
+CarpentersBlocks:blockCarpentersBarrier, Carpenter's Barrier
+CarpentersBlocks:blockCarpentersBed, Carpenter's Bed
+CarpentersBlocks:blockCarpentersButton, Carpenter's Button
+CarpentersBlocks:blockCarpentersCollapsibleBlock, Carpenter's Collapsible Block
+CarpentersBlocks:blockCarpentersDaylightSensor, Carpenter's Daylight Sensor
+CarpentersBlocks:blockCarpentersDoor, Carpenter's Door
+CarpentersBlocks:blockCarpentersFlowerPot, Carpenter's Flower Pot
+CarpentersBlocks:blockCarpentersGarageDoor, Carpenter's Garage Door
+CarpentersBlocks:blockCarpentersGate, Carpenter's Gate
+CarpentersBlocks:blockCarpentersHatch, Carpenter's Hatch
+CarpentersBlocks:blockCarpentersLadder, Carpenter's Ladder
+CarpentersBlocks:blockCarpentersLever, Carpenter's Lever
+CarpentersBlocks:blockCarpentersPressurePlate, Carpenter's Pressure Plate
+CarpentersBlocks:blockCarpentersSafe, Carpenter's Safe
+CarpentersBlocks:blockCarpentersSlope:0, Carpenter's Wedge Slope
+CarpentersBlocks:blockCarpentersSlope:1, Carpenter's Oblique Interior Slope
+CarpentersBlocks:blockCarpentersSlope:2, Carpenter's Oblique Exterior Slope
+CarpentersBlocks:blockCarpentersSlope:3, Carpenter's Prism Slope
+CarpentersBlocks:blockCarpentersSlope:4, Carpenter's Prism Wedge Slope
+CarpentersBlocks:blockCarpentersStairs, Carpenter's Stairs
+CarpentersBlocks:blockCarpentersTorch, Carpenter's Torch
+catwalks:sturdy_rail, Sturdy Rail
+catwalks:sturdy_rail_powered, Sturdy Powered Rail
+catwalks:sturdy_rail_detector, Sturdy Detector Rail
+catwalks:sturdy_rail_activator, Sturdy Activator Rail
+catwalks:support_column, Support Column
+catwalks:scaffold:0, Scaffold
+catwalks:scaffold:1, Builder's Scaffold
+catwalks:catwalk_lit_tape, Catwalk
+catwalks:catwalk_lit, Catwalk
+catwalks:catwalk_lit_nobottom_tape, Catwalk
+catwalks:catwalk_lit_nobottom, Catwalk
+catwalks:catwalk_unlit_tape, Catwalk
+catwalks:catwalk_unlit, Catwalk
+catwalks:catwalk_unlit_nobottom_tape, Catwalk
+catwalks:catwalk_unlit_nobottom, Catwalk
+catwalks:cagedLadder_north_lit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_north_lit_nobottom, Caged Ladder
+catwalks:cagedLadder_north_lit_tape, Caged Ladder
+catwalks:cagedLadder_north_lit, Caged Ladder
+catwalks:cagedLadder_north_unlit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_north_unlit_nobottom, Caged Ladder
+catwalks:cagedLadder_north_unlit_tape, Caged Ladder
+catwalks:cagedLadder_north_unlit, Caged Ladder
+catwalks:cagedLadder_south_lit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_south_lit_nobottom, Caged Ladder
+catwalks:cagedLadder_south_lit_tape, Caged Ladder
+catwalks:cagedLadder_south_lit, Caged Ladder
+catwalks:cagedLadder_south_unlit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_south_unlit_nobottom, Caged Ladder
+catwalks:cagedLadder_south_unlit_tape, Caged Ladder
+catwalks:cagedLadder_south_unlit, Caged Ladder
+catwalks:cagedLadder_west_lit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_west_lit_nobottom, Caged Ladder
+catwalks:cagedLadder_west_lit_tape, Caged Ladder
+catwalks:cagedLadder_west_lit, Caged Ladder
+catwalks:cagedLadder_west_unlit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_west_unlit_nobottom, Caged Ladder
+catwalks:cagedLadder_west_unlit_tape, Caged Ladder
+catwalks:cagedLadder_west_unlit, Caged Ladder
+catwalks:cagedLadder_east_lit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_east_lit_nobottom, Caged Ladder
+catwalks:cagedLadder_east_lit_tape, Caged Ladder
+catwalks:cagedLadder_east_lit, Caged Ladder
+catwalks:cagedLadder_east_unlit_nobottom_tape, Caged Ladder
+catwalks:cagedLadder_east_unlit_nobottom, Caged Ladder
+catwalks:cagedLadder_east_unlit_tape, Caged Ladder
+catwalks:cagedLadder_east_unlit, Caged Ladder
+catwalkmod:scaffold, Catwalk
+catwalkmod:cagedLadder, Caged Ladder
+compactkineticgenerators:BlockCkg:0, Low Kinetic Wind Generator
+compactkineticgenerators:BlockCkg:1, Medium Kinetic Wind Generator
+compactkineticgenerators:BlockCkg:2, High Kinetic Wind Generator
+compactkineticgenerators:BlockCkg:3, Extreme Kinetic Wind Generator
+compactkineticgenerators:BlockCkg:4, Low Kinetic Water Generator
+compactkineticgenerators:BlockCkg:5, Medium Kinetic Water Generator
+compactkineticgenerators:BlockCkg:6, High Kinetic Water Generator
+compactkineticgenerators:BlockCkg:7, Extreme Kinetic Water Generator
+compactkineticgenerators:BlockCkg:8, Low Kinetic Generator
+compactkineticgenerators:BlockCkg:9, Medium Kinetic Generator
+compactkineticgenerators:BlockCkg:10, High Kinetic Generator
+compactkineticgenerators:BlockCkg:11, Extreme Kinetic Generator
 GalacticraftCore:tile.landingPad:0, Rocket Launch Pad
 GalacticraftCore:tile.landingPad:1, Buggy Fueling Pad
 GalacticraftCore:tile.landingPadFull, Rocket Launch Pad
@@ -9739,20 +9739,20 @@ gregtech:gt.blockores:19810, Small Redstone Ore
 gregtech:gt.blockores:20810, Small Redstone Ore
 gregtech:gt.blockores:21810, Small Redstone Ore
 gregtech:gt.blockores:22810, Small Redstone Ore
-gregtech:gt.blockores:812, Nikolite Ore
-gregtech:gt.blockores:1812, Nikolite Ore
-gregtech:gt.blockores:2812, Nikolite Ore
-gregtech:gt.blockores:3812, Nikolite Ore
-gregtech:gt.blockores:4812, Nikolite Ore
-gregtech:gt.blockores:5812, Nikolite Ore
-gregtech:gt.blockores:6812, Nikolite Ore
-gregtech:gt.blockores:16812, Small Nikolite Ore
-gregtech:gt.blockores:17812, Small Nikolite Ore
-gregtech:gt.blockores:18812, Small Nikolite Ore
-gregtech:gt.blockores:19812, Small Nikolite Ore
-gregtech:gt.blockores:20812, Small Nikolite Ore
-gregtech:gt.blockores:21812, Small Nikolite Ore
-gregtech:gt.blockores:22812, Small Nikolite Ore
+gregtech:gt.blockores:812, Electrotine Ore
+gregtech:gt.blockores:1812, Electrotine Ore
+gregtech:gt.blockores:2812, Electrotine Ore
+gregtech:gt.blockores:3812, Electrotine Ore
+gregtech:gt.blockores:4812, Electrotine Ore
+gregtech:gt.blockores:5812, Electrotine Ore
+gregtech:gt.blockores:6812, Electrotine Ore
+gregtech:gt.blockores:16812, Small Electrotine Ore
+gregtech:gt.blockores:17812, Small Electrotine Ore
+gregtech:gt.blockores:18812, Small Electrotine Ore
+gregtech:gt.blockores:19812, Small Electrotine Ore
+gregtech:gt.blockores:20812, Small Electrotine Ore
+gregtech:gt.blockores:21812, Small Electrotine Ore
+gregtech:gt.blockores:22812, Small Electrotine Ore
 gregtech:gt.blockores:817, Salt Ore
 gregtech:gt.blockores:1817, Salt Ore
 gregtech:gt.blockores:2817, Salt Ore
@@ -11512,16 +11512,28 @@ GalaxySpace:convertersurface, Converter Surface
 GalaxySpace:storagemoduleT3:0, Advanced Energy Cluster
 GalaxySpace:oxstoragemoduleT2:0, Advanced Oxygen Module
 GalaxySpace:solarPanel, Hybrid Solar Panel
-GalaxySpace:metalsblock:0, Decorate Lead Block
-GalaxySpace:metalsblock:1, Decorate Adamantite Block
-GalaxySpace:metalsblock:2, Decorate Cobalt Block
-GalaxySpace:metalsblock:3, Decorate Magnesium Block
-GalaxySpace:metalsblock:4, Decorate Mithril Block
-GalaxySpace:metalsblock:5, Decorate Nickel Block
-GalaxySpace:metalsblock:6, Decorate Oriharukon Block
-GalaxySpace:metalsblock:7, Decorate Platinum Block
-GalaxySpace:metalsblock:8, Decorate Wolframium Block
-GalaxySpace:metalsblock:9, Decorate Copper Block
+GalaxySpace:gravitationmoduleon:0, Gravity Module
+GalaxySpace:gravitationmoduleoff:0, Gravity Module
+GalaxySpace:metalsblock:0, Lead Block
+GalaxySpace:metalsblock:1, Adamantite Block
+GalaxySpace:metalsblock:2, Cobalt Block
+GalaxySpace:metalsblock:3, Magnesium Block
+GalaxySpace:metalsblock:4, Mithril Block
+GalaxySpace:metalsblock:5, Nickel Block
+GalaxySpace:metalsblock:6, Oriharukon Block
+GalaxySpace:metalsblock:7, Platinum Block
+GalaxySpace:metalsblock:8, Wolframium Block
+GalaxySpace:metalsblock:9, Duralumin Block
+GalaxySpace:decometalsblock:0, Decorate Lead Block
+GalaxySpace:decometalsblock:1, Decorate Adamantite Block
+GalaxySpace:decometalsblock:2, Decorate Cobalt Block
+GalaxySpace:decometalsblock:3, Decorate Magnesium Block
+GalaxySpace:decometalsblock:4, Decorate Mithril Block
+GalaxySpace:decometalsblock:5, Decorate Nickel Block
+GalaxySpace:decometalsblock:6, Decorate Oriharukon Block
+GalaxySpace:decometalsblock:7, Decorate Platinum Block
+GalaxySpace:decometalsblock:8, Decorate Wolframium Block
+GalaxySpace:decometalsblock:9, Decorate Copper Block
 GalaxySpace:futureglass, Future Glass
 GalaxySpace:futureglasses:0, Black Future Glass
 GalaxySpace:futureglasses:1, Red Future Glass
@@ -11539,6 +11551,7 @@ GalaxySpace:futureglasses:12, Lightblue Future Glass
 GalaxySpace:futureglasses:13, Magneta Future Glass
 GalaxySpace:futureglasses:14, Orange Future Glass
 GalaxySpace:futureglasses:15, White Future Glass
+GalaxySpace:futurelamp, tile.SpaceLamp.name
 GalaxySpace:mercuryblocks:0, Mercury Surface Block
 GalaxySpace:mercuryblocks:1, Mercury Subsurface Block
 GalaxySpace:mercuryblocks:2, Mercury Core
@@ -11595,6 +11608,7 @@ GalaxySpace:ioweb, Io Web
 GalaxySpace:iodualstone, Io Dual Block Surface
 GalaxySpace:europagrunt:0, Europa Block Surface
 GalaxySpace:europagrunt:1, Europa Ice
+GalaxySpace:europagrunt:2, Europa Stone
 GalaxySpace:europageyser, Europa Geyser
 GalaxySpace:europaunderwatergeyser, Underwater Europa Geyser
 GalaxySpace:ganymedeblocks:0, Ganymede Surface Block
@@ -11647,6 +11661,7 @@ GalaxySpace:barnardaClog, Barnarda C Log
 GalaxySpace:barnardaCplanks:0, Oak Planks from Barnarda C Log
 GalaxySpace:barnardaCleaves, Barnarda C Leaves Log 
 GalaxySpace:barnardaCcrystal, Rainbow Crystal
+GalaxySpace:barnardaCstalactite, Ore Stalactite
 GalaxySpace:barnardaEgrunt, Barnarda E Surface Block
 GalaxySpace:barnardaEsubgrunt, Barnarda E Subsurface Block
 GalaxySpace:barnardaEoreiron, Iron Ore
@@ -11757,11 +11772,6 @@ malisisdoors:rustyHatch, Rusty Hatch
 malisisdoors:rustyLadder, Rusty Ladder
 malisisdoors:carriage_door, Carriage Door
 malisisdoors:medieval_door, Medieval Door
-malisisdoors:forcefieldDoor, Forcefield
-TaintedMagic:BlockShadowOre, Shadow Ore
-TaintedMagic:BlockWarpwoodLog, Warpwood
-TaintedMagic:BlockShadowmetal, Block of Shadowmetal
-TaintedMagic:BlockWarpwoodPlanks, Warpwood Planks
 minecraft:record_13, Music Disc
 minecraft:record_cat, Music Disc
 minecraft:record_blocks, Music Disc
@@ -11774,6 +11784,11 @@ minecraft:record_strad, Music Disc
 minecraft:record_ward, Music Disc
 minecraft:record_11, Music Disc
 minecraft:record_wait, Music Disc
+malisisdoors:forcefieldDoor, Forcefield
+TaintedMagic:BlockShadowOre, Shadow Ore
+TaintedMagic:BlockWarpwoodLog, Warpwood
+TaintedMagic:BlockShadowmetal, Block of Shadowmetal
+TaintedMagic:BlockWarpwoodPlanks, Warpwood Planks
 TaintedMagic:BlockWarpwoodLeaves, Warped Leaves
 TaintedMagic:BlockWarpwoodSapling, Warpwood Sapling
 OpenBlocks:ladder, Jaded Ladder
@@ -11901,7 +11916,6 @@ OpenPeripheral:glassesbridge, Terminal Glasses Bridge
 OpenPeripheral:pim, PIM
 OpenPeripheral:sensor, Sensor
 OpenPeripheral:selector, Item Selector
-OpenPeripheral:ticketmachine, Ticket Machine
 openprinter:openprinter.printer, Open Printer
 openprinter:openprinter.shredder, Open Shredder
 openprinter:openprinter.filecabinet, Open File Cabinet
@@ -14355,10 +14369,10 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Copper
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Tin
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Bronze
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Paving Slab of Travel
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Smokey Quartz Slab
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Smokey Quartz
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Chiseled Smokey Quartz Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Pillar Smokey Quartz Block
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Smokey Quartz Slab
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Nether Star Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Tainted Log
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Tainted Planks
@@ -16275,6 +16289,16 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Bordered Quartz
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Ender-Infused Metal
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Dimensional Bridge Stabilizer (Empty)
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Advanced Machine Frame
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Lead Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Decorate Lead Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Decorate Lead Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Decorate Lead Block
@@ -16302,6 +16326,14 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Black Future Glass
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Black Future Glass
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Black Future Glass
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Black Future Glass
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
+appliedenergistics2:item.ItemFacade:0, Cable Facade - tile.SpaceLamp.name
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Mercury Surface Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Mercury Surface Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Mercury Surface Block
@@ -16351,6 +16383,7 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Io Surface Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Io Surface Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Io Glowstone
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Io Dual Block Surface
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Europa Block Surface
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Europa Block Surface
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Europa Block Surface
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Europa Geyser
@@ -17588,6 +17621,35 @@ Thaumcraft:ItemGirdleRunic:1, Kinetic Girdle of Shielding
 Thaumcraft:ItemAmuletVis:0, Vis Stone
 Thaumcraft:ItemAmuletVis:1, Amulet of Vis Storage
 Thaumcraft:ItemGirdleHover:0, Thaumostatic Girdle
+Thaumcraft:ItemSpawnerEgg:0, Spawn Angry Zombie
+Thaumcraft:ItemSpawnerEgg:1, Spawn Furious Zombie
+Thaumcraft:ItemSpawnerEgg:2, Spawn Wisp
+Thaumcraft:ItemSpawnerEgg:3, Spawn Firebat
+Thaumcraft:ItemSpawnerEgg:4, Spawn Pech Forager
+Thaumcraft:ItemSpawnerEgg:5, Spawn Mind Spider
+Thaumcraft:ItemSpawnerEgg:6, Spawn Eldritch Guardian
+Thaumcraft:ItemSpawnerEgg:7, Spawn %s the %s
+Thaumcraft:ItemSpawnerEgg:8, Spawn Crimson Knight
+Thaumcraft:ItemSpawnerEgg:9, Spawn Crimson Cleric
+Thaumcraft:ItemSpawnerEgg:10, Spawn Praetor %s the %s
+Thaumcraft:ItemSpawnerEgg:11, Spawn Crimson Portal
+Thaumcraft:ItemSpawnerEgg:12, Spawn %s Eldritch Construct
+Thaumcraft:ItemSpawnerEgg:13, Spawn Eldritch Crab
+Thaumcraft:ItemSpawnerEgg:14, Spawn Shambling Husk
+Thaumcraft:ItemSpawnerEgg:15, Spawn Thaumic Slime
+Thaumcraft:ItemSpawnerEgg:16, Spawn Tainted Crawler
+Thaumcraft:ItemSpawnerEgg:17, Spawn Taintacle
+Thaumcraft:ItemSpawnerEgg:18, Spawn Taint Tendril
+Thaumcraft:ItemSpawnerEgg:19, Spawn Taint Spore
+Thaumcraft:ItemSpawnerEgg:20, Spawn Taint Spore Swarmer
+Thaumcraft:ItemSpawnerEgg:21, Spawn Taint Swarm
+Thaumcraft:ItemSpawnerEgg:22, Spawn Tainted Chicken
+Thaumcraft:ItemSpawnerEgg:23, Spawn Tainted Cow
+Thaumcraft:ItemSpawnerEgg:24, Spawn Tainted Creeper
+Thaumcraft:ItemSpawnerEgg:25, Spawn Tainted Pig
+Thaumcraft:ItemSpawnerEgg:26, Spawn Tainted Sheep
+Thaumcraft:ItemSpawnerEgg:27, Spawn Tainted Villager
+Thaumcraft:ItemSpawnerEgg:28, Spawn Giant Taintacle
 Thaumcraft:ItemZombieBrain, Zombie Brain
 Thaumcraft:ItemBathSalts, Purifying Bath Salts
 Thaumcraft:ItemCrystalEssence:0, Crystallized Essence
@@ -18571,6 +18633,10 @@ Forestry:cratedNaturaLogDarkwood, item.cratedNaturaLogDarkwood.name
 Forestry:cratedNaturaLogFusewood, item.cratedNaturaLogFusewood.name
 Forestry:cratedNaturaBlockHeatsand, item.cratedNaturaBlockHeatsand.name
 Forestry:cratedNaturaBlockTainted, item.cratedNaturaBlockTainted.name
+betterbuilderswands:wandStone, Stone Wand
+betterbuilderswands:wandIron, Iron Wand
+betterbuilderswands:wandDiamond, Diamond Wand
+betterbuilderswands:wandUnbreakable, Unbreakable Wand
 BiblioCraft:item.StockroomCatalog, Stockroom Catalog
 BiblioCraft:item.PlumbLine, Plumb line
 BiblioCraft:item.FramingSaw, Framing Saw
@@ -20507,16 +20573,9 @@ BloodArsenal:bound_diamond_shard:3, Bound Diamond Fire Shard
 BloodArsenal:bound_diamond_shard:4, Bound Diamond Water Shard
 BloodArsenal:bound_diamond_shard:5, Bound Diamond Dusk Shard
 BloodArsenal:bound_diamond_shard:6, Bound Diamond Dawn Shard
-BuildCraft|Silicon:redstoneChipset:0, Redstone Chipset
-BuildCraft|Silicon:redstoneChipset:1, Iron Chipset
-BuildCraft|Silicon:redstoneChipset:2, Golden Chipset
-BuildCraft|Silicon:redstoneChipset:3, Diamond Chipset
-BuildCraft|Silicon:redstoneChipset:4, Pulsating Chipset
-BuildCraft|Silicon:redstoneChipset:5, Quartz Chipset
-BuildCraft|Silicon:redstoneChipset:6, Redstone Comp Chipset
-BuildCraft|Silicon:redstoneChipset:7, Emerald Chipset
-BuildCraft|Silicon:package, Package
-BuildCraft|Silicon:redstoneCrystal, Redstone Crystal
+BuildCraft|Robotics:robot, Robot
+BuildCraft|Robotics:robotStation, item.robotStation.name
+BuildCraft|Robotics:redstone_board, Redstone Board
 BuildCraft|Transport:pipeWaterproof, Pipe Sealant
 BuildCraft|Transport:item.buildcraftPipe.pipeitemswood:0, Wooden Transport Pipe
 BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald:0, Emerald Transport Pipe
@@ -20597,13 +20656,20 @@ BuildCraft|Transport:pipeLens:32, Lens (Clear)
 BuildCraft|Transport:pipeLens:33, Filter (Clear)
 BuildCraft|Transport:pipePowerAdapter, item.pipePowerAdapter.name
 BuildCraft|Transport:gateCopier, Gate Copier
-BuildCraft|Builders:templateItem, Template
-BuildCraft|Builders:blueprintItem, Blueprint
 BuildCraft|Energy:bucketOil, Oil Bucket
 BuildCraft|Energy:bucketFuel, Fuel Bucket
-BuildCraft|Robotics:robot, Robot
-BuildCraft|Robotics:robotStation, item.robotStation.name
-BuildCraft|Robotics:redstone_board, Redstone Board
+BuildCraft|Silicon:redstoneChipset:0, Redstone Chipset
+BuildCraft|Silicon:redstoneChipset:1, Iron Chipset
+BuildCraft|Silicon:redstoneChipset:2, Golden Chipset
+BuildCraft|Silicon:redstoneChipset:3, Diamond Chipset
+BuildCraft|Silicon:redstoneChipset:4, Pulsating Chipset
+BuildCraft|Silicon:redstoneChipset:5, Quartz Chipset
+BuildCraft|Silicon:redstoneChipset:6, Redstone Comp Chipset
+BuildCraft|Silicon:redstoneChipset:7, Emerald Chipset
+BuildCraft|Silicon:package, Package
+BuildCraft|Silicon:redstoneCrystal, Redstone Crystal
+BuildCraft|Builders:templateItem, Template
+BuildCraft|Builders:blueprintItem, Blueprint
 BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis:0, Apiarist's Pipe
 Railcraft:fluid.creosote.bucket, Creosote Bucket
 Railcraft:fluid.creosote.bottle, Creosote Bottle
@@ -20829,20 +20895,6 @@ chisel:diamondChisel, item.null.name
 chisel:obsidianChisel, item.null.name
 chisel:cloudinabottle, Cloud In A Bottle
 chisel:smashingrock, Smashing Rock
-CarpentersBlocks:itemCarpentersHammer, Carpenter's Hammer
-CarpentersBlocks:itemCarpentersChisel, Carpenter's Chisel
-CarpentersBlocks:itemCarpentersTile, Carpenter's Tile
-CarpentersBlocks:itemCarpentersDoor, Carpenter's Door
-CarpentersBlocks:itemCarpentersBed, Carpenter's Bed
-catwalks:blowtorch, Blowtorch
-catwalks:ropeLight, Rope Light
-catwalks:cautionTape, Caution Tape
-catwalks:steelgrate, Steel Grate
-catwalkmod:ropeLight, item.null.name
-catwalkmod:blowtorch, item.null.name
-catwalkmod:steelGrate, item.null.name
-compactkineticgenerators:IridiumBlade, Iridium Rotor Blade
-compactkineticgenerators:IridiumRotor, Kinetic Gearbox Rotor (Iridium)
 EnderIO:itemCoordSelector, Coordinate Selector
 EnderIO:itemFusedQuartzFrame, Fused Quartz Frame
 EnderIO:itemConduitFacade:0, Conduit Facade
@@ -20939,6 +20991,20 @@ EnderIO:item.darkSteel_axe, Dark Axe
 EnderIO:item.darkSteel_shears, Dark Shears
 EnderIO:itemMagnet:0, Electromagnet
 EnderIO:itemMagnet:16, Electromagnet
+CarpentersBlocks:itemCarpentersHammer, Carpenter's Hammer
+CarpentersBlocks:itemCarpentersChisel, Carpenter's Chisel
+CarpentersBlocks:itemCarpentersTile, Carpenter's Tile
+CarpentersBlocks:itemCarpentersDoor, Carpenter's Door
+CarpentersBlocks:itemCarpentersBed, Carpenter's Bed
+catwalks:blowtorch, Blowtorch
+catwalks:ropeLight, Rope Light
+catwalks:cautionTape, Caution Tape
+catwalks:steelgrate, Steel Grate
+catwalkmod:ropeLight, item.null.name
+catwalkmod:blowtorch, item.null.name
+catwalkmod:steelGrate, item.null.name
+compactkineticgenerators:IridiumBlade, Iridium Rotor Blade
+compactkineticgenerators:IridiumRotor, Kinetic Gearbox Rotor (Iridium)
 GalacticraftCore:item.bucketOil, Oil Bucket
 GalacticraftCore:item.bucketFuel, Fuel Bucket
 GalacticraftCore:item.spaceship:0, Tier 1 Rocket
@@ -22112,7 +22178,7 @@ gregtech:gt.metaitem.01:2805, Clay Dust
 gregtech:gt.metaitem.01:2807, Netherrack Dust
 gregtech:gt.metaitem.01:2808, Endstone Dust
 gregtech:gt.metaitem.01:2809, Wood Pulp
-gregtech:gt.metaitem.01:2812, Nikolite Dust
+gregtech:gt.metaitem.01:2812, Electrotine Dust
 gregtech:gt.metaitem.01:2813, Bluestone Dust
 gregtech:gt.metaitem.01:2814, Nether Brick Dust
 gregtech:gt.metaitem.01:2815, Ashes
@@ -23430,7 +23496,7 @@ gregtech:gt.metaitem.01:17804, Obsidian Plate
 gregtech:gt.metaitem.01:17809, Wood Plank
 gregtech:gt.metaitem.01:17810, Redstone Plate
 gregtech:gt.metaitem.01:17811, Glowstone Plate
-gregtech:gt.metaitem.01:17812, Nikolite Plate
+gregtech:gt.metaitem.01:17812, Electrotine Plate
 gregtech:gt.metaitem.01:17829, Deep Iron Plate
 gregtech:gt.metaitem.01:17849, Black Granite Plate
 gregtech:gt.metaitem.01:17850, Red Granite Plate
@@ -27896,44 +27962,84 @@ gregtech:gt.metaitem.02:32573, Onion Slice
 gregtech:gt.metaitem.02:32574, Cucumber Slice
 gregtech:gt.metaitem.02:32576, Cheese Slice
 gregtech:gt.metatool.01:0, Sword
+gregtech:gt.metatool.01:0, Sword
+gregtech:gt.metatool.01:2, Pickaxe
 gregtech:gt.metatool.01:2, Pickaxe
 gregtech:gt.metatool.01:4, Shovel
+gregtech:gt.metatool.01:4, Shovel
+gregtech:gt.metatool.01:6, Axe
 gregtech:gt.metatool.01:6, Axe
 gregtech:gt.metatool.01:8, Hoe
+gregtech:gt.metatool.01:8, Hoe
+gregtech:gt.metatool.01:10, Saw
 gregtech:gt.metatool.01:10, Saw
 gregtech:gt.metatool.01:12, Hammer
+gregtech:gt.metatool.01:12, Hammer
+gregtech:gt.metatool.01:14, Soft Mallet
 gregtech:gt.metatool.01:14, Soft Mallet
 gregtech:gt.metatool.01:16, Wrench
+gregtech:gt.metatool.01:16, Wrench
+gregtech:gt.metatool.01:18, File
 gregtech:gt.metatool.01:18, File
 gregtech:gt.metatool.01:20, Crowbar
+gregtech:gt.metatool.01:20, Crowbar
+gregtech:gt.metatool.01:22, Screwdriver
 gregtech:gt.metatool.01:22, Screwdriver
 gregtech:gt.metatool.01:24, Mortar
+gregtech:gt.metatool.01:24, Mortar
+gregtech:gt.metatool.01:26, Wire Cutter
 gregtech:gt.metatool.01:26, Wire Cutter
 gregtech:gt.metatool.01:28, Scoop
+gregtech:gt.metatool.01:28, Scoop
+gregtech:gt.metatool.01:30, Branch Cutter
 gregtech:gt.metatool.01:30, Branch Cutter
 gregtech:gt.metatool.01:32, Universal Spade
+gregtech:gt.metatool.01:32, Universal Spade
+gregtech:gt.metatool.01:34, Knife
 gregtech:gt.metatool.01:34, Knife
 gregtech:gt.metatool.01:36, Butchery Knife
+gregtech:gt.metatool.01:36, Butchery Knife
+gregtech:gt.metatool.01:40, Sense
 gregtech:gt.metatool.01:40, Sense
 gregtech:gt.metatool.01:42, Plow
+gregtech:gt.metatool.01:42, Plow
+gregtech:gt.metatool.01:44, Plunger
 gregtech:gt.metatool.01:44, Plunger
 gregtech:gt.metatool.01:46, Rolling Pin
+gregtech:gt.metatool.01:46, Rolling Pin
+gregtech:gt.metatool.01:100, Drill (LV)
 gregtech:gt.metatool.01:100, Drill (LV)
 gregtech:gt.metatool.01:102, Drill (MV)
+gregtech:gt.metatool.01:102, Drill (MV)
+gregtech:gt.metatool.01:104, Drill (HV)
 gregtech:gt.metatool.01:104, Drill (HV)
 gregtech:gt.metatool.01:110, Chainsaw (LV)
+gregtech:gt.metatool.01:110, Chainsaw (LV)
+gregtech:gt.metatool.01:112, Chainsaw (MV)
 gregtech:gt.metatool.01:112, Chainsaw (MV)
 gregtech:gt.metatool.01:114, Chainsaw (HV)
+gregtech:gt.metatool.01:114, Chainsaw (HV)
+gregtech:gt.metatool.01:120, Wrench (LV)
 gregtech:gt.metatool.01:120, Wrench (LV)
 gregtech:gt.metatool.01:122, Wrench (MV)
+gregtech:gt.metatool.01:122, Wrench (MV)
+gregtech:gt.metatool.01:124, Wrench (HV)
 gregtech:gt.metatool.01:124, Wrench (HV)
 gregtech:gt.metatool.01:130, JackHammer (HV)
+gregtech:gt.metatool.01:130, JackHammer (HV)
+gregtech:gt.metatool.01:140, Buzzsaw (LV)
 gregtech:gt.metatool.01:140, Buzzsaw (LV)
 gregtech:gt.metatool.01:150, Screwdriver (LV)
+gregtech:gt.metatool.01:150, Screwdriver (LV)
+gregtech:gt.metatool.01:160, Soldering Iron (LV)
 gregtech:gt.metatool.01:160, Soldering Iron (LV)
 gregtech:gt.metatool.01:170, Small Turbine
+gregtech:gt.metatool.01:170, Small Turbine
+gregtech:gt.metatool.01:172, Turbine
 gregtech:gt.metatool.01:172, Turbine
 gregtech:gt.metatool.01:174, Large Turbine
+gregtech:gt.metatool.01:174, Large Turbine
+gregtech:gt.metatool.01:176, Huge Turbine
 gregtech:gt.metatool.01:176, Huge Turbine
 gregtech:gt.GregTech_FluidDisplay, Fluid Display
 gregtech:gt.sensorcard, GregTech Sensor Card
@@ -28328,6 +28434,8 @@ enhancedlootbags:lootbag:33, LootBag (Trasportation 2 Class)
 enhancedlootbags:lootbag:33, LootBag (Trasportation 2 Class)
 enhancedlootbags:lootbag:34, LootBag (Trasportation 1 Class)
 enhancedlootbags:lootbag:34, LootBag (Trasportation 1 Class)
+enhancedlootbags:lootbag:35, LootBag (Seeds Class 3)
+enhancedlootbags:lootbag:35, LootBag (Seeds Class 3)
 enhancedportals:wrench, Wrench
 enhancedportals:nanobrush, Nanobrush
 enhancedportals:glasses, Glasses
@@ -28625,12 +28733,9 @@ GalaxySpace:item.GlowstoneDusts:2, Enceladus Glowstone Dust
 GalaxySpace:item.GlowstoneDusts:3, Proteus Glowstone Dust
 GalaxySpace:item.GlowstoneDusts:4, Pluto Glowstone Dust
 GalaxySpace:item.spacesuit_helmet, SpaceSuit Helmet
-GalaxySpace:item.spacesuit_helmetglasses, SpaceSuit Sensor Glasses
 GalaxySpace:item.spacesuit_plate, SpaceSuit Chestplate
-GalaxySpace:item.spacesuit_jetplate, SpaceSuit Jetpack
 GalaxySpace:item.spacesuit_leg, SpaceSuit Leggins
 GalaxySpace:item.spacesuit_boots, SpaceSuit Boots
-GalaxySpace:item.spacesuit_gravityboots, SpaceSuit Gravity Boots
 GalaxySpace:item.MethaneBucket, Methane Bucket
 GalaxySpace:item.ItemBioFuelCanister, item.ItemBioFuelCanister.name
 GalaxySpace:item.BarnardaCStrawberry, Unknow Fruits
@@ -28926,13 +29031,13 @@ IronChest:diamondCrystalUpgrade, Diamond to Crystal Chest Upgrade
 IronChest:woodIronUpgrade, Wood to Iron Chest Upgrade
 IronChest:woodCopperUpgrade, Wood to Copper Chest Upgrade
 IronChest:diamondObsidianUpgrade, Diamond to Obsidian Chest Upgrade
-ironchestminecarts:minecart_chest_copper, Minecart with Copper Chest
-ironchestminecarts:minecart_chest_diamond, Minecart with Diamond Chest
-ironchestminecarts:minecart_chest_crystal, Minecart with Crystal Chest
-ironchestminecarts:minecart_chest_silver, Minecart with Silver Chest
-ironchestminecarts:minecart_chest_gold, Minecart with Gold Chest
 ironchestminecarts:minecart_chest_dirtchest9000, Minecart with DirtChest9000
+ironchestminecarts:minecart_chest_silver, Minecart with Silver Chest
+ironchestminecarts:minecart_chest_crystal, Minecart with Crystal Chest
+ironchestminecarts:minecart_chest_gold, Minecart with Gold Chest
 ironchestminecarts:minecart_chest_obsidian, Minecart with Obsidian Chest
+ironchestminecarts:minecart_chest_diamond, Minecart with Diamond Chest
+ironchestminecarts:minecart_chest_copper, Minecart with Copper Chest
 ironchestminecarts:minecart_chest_iron, Minecart with Iron Chest
 irontank:ironGoldUpgrade, Iron to Gold Tank Upgrade
 irontank:goldDiamondUpgrade, Gold to Diamond Tank Upgrade

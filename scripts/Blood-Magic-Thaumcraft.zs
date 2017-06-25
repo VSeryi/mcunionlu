@@ -915,6 +915,21 @@ mods.thaumcraft.Infusion.addRecipe("CRYSTALCLUSTER", <BloodArsenal:blood_stone:4
 mods.thaumcraft.Research.addInfusionPage("CRYSTALCLUSTER", <AWWayofTime:blockCrystal>);
 mods.thaumcraft.Warp.addToResearch("CRYSTALCLUSTER", 5);
 
+// --- Ichorium Block
+mods.thaumcraft.Research.addResearch("ICHORIUMBLOCK", "BLOODMAGIC", "victus 21, fames 18, praecantatio 15, infernus 12, alienis 9, superbia 6, terra 3", -10, 2, 4, <gregtech:gt.blockmetal8:13>);
+game.setLocalization("tc.research_name.ICHORIUMBLOCK", "Tier 6 Pillar");
+game.setLocalization("tc.research_text.ICHORIUMBLOCK", "[BM] The final Tier");
+mods.thaumcraft.Research.addPrereq("ICHORIUMBLOCK", "INFUSION", false);
+mods.thaumcraft.Research.addPrereq("ICHORIUMBLOCK", "CRYSTALCLUSTER", false);
+mods.thaumcraft.Research.setConcealed("ICHORIUMBLOCK", true);
+mods.thaumcraft.Research.addPage("ICHORIUMBLOCK", "bloodmagic.research_page.ICHORIUMBLOCK");
+game.setLocalization("bloodmagic.research_page.ICHORIUMBLOCK", "The sixth and final tier of your Blood Magic altar will require 76 additional Blood Runes, and 4 seven block pillars made of Blood-Soaked Ichorium Blocks capped with Crystal Clusters. The Tier 6 Altar allows you to unlock the full potential of your Blood Magic endeavors by way of unlocking even more and more powerful transfusion recipes. Like previous tier, the sixth ring of runes requires a two-block gap outward from the previous ring. The Ichorium Blocks need to be placed in a Tier 5 Altar to soak up the Blood and be Transformed in a Blood Soaked Ichorium Block");
+mods.thaumcraft.Infusion.addRecipe("ICHORIUMBLOCK", <dreamcraft:tile.Mytryl>, 
+[<ThaumicTinkerer:kamiResource:2>, <AWWayofTime:bloodMagicBaseItems:28>, <ThaumicTinkerer:kamiResource>, <AWWayofTime:standardBindingAgent>, <ThaumicTinkerer:kamiResource:2>, <AWWayofTime:bloodMagicBaseItems:29>, <ThaumicTinkerer:kamiResource>, <AWWayofTime:bloodMagicBaseAlchemyItems:4>], 
+"victus 64, fames 48, praecantatio 32, infernus 24, alienis 16, superbia 16, terra 8", <gregtech:gt.blockmetal8:13>, 12);
+mods.thaumcraft.Research.addInfusionPage("ICHORIUMBLOCK", <gregtech:gt.blockmetal8:13>);
+mods.thaumcraft.Warp.addToResearch("ICHORIUMBLOCK", 3);
+
 // --- Glyph of Rigit Stability
 mods.thaumcraft.Research.addResearch("GLYPHSTONE", "BLOODMAGIC", "terra 21, superbia 18, ordo 15, cognitio 12, auram 9, praecantatio 6, alienis 3", 2, -10, 4, <AWWayofTime:blockStabilityGlyph>);
 game.setLocalization("tc.research_name.GLYPHSTONE", "Glyph Stone");
@@ -1077,7 +1092,7 @@ game.setLocalization("tc.research_text.HARVESTGODDESSSIGIL", "[BM] you sow what 
 mods.thaumcraft.Research.addPrereq("HARVESTGODDESSSIGIL", "INFUSION", false);
 mods.thaumcraft.Research.addPrereq("HARVESTGODDESSSIGIL", "SIGILOFENDERSEVERANCE", false);
 mods.thaumcraft.Research.setConcealed("HARVESTGODDESSSIGIL", true);
-mods.thaumcraft.Research.addPage("HARVESTGODDESSSIGIL", "bloodmagic.research_page.SIGILOFENDERSEVERANCE");
+mods.thaumcraft.Research.addPage("HARVESTGODDESSSIGIL", "bloodmagic.research_page.HARVESTGODDESSSIGIL");
 game.setLocalization("bloodmagic.research_page.HARVESTGODDESSSIGIL", "The Harvest Goddess Sigil is an item from Blood Magic. It is used to harvest and immediately replant mature crops within a 3-block radius of the holder. The Harvest Goddess Sigil does not pick up dropped plants or seeds. The effect of this sigil is very similar to ritual Reap of the Harvest Moon, trading off area of effect and automation for portability. Activating this Sigil costs 600 LP every 10 seconds while active. When used as an upgrade to a Bound Armor, the Harvest Goddess Sigil Harvests and replants nearby crops.");
 mods.thaumcraft.Infusion.addRecipe("HARVESTGODDESSSIGIL", <AWWayofTime:growthSigil>, 
 [<BloodArsenal:bound_sickle>, <AWWayofTime:bloodMagicBaseAlchemyItems:2>, <AWWayofTime:bloodMagicBaseItems:27>, <AWWayofTime:bloodMagicBaseAlchemyItems:8>, <AWWayofTime:bloodMagicBaseAlchemyItems:2>, <AWWayofTime:bloodMagicBaseAlchemyItems:8>, <AWWayofTime:bloodMagicBaseItems:27>, <AWWayofTime:bloodMagicBaseAlchemyItems:2>], 
@@ -1092,7 +1107,7 @@ game.setLocalization("tc.research_text.SIGILOFCOMPRESSION", "[BM] Are you try to
 mods.thaumcraft.Research.addPrereq("SIGILOFCOMPRESSION", "INFUSION", false);
 mods.thaumcraft.Research.addPrereq("SIGILOFCOMPRESSION", "SIGILOFMAGNETISM", false);
 mods.thaumcraft.Research.setConcealed("SIGILOFCOMPRESSION", true);
-mods.thaumcraft.Research.addPage("SIGILOFCOMPRESSION", "bloodmagic.research_page.SIGILOFENDERSEVERANCE");
+mods.thaumcraft.Research.addPage("SIGILOFCOMPRESSION", "bloodmagic.research_page.SIGILOFCOMPRESSION");
 game.setLocalization("bloodmagic.research_page.SIGILOFCOMPRESSION", "The Sigil of Compression is an item added by the Blood Magic mod. This Sigil compresses any item picked-up into its block form if possible. Sadly it not works for Gregtech Ingots which makes the Sigil very useless. Activating this Sigil costs 250 LP every 10 seconds while active.");
 mods.thaumcraft.Infusion.addRecipe("SIGILOFCOMPRESSION", <AWWayofTime:demonicSlate>, 
 [<AWWayofTime:demonicSlate>, <gregtech:gt.metaitem.01:32644>, <gregtech:gt.metaitem.01:32744>, <gregtech:gt.metaitem.01:32604>, <AWWayofTime:demonicSlate>, <gregtech:gt.metaitem.01:32604>, <gregtech:gt.metaitem.01:32744>, <gregtech:gt.metaitem.01:32644>], 
