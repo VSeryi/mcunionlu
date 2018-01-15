@@ -22,7 +22,6 @@ import mods.gregtech.ChemicalReactor;
 import mods.ic2.Compressor;
 import mods.gregtech.CuttingSaw;
 import mods.gregtech.ImplosionCompressor;
-import mods.ic2.Macerator;
 import mods.gregtech.Pulverizer;
 
 
@@ -84,6 +83,7 @@ val StainlessSteelScrew = <ore:screwStainlessSteel>;
 val HardenedDrill = <StevesCarts:CartModule:43>;
 val ReinforcedDrillTip = <ore:toolHeadDrillReinforced>;
 val IridiumBlock = <ore:blockIridium>;
+val TitaniumPlate = <ore:plateTitanium>;
 val TitaniumScrew = <ore:screwTitanium>;
 val GalgadorianDrill = <StevesCarts:CartModule:9>;
 val GalgadorianDrillTip = <ore:toolHeadDrillGalgadorian>;
@@ -115,6 +115,7 @@ val HSawBlade = <StevesCarts:ModuleComponents:80>;
 val GSawBlade = <StevesCarts:ModuleComponents:81>;
 val WoodCore = <StevesCarts:ModuleComponents:17>;
 val MasterCircuit = <ore:circuitMaster>;
+val DataCircuit = <ore:circuitData>;
 val Saplings1 = <minecraft:sapling:*>;
 val Saplings2 = <BiomesOPlenty:saplings:*>;
 val Saplings3 = <BiomesOPlenty:colorizedSaplings:*>;
@@ -368,12 +369,6 @@ recipes.remove(SolarPanel);
 
 // --- Advanced Solar Panel
 recipes.remove(AdvSolarPanel);
-
-// --- PCB
-recipes.remove(PCB);
-
-// --- Advanced PCB
-recipes.remove(AdvPCB);
 
 // --- Chest Pane
 recipes.remove(<StevesCarts:ModuleComponents:30>);
@@ -722,6 +717,9 @@ recipes.remove(<StevesCarts:CartModule:99>);
 
 // --- Wood Core
 recipes.remove(WoodCore);
+
+// --- Reinforced
+furnace.remove(<StevesCarts:ModuleComponents:22>);
 
 
 
@@ -1283,9 +1281,9 @@ recipes.addShaped(<StevesCarts:CartModule:25>, [
 
 // --- Chunk Loader
 recipes.addShaped(<StevesCarts:CartModule:49>, [
-[IronPlate, PCB, IronPlate],
+[TitaniumPlate, DataCircuit, TitaniumPlate],
 [AdvPCB, PAnchor, AdvPCB],
-[ReinforcedPlate, PCB, ReinforcedPlate]]);
+[ReinforcedPlate, DataCircuit, ReinforcedPlate]]);
 
 // --- Lawn Mover
 recipes.addShaped(<StevesCarts:CartModule:85>, [
@@ -1401,6 +1399,21 @@ recipes.addShaped(<StevesCarts:CartModule:99>, [
 [PCB, Slab, PCB],
 [IronPlate, IronPlate, IronPlate]]);
 
+// --- Reinforced Ingot
+recipes.addShapeless(<StevesCarts:ModuleComponents:22>, [<gregtech:gt.metaitem.01:11383>]);
+// --
+recipes.addShapeless(<gregtech:gt.metaitem.01:11383>, [<StevesCarts:ModuleComponents:22>]);
+
+// --- Galgadorian Ingot
+recipes.addShapeless(<StevesCarts:ModuleComponents:47>, [<gregtech:gt.metaitem.01:11384>]);
+// --
+recipes.addShapeless(<gregtech:gt.metaitem.01:11384>, [<StevesCarts:ModuleComponents:47>]);
+
+// --- Enhanced Galgadorian Ingot
+recipes.addShapeless(<StevesCarts:ModuleComponents:49>, [<gregtech:gt.metaitem.01:11385>]);
+// --
+recipes.addShapeless(<gregtech:gt.metaitem.01:11385>, [<StevesCarts:ModuleComponents:49>]);
+
 
 
 
@@ -1428,7 +1441,7 @@ Assembler.addRecipe(<StevesCarts:ModuleComponents:82>, <gregtech:gt.metaitem.01:
 Assembler.addRecipe(<StevesCarts:CartModule:37>, <gregtech:gt.metaitem.01:17809> * 4, <StevesCarts:ModuleComponents> * 2, 400, 2);
 
 // --- Standart Hull
-Assembler.addRecipe(<StevesCarts:CartModule:38>, <Railcraft:part.plate> * 4, <StevesCarts:ModuleComponents:1> * 2, 400, 2);
+Assembler.addRecipe(<StevesCarts:CartModule:38>, <gregtech:gt.metaitem.01:17032> * 4, <StevesCarts:ModuleComponents:1> * 2, 400, 2);
 
 // --- Reinforced Hull
 Assembler.addRecipe(<StevesCarts:CartModule:39>, <gregtech:gt.metaitem.01:17383> * 4, <StevesCarts:ModuleComponents:23> * 2, 400, 2);
@@ -1456,16 +1469,6 @@ Assembler.addRecipe(SolarPanel, <gregtech:gt.metaitem.01:32750>, PCB, 600, 30);
 
 // --- Advanced Solar Panel
 Assembler.addRecipe(AdvSolarPanel, SolarPanel * 4, AdvPCB * 2, 1200, 120);
-
-// --- PCB
-Assembler.addRecipe(PCB, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:17086>, 200, 30);
-
-// --- Advanced PCB
-Assembler.addRecipe(AdvPCB, <gregtech:gt.metaitem.01:32711>, PCB * 2, <liquid:molten.tin> * 144, 200, 120);
-// -
-Assembler.addRecipe(AdvPCB, <gregtech:gt.metaitem.01:32711>, PCB * 2, <liquid:molten.lead> * 288, 200, 120);
-// -
-Assembler.addRecipe(AdvPCB, <gregtech:gt.metaitem.01:32711>, PCB * 2, <liquid:molten.solderingalloy> * 72, 200, 120);
 
 // ---  Large Chest Pane
 Assembler.addRecipe(<StevesCarts:ModuleComponents:31>, <StevesCarts:ModuleComponents:30> * 4, <gregtech:gt.integrated_circuit:4> * 0, 80, 8);
@@ -1700,22 +1703,8 @@ ChemicalReactor.addRecipe(<StevesCarts:ModuleComponents:18> * 2, null, <minecraf
 
 
 
-// --- Reinforced Metal Block
-Compressor.addRecipe(<StevesCarts:BlockMetalStorage>, <StevesCarts:ModuleComponents:22> * 9);
-// -
-Compressor.addRecipe(<StevesCarts:BlockMetalStorage>, <gregtech:gt.metaitem.01:11383> * 9);
-
-// --- Galgadorian Block
-Compressor.addRecipe(<StevesCarts:BlockMetalStorage:1>, <gregtech:gt.metaitem.01:11384> * 9);
-
-
-// --- Enhanced Galgadorian Block
-Compressor.addRecipe(<StevesCarts:BlockMetalStorage:2>, <gregtech:gt.metaitem.01:11385> * 9);
-
 // --- Large Lump of Galgador
 Compressor.addRecipe(<StevesCarts:ModuleComponents:48>, <StevesCarts:ModuleComponents:46> * 9);
-// -
-Compressor.addRecipe(<StevesCarts:ModuleComponents:48>, <gregtech:gt.metaitem.01:2385> * 9);
 
 
 
@@ -1744,11 +1733,11 @@ CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:31> * 4, null, <StevesCarts:M
 CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:31> * 4, null, <StevesCarts:ModuleComponents:32>, <liquid:lubricant> * 2, 50, 30);
 
 // ---  Iron Pane
-CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <Railcraft:part.plate>, <liquid:water> * 8, 200, 30);
+CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <IC2:itemCasing:4>, <liquid:water> * 8, 200, 30);
 // -
-CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <Railcraft:part.plate>, <liquid:ic2distilledwater> * 6, 200, 30);
+CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <IC2:itemCasing:4>, <liquid:ic2distilledwater> * 6, 200, 30);
 // -
-CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <Railcraft:part.plate>, <liquid:lubricant> * 2, 100, 30);
+CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <IC2:itemCasing:4>, <liquid:lubricant> * 2, 100, 30);
 // -
 CuttingSaw.addRecipe(<StevesCarts:ModuleComponents:34> * 4, null, <StevesCarts:ModuleComponents:35>, <liquid:water> * 12, 200, 30);
 // -
@@ -1818,21 +1807,12 @@ ImplosionCompressor.addRecipe(RefinedH, <StevesCarts:ModuleComponents:18>, 1);
 
 
 
-// --- Macerator Recipes ---
+// --- Pulverizer Recipes ---
 
 
-
-// --- Enhanced Galgadorian Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2385> * 9, <StevesCarts:BlockMetalStorage:2>);
-
-// --- Galgadorian Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2384> * 9, <StevesCarts:BlockMetalStorage:1>);
-
-// --- Reinforecd Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2383> * 9, <StevesCarts:BlockMetalStorage>);
 
 // --- Stabezied Metal
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2383>, <StevesCarts:ModuleComponents:22>);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2383>], <StevesCarts:ModuleComponents:22>, [10000], 300, 2);
 
 
 

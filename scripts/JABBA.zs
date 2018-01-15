@@ -63,6 +63,7 @@ val MKX = <JABBA:upgradeStructural:9>;
 val MKXI = <JABBA:upgradeStructural:10>;
 val MKXII = <JABBA:upgradeStructural:11>;
 val MKXIII = <JABBA:upgradeStructural:12>;
+val MKXIV = <JABBA:upgradeStructural:13>;
 
 val Piston = <minecraft:piston>;
 val CarpentersBlock = <CarpentersBlocks:blockCarpentersBlock>;
@@ -98,6 +99,9 @@ val SteelWheels = <gregtech:gt.metaitem.01:32101>;
 val GTHammer = <gregtech:gt.metatool.01:12>;
 val GTScrewdriver = <gregtech:gt.metatool.01:22>;
 val RedAlloyPlate = <ore:plateRedAlloy>;
+val SteelScrew= <ore:screwSteel>;
+val BlackPlutoniumPlate = <ore:plateBlackPlutonium>;
+val BlackPlutoniumStick = <ore:stickBlackPlutonium>;
 
 val BSpace = <JABBA:upgradeCore:1>;
 val RSUp = <JABBA:upgradeCore:2>;
@@ -113,6 +117,8 @@ val Storage9Up = <JABBA:upgradeCore:5>;
 val Storage27Up = <JABBA:upgradeCore:6>;
 val Storage81Up = <JABBA:upgradeCore:8>;
 val Storage243Up = <JABBA:upgradeCore:9>;
+
+val Screwdriver = <ore:craftingToolScrewdriver>;
 
 
 
@@ -173,6 +179,9 @@ recipes.remove(MKXII);
 // --- Structural Upgrade MK XIII
 recipes.remove(MKXIII);
 
+// --- Structural Upgrade MK XIV
+recipes.remove(MKXIV);
+
 // --- Storage Upgrade
 recipes.remove(StorageUp);
 
@@ -216,14 +225,14 @@ recipes.addShaped(Barrel, [
 
 // --- Dolly
 recipes.addShaped(Dolly, [
-[<ore:stickAnyIron>, <ore:stickAnyIron>, <ore:stickAnyIron>],
-[<ore:stickAnyIron>, <ore:craftingToolWrench>, <ore:stickAnyIron>],
+[<ore:stickAnyIron>, <ore:stickAnyIron>, <ore:roundRubber>],
+[<ore:stickAnyIron>, <ore:craftingToolWrench>, <ore:roundRubber>],
 [IronWheels, <ore:plateSteel>, IronWheels]]);
 
 // --- Diamond Dolly
 recipes.addShaped(DiamondDolly, [
-[<ore:stickDiamond>, <ore:stickDiamond>, <ore:stickDiamond>],
-[<ore:stickDiamond>, <ore:craftingToolWrench>, <ore:stickDiamond>],
+[<ore:stickDiamond>, <ore:stickDiamond>, <ore:roundPlastic>],
+[<ore:stickDiamond>, <ore:craftingToolWrench>, <ore:roundPlastic>],
 [SteelWheels, <ore:plateNetherStar>, SteelWheels]]);
 
 // --- Barrel Hammer
@@ -320,8 +329,14 @@ recipes.addShaped(MKXIII, [
 [NeutroniumPlate, Barrel, NeutroniumPlate],
 [NeutroniumStick, NeutroniumPlate, NeutroniumStick]]);
 
+// --- Structural Upgrade MK XIV
+recipes.addShaped(MKXIV, [
+[BlackPlutoniumStick, BlackPlutoniumPlate, BlackPlutoniumStick],
+[BlackPlutoniumPlate, Barrel, BlackPlutoniumPlate],
+[BlackPlutoniumStick, BlackPlutoniumPlate, BlackPlutoniumStick]]);
+
 // --- BSpace Barrel Upgrade
-recipes.addShaped(BSpace, [
+recipes.addShaped(BSpace * 2, [
 [EnderEyePlate, Piston, EnderEyePlate],
 [Piston, <EnderStorage:enderChest>, Piston],
 [EnderEyePlate, Piston, EnderEyePlate]]);
@@ -344,7 +359,11 @@ recipes.addShaped(VoidUp, [
 [Piston, <Railcraft:machine.beta:11>, Piston],
 [IronPlate, Piston, IronPlate]]);
 
-
+// --- Storage Upgrade
+recipes.addShaped(StorageUp, [
+[SteelScrew, Piston, SteelScrew],
+[SteelScrew, Barrel, SteelScrew],
+[null, Screwdriver, null]]);
 
 
 
@@ -392,16 +411,16 @@ Assembler.addRecipe(Barrel, Plank6 * 8, Chest, 200, 16);
 Assembler.addRecipe(StorageUp, Barrel, Piston, 1200, 16);
 
 // --- Storage Upgrade 3x
-Assembler.addRecipe(Storage3Up, StorageUp * 3, <gregtech:gt.integrated_circuit:1> * 0, 900, 30);
+Assembler.addRecipe(Storage3Up, StorageUp * 3, <gregtech:gt.integrated_circuit:3> * 0, 900, 30);
 
 // --- Storage Upgrade 9x
-Assembler.addRecipe(Storage9Up, Storage3Up * 3, <gregtech:gt.integrated_circuit:2> * 0, 600, 64);
+Assembler.addRecipe(Storage9Up, Storage3Up * 3, <gregtech:gt.integrated_circuit:3> * 0, 600, 64);
 
 // --- Storage Upgrade 27x
 Assembler.addRecipe(Storage27Up, Storage9Up * 3, <gregtech:gt.integrated_circuit:3> * 0, 400, 120);
 
 // --- Storage Upgrade 81x
-Assembler.addRecipe(Storage81Up, Storage27Up * 3, <gregtech:gt.integrated_circuit:4> * 0, 200, 256);
+Assembler.addRecipe(Storage81Up, Storage27Up * 3, <gregtech:gt.integrated_circuit:3> * 0, 200, 256);
 
 // --- Storage Upgrade 243x
-Assembler.addRecipe(Storage243Up, Storage81Up * 3, <gregtech:gt.integrated_circuit:5> * 0, 150, 480);
+Assembler.addRecipe(Storage243Up, Storage81Up * 3, <gregtech:gt.integrated_circuit:3> * 0, 150, 480);

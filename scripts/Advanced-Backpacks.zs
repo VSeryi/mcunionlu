@@ -94,11 +94,11 @@ recipes.addShaped(<adventurebackpack:adventureBackpack>.withTag({backpackData: {
 recipes.addShaped(<adventurebackpack:adventureBackpack>.withTag({backpackData: {colorName: "Standard"}}), [
 [<ore:materialHardenedleather>, <ore:plateAluminium>, <ore:materialHardenedleather>],
 [<BuildCraft|Factory:tankBlock>, <ore:chestIron>, <BuildCraft|Factory:tankBlock>],
-[<ore:materialHardenedleather>, <OpenBlocks:sleepingBag>, <ore:materialHardenedleather>]]);
+[<ore:materialHardenedleather>, <sleepingbag:sleepingBag>, <ore:materialHardenedleather>]]);
 
 // --- Bat Backpack
 recipes.addShaped(<adventurebackpack:adventureBackpack:2>.withTag({backpackData: {colorName: "Bat"}}), [
-[<ore:itemLeather>, <ore:blockWoolBlack>, <ore:itemLeather>],
+[<ore:itemLeather>, <IC2:itemNightvisionGoggles:1>, <ore:itemLeather>],
 [<minecraft:potion:8262>, <adventurebackpack:adventureBackpack>.onlyWithTag({backpackData: {colorName: "Standard"}}), <minecraft:potion:8262>],
 [<ore:blockWoolBlack>, <ore:blockWoolBlack>, <ore:blockWoolBlack>]]);
 
@@ -106,11 +106,11 @@ recipes.addShaped(<adventurebackpack:adventureBackpack:2>.withTag({backpackData:
 recipes.addShaped(<adventurebackpack:adventureBackpack:11>.withTag({backpackData: {colorName: "IronGolem"}}), [
 [<ore:itemLeather>, <minecraft:red_flower>, <ore:itemLeather>],
 [<minecraft:enchanted_book>.onlyWithTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}), <adventurebackpack:adventureBackpack>.onlyWithTag({backpackData: {colorName: "Standard"}}), <minecraft:enchanted_book>.onlyWithTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]})],
-[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+[<ore:plateIron>, <IC2:itemArmorRubBoots>, <ore:plateIron>]]);
 
 // --- Squid Backpack
 recipes.addShaped(<adventurebackpack:adventureBackpack:62>.withTag({backpackData: {colorName: "Squid"}}), [
-[<ore:itemLeather>, <minecraft:dye>, <ore:itemLeather>],
+[<ore:itemLeather>, <GalacticraftCore:item.oxygenMask>, <ore:itemLeather>],
 [<minecraft:potion:8269>, <adventurebackpack:adventureBackpack>.onlyWithTag({backpackData: {colorName: "Standard"}}), <minecraft:potion:8269>],
 [<ore:blockWoolBlue>, <minecraft:dye>, <ore:blockWoolBlue>]]);
 
@@ -120,7 +120,7 @@ recipes.addShapeless(<adventurebackpack:backpackComponent:2>, [<BuildCraft|Facto
 recipes.addShapeless(<BuildCraft|Factory:tankBlock>, [<adventurebackpack:backpackComponent:2>]);
 
 // --- Sleeping Bag
-recipes.addShapeless(<adventurebackpack:backpackComponent:1>, [<OpenBlocks:sleepingBag>]);
+recipes.addShapeless(<adventurebackpack:backpackComponent:1>, [<sleepingbag:sleepingBag>]);
 
 // --- Machete
 recipes.addShaped(<adventurebackpack:machete>, [
@@ -237,3 +237,13 @@ recipes.addShaped(<adventurebackpack:coalJetpack>.withTag({jetpackData: {waterTa
 
 // --- Melon Juice Bottle
 mods.gregtech.Brewery.addRecipe(<liquid:water> * 750, <minecraft:melon>, <liquid:melonjuice> * 750, false);
+
+
+
+
+// --- Tooltips ---
+
+
+
+
+<Backpack:backpack:*>.addTooltip(format.red("Idiots! Do not upgrade your backpack with important stuff inside - Dream 2017!"));

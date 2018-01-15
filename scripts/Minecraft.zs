@@ -10,7 +10,6 @@ import mods.gregtech.AlloySmelter;
 import mods.gregtech.ArcFurnace;
 import mods.gregtech.Assembler;
 import mods.gregtech.BlastFurnace;
-import mods.ic2.Compressor;
 import mods.gregtech.CuttingSaw;
 import mods.ic2.Extractor;
 import mods.gregtech.FluidExtractor;
@@ -252,6 +251,32 @@ val Map = <minecraft:map>;
 val Paper = <ore:paperEmpty>;
 val WoodDoor = <minecraft:wooden_door>;
 val IronDoor = <minecraft:iron_door>;
+val Sign = <minecraft:sign>;
+
+val Sticks = <minecraft:stick>;
+val Sticks1 = <Natura:natura.stick:*>;
+
+val Planks = <gregtech:gt.metaitem.02:32470>;
+val Planks1 = <gregtech:gt.metaitem.02:32471>;
+val Planks2 = <gregtech:gt.metaitem.02:32472>;
+val Planks3 = <gregtech:gt.metaitem.02:32473>;
+val Planks4 = <gregtech:gt.metaitem.02:32474>;
+val Planks5 = <gregtech:gt.metaitem.02:32475>;
+val Planks6 = <gregtech:gt.metaitem.02:32476>;
+val Planks7 = <gregtech:gt.metaitem.02:32477>;
+val Planks8 = <gregtech:gt.metaitem.02:32478>;
+val Planks9 = <gregtech:gt.metaitem.02:32479>;
+val Planks10 = <gregtech:gt.metaitem.02:32480>;
+val Planks11 = <gregtech:gt.metaitem.02:32481>;
+val Planks12 = <gregtech:gt.metaitem.02:32482>;
+val Planks13 = <gregtech:gt.metaitem.02:32483>;
+val Planks14 = <gregtech:gt.metaitem.02:32484>;
+val Planks15 = <gregtech:gt.metaitem.02:32485>;
+val Planks16 = <gregtech:gt.metaitem.02:32486>;
+val Planks17 = <gregtech:gt.metaitem.02:32487>;
+val Planks18 = <gregtech:gt.metaitem.02:32488>;
+val Planks19 = <gregtech:gt.metaitem.02:32489>;
+val Planks20 = <gregtech:gt.metaitem.02:32490>;
 
 
 // --- Removing Recipes ---
@@ -313,6 +338,8 @@ recipes.remove(MossyBricks);
 
 // --- Obsidian
 recipes.remove(Obsidian);
+// -
+furnace.remove(<*>, Obsidian);
 
 // --- Jack O Lantern
 recipes.remove(JackOLantern);
@@ -348,9 +375,6 @@ recipes.remove(Fence);
 
 // --- Fence Gate
 recipes.remove(FenceGate);
-
-// --- Iron Bars
-recipes.remove(IronBars);
 
 // --- Enchantment Table
 recipes.remove(EnchantingTable);
@@ -805,13 +829,6 @@ recipes.remove(<minecraft:golden_apple:1>);
 // --- Golden Carrot
 recipes.remove(<minecraft:golden_carrot>);
 
-// --- Sugar
-recipes.removeShaped(<minecraft:sugar>);
-// -
-recipes.removeShapeless(<minecraft:sugar>, [<harvestcraft:potItem>, <harvestcraft:honeyItem>]);
-// -
-recipes.removeShapeless(<minecraft:sugar>, [<harvestcraft:potItem>, <ore:dropHoney>]);
-
 // --- Cake
 recipes.remove(<minecraft:cake>);
 
@@ -1000,6 +1017,9 @@ furnace.remove(<TConstruct:materials:21>, <TConstruct:oreBerries:3>);
 // --- remove Aluminium Berrys in Furnace
 furnace.remove(<TConstruct:materials:22>, <TConstruct:oreBerries:4>);
 
+// --- Iron Nuggets
+recipes.remove(<ore:nuggetIron>);
+
 
 
 // --- Adding Back Recipes ---
@@ -1105,21 +1125,21 @@ recipes.addShaped(Jukebox, [
 recipes.addShapeless(JackOLantern,
 [Pumpkin, Torch, Knife]);
 
-// --- Trapdoor
+// --- Trappdoor
 recipes.addShaped(Trapdoor, [
-[<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>],
+[<minecraft:wooden_slab>, Stick, <minecraft:wooden_slab>],
 [Stick, Flint, Stick],
-[<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>]]);
+[<minecraft:wooden_slab>, Stick, <minecraft:wooden_slab>]]);
 // --- 
 recipes.addShaped(Trapdoor * 2, [
-[<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>],
+[<minecraft:wooden_slab>, Stick, <minecraft:wooden_slab>],
 [Stick, IronScrew, Stick],
-[<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>]]);
+[<minecraft:wooden_slab>, Stick, <minecraft:wooden_slab>]]);
 // ---
 recipes.addShaped(Trapdoor * 3, [
-[<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>],
+[<minecraft:wooden_slab>, Stick, <minecraft:wooden_slab>],
 [Stick, SteelScrew, Stick],
-[<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>]]);
+[<minecraft:wooden_slab>, Stick, <minecraft:wooden_slab>]]);
 
 // --- Pressure Plate
 recipes.addShaped(<minecraft:stone_pressure_plate> * 2, [
@@ -1260,12 +1280,6 @@ recipes.addShaped(FenceGate * 6, [
 [SteelScrew, Screwdriver, SteelScrew],
 [CarpentersBlock, Stick, CarpentersBlock],
 [CarpentersBlock, Stick, CarpentersBlock]]);
-
-// --- Iron Bars
-recipes.addShaped(IronBars * 3, [
-[null, HHammer, null],
-[IronRod, IronRod, IronRod],
-[IronRod, IronRod, IronRod]]);
 
 // --- Redstone Lamp
 recipes.addShaped(RSLamp, [
@@ -2282,6 +2296,17 @@ recipes.addShaped(<minecraft:compass>, [
 [<ore:ringZinc>, <ore:plateIron>, <ore:ringZinc>],
 [<ore:boltRedAlloy>, <ore:craftingToolScrewdriver>, <ore:screwIron>]]);
 
+// --- Clay Block
+recipes.addShaped(ClayBlock * 2, [
+[<ore:itemClay>, <ore:itemClay>, <ore:itemClay>],
+[<ore:itemClay>, <minecraft:water_bucket>, <ore:itemClay>],
+[<ore:itemClay>, <ore:itemClay>, <ore:itemClay>]]);
+// -
+recipes.addShaped(ClayBlock * 2, [
+[<ore:itemClay>, <ore:itemClay>, <ore:itemClay>],
+[<ore:itemClay>, <IguanaTweaksTConstruct:clayBucketWater>, <ore:itemClay>],
+[<ore:itemClay>, <ore:itemClay>, <ore:itemClay>]]);
+
 // --- Pumpkin Seeds
 recipes.addShaped(<minecraft:pumpkin_seeds> * 2, [[<minecraft:pumpkin>, <ore:craftingToolHardHammer>]]);
 // -
@@ -2298,17 +2323,13 @@ recipes.addShapeless(<minecraft:melon> * 6, [<ore:craftingToolKnife>, <minecraft
 // --- Gunpowder
 recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustSmallGunpowder>, <ore:dustSmallGunpowder>, <ore:dustSmallGunpowder>, <ore:dustSmallGunpowder>]);
 
-// --- remove Charcoal in Furnace
-furnace.remove(<minecraft:coal:1>);
-
 // --- remove Sand in Furnance
 furnace.remove(<minecraft:glass>);
 
-// --- Add back glass Dust to Glass
-furnace.addRecipe(<minecraft:glass>, <gregtech:gt.metaitem.01:2890>);
-
 // --- Dough and Clay water Bucket
 recipes.addShapeless(<gregtech:gt.metaitem.02:32559>, [<IguanaTweaksTConstruct:clayBucketWater>, <gregtech:gt.metaitem.01:2881>]);
+// --- Dough and fresh Water
+recipes.addShapeless(<gregtech:gt.metaitem.02:32559>, [<harvestcraft:freshwaterItem>, <gregtech:gt.metaitem.01:2881>, <harvestcraft:freshwaterItem>]);
 
 // --- Minecart with Chest
 recipes.addShaped(<minecraft:chest_minecart>, [
@@ -2704,6 +2725,18 @@ recipes.addShaped(<minecraft:mossy_cobblestone>, [
 [<BiomesOPlenty:moss>, MossyCobble, <BiomesOPlenty:moss>],
 [<BiomesOPlenty:moss>, <BiomesOPlenty:moss>, <BiomesOPlenty:moss>]]);
 
+// --- Book
+recipes.addShaped(Book, [
+[String, Paper, <minecraft:leather>],
+[String, Paper, <TConstruct:buckets:25>.transformReplace(<minecraft:bucket>)],
+[String, Paper, <minecraft:leather>]]);
+
+// --- Book Shelf
+recipes.addShaped(Bookshelf, [
+[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
+[Book, Book, Book],
+[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]]);
+
 
 // --- Charcoal
 mods.railcraft.BlastFurnace.addRecipe(<minecraft:log:*>, false, false, 20, <minecraft:coal:1>);
@@ -2743,6 +2776,18 @@ mods.railcraft.BlastFurnace.addRecipe(<TwilightForest:tile.TFMagicLog:*>, false,
 mods.railcraft.BlastFurnace.addRecipe(<witchery:witchlog:*>, false, false, 20, <minecraft:coal:1>);
 // -
 mods.railcraft.BlastFurnace.addRecipe(<harvestthenether:netherLog:*>, false, false, 20, <minecraft:coal:1>);
+// -
+mods.railcraft.BlastFurnace.addRecipe(<TaintedMagic:BlockWarpwoodLog>, false, false, 20, <minecraft:coal:1>);
+// -
+mods.railcraft.BlastFurnace.addRecipe(<harvestcraft:pamCinnamon>, false, false, 20, <minecraft:coal:1>);
+// -
+mods.railcraft.BlastFurnace.addRecipe(<harvestcraft:pamMaple>, false, false, 20, <minecraft:coal:1>);
+// -
+mods.railcraft.BlastFurnace.addRecipe(<harvestcraft:pamPaperbark>, false, false, 20, <minecraft:coal:1>);
+// -
+mods.railcraft.BlastFurnace.addRecipe(<thaumicbases:genLogs>, false, false, 20, <minecraft:coal:1>);
+// -
+mods.railcraft.BlastFurnace.addRecipe(<thaumicbases:genLogs:1>, false, false, 20, <minecraft:coal:1>);
 
 
 
@@ -2783,6 +2828,7 @@ AlloySmelter.addRecipe(<minecraft:golden_leggings>, <minecraft:gold_ingot> * 7, 
 
 // --- Gold Boots
 AlloySmelter.addRecipe(<minecraft:golden_boots>, <minecraft:gold_ingot> * 4, <dreamcraft:item.MoldBoots> * 0, 200, 30);
+
 
 
 
@@ -2830,12 +2876,21 @@ Assembler.addRecipe(<minecraft:wooden_door>, <gregtech:gt.metaitem.01:17809> * 4
 Assembler.addRecipe(<minecraft:wooden_door>, <gregtech:gt.metaitem.01:17809> * 4, <minecraft:trapdoor>, <liquid:molten.copper> * 16, 400, 4);
 
 // --- Iron Door
-Assembler.addRecipe(<minecraft:iron_door>, <Railcraft:part.plate> * 4, <dreamcraft:item.SteelBars>, <liquid:molten.steel> * 16, 400, 8);
+Assembler.addRecipe(<minecraft:iron_door>, <gregtech:gt.metaitem.01:17032> * 4, <dreamcraft:item.SteelBars>, <liquid:molten.steel> * 16, 400, 8);
 
-// --- Trapped Door
+// --- Traped Door
 Assembler.addRecipe(<minecraft:trapdoor> * 4, <minecraft:wooden_slab> * 4, <minecraft:stick> * 4, <liquid:molten.iron> * 16, 600, 4);
 // -
 Assembler.addRecipe(<minecraft:trapdoor> * 6, <minecraft:wooden_slab> * 4, <minecraft:stick> * 4, <liquid:molten.steel> * 16, 600, 4);
+//-
+Assembler.addRecipe(<minecraft:trapdoor> * 4, <minecraft:wooden_slab> * 4, <Natura:natura.stick:*> * 4, <liquid:molten.iron> * 16, 600, 4);
+// -
+Assembler.addRecipe(<minecraft:trapdoor> * 6, <minecraft:wooden_slab> * 4, <Natura:natura.stick:*> * 4, <liquid:molten.steel> * 16, 600, 4);
+//-
+Assembler.addRecipe(<minecraft:trapdoor> * 4, <minecraft:wooden_slab> * 4, <BiomesOPlenty:bamboo> * 4, <liquid:molten.iron> * 16, 600, 4);
+// -
+Assembler.addRecipe(<minecraft:trapdoor> * 6, <minecraft:wooden_slab> * 4, <BiomesOPlenty:bamboo> * 4, <liquid:molten.steel> * 16, 600, 4);
+
 
 // --- Piston
 Assembler.addRecipe(<minecraft:piston>, <dreamcraft:tile.PistonBlock>, <dreamcraft:item.PistonPlate>, 100, 30);
@@ -3065,6 +3120,95 @@ Assembler.addRecipe(<minecraft:ladder>, <minecraft:stick> * 2, <gregtech:gt.meta
 Assembler.addRecipe(<minecraft:ladder> * 2, <minecraft:stick> * 2, <gregtech:gt.metaitem.01:27032>, <liquid:glue> * 16, 100, 16);
 // -
 Assembler.addRecipe(<minecraft:ladder> * 4, <minecraft:stick> * 2, <gregtech:gt.metaitem.01:27305>, <liquid:glue> * 32, 100, 30);
+
+// --- Brick Blocks
+Assembler.addRecipe(<minecraft:brick_block> * 2, <minecraft:brick> * 8, <gregtech:gt.integrated_circuit:1> * 0, <liquid:water> * 500, 300, 16);
+
+// --- Sign
+Assembler.addRecipe(Sign * 3, Sticks, Planks, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks1, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks2, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks3, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks4, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks5, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks6, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks7, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks8, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks9, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks10, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks11, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks12, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks13, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks14, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks15, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks16, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks17, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks18, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks19, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks, Planks20, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks1, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks2, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks3, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks4, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks5, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks6, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks7, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks8, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks9, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks10, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks11, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks12, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks13, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks14, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks15, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks16, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks17, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks18, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks19, 100, 4);
+// -
+Assembler.addRecipe(Sign * 3, Sticks1, Planks20, 100, 4);
+
 
 
 

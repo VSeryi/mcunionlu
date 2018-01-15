@@ -6,6 +6,8 @@
 
 
 
+import mods.gregtech.Assembler;
+
 
 mods.chisel.Groups.addGroup("glasswork"); 
 //mods.chisel.Groups.addGroup("stained_glass_");
@@ -21,13 +23,18 @@ val ObsidianChisel = <chisel:obsidianChisel>;
 val DiamondChisel = <chisel:diamondChisel>;
 val BottledCloud = <chisel:cloudinabottle>;
 
+val WoodPlate = <ore:plateWood>;
 val IronPlate = <ore:plateAnyIron>;
 val SteelPlate = <ore:plateSteel>;
 val ObsidainPlate = <ore:plateObsidian>;
+val WoodScrew = <ore:screwWood>;
 val IronScrew = <ore:screwAnyIron>;
+val WroughtIronScrew = <ore:screwWroughtIron>;
 val SteelScrew = <ore:screwSteel>;
 val IronRod = <ore:stickAnyIron>;
 val SteelRod = <ore:stickSteel>;
+val WoodStick = <ore:stickWood>;
+val WroughtIronStick = <ore:stickWroughtIron>;
 val ObsidianStick = <ore:stickObsidian>;
 val TinyQuartzPile = <ore:dustTinyQuartzite>;
 val EmptyBottle = <minecraft:glass_bottle>;
@@ -73,7 +80,15 @@ recipes.remove(<chisel:upgrade:2>);
 // --- Mossy stone
 mods.chisel.Groups.removeGroup("cobblestone");
 
+// --- Stonebricks
 mods.chisel.Groups.removeVariation(<minecraft:stonebrick:1>);
+
+// --- Energised Voidstone
+recipes.remove(<chisel:voidstone2>);
+
+// --- Concrete
+furnace.remove(<chisel:concrete>);
+
 
 
 
@@ -83,35 +98,35 @@ mods.chisel.Groups.removeVariation(<minecraft:stonebrick:1>);
 // --- Chisel
 recipes.addShaped(Chisel, [
 [HHammer, IronPlate, IronPlate],
-[IronScrew, IronRod, IronPlate],
-[IronRod, IronScrew, Screwdriver]]);
+[IronScrew, WoodStick, IronPlate],
+[WoodStick, IronScrew, Screwdriver]]);
 // -
 recipes.addShaped(Chisel, [
 [Screwdriver, IronPlate, IronPlate],
-[IronScrew, IronRod, IronPlate],
-[IronRod, IronScrew, HHammer]]);
+[IronScrew, WoodStick, IronPlate],
+[WoodStick, IronScrew, HHammer]]);
 
 // --- Obsidian Chisel
 recipes.addShaped(ObsidianChisel, [
-[HHammer, SteelPlate, ObsidainPlate],
-[SteelScrew, <RandomThings:ingredient:1>, SteelPlate],
-[SteelRod, SteelScrew, Screwdriver]]);
+[HHammer, ObsidainPlate, ObsidainPlate],
+[WroughtIronScrew, WroughtIronStick, ObsidainPlate],
+[WroughtIronStick, WroughtIronScrew, Screwdriver]]);
 // -
 recipes.addShaped(ObsidianChisel, [
-[Screwdriver, SteelPlate, ObsidainPlate],
-[SteelScrew, <RandomThings:ingredient:1>, SteelPlate],
-[SteelRod, SteelScrew, HHammer]]);
+[Screwdriver, ObsidainPlate, ObsidainPlate],
+[WroughtIronScrew, WroughtIronStick, ObsidainPlate],
+[WroughtIronStick, WroughtIronScrew, HHammer]]);
 
 // --- Diamond Chisel
 recipes.addShaped(DiamondChisel, [
 [HHammer, <ore:plateDiamond>, <ore:plateDiamond>],
-[<ore:screwDiamond>, <ore:stickDiamond>, <ore:plateDiamond>],
-[<ore:stickDiamond>, <ore:screwDiamond>, Screwdriver]]);
+[SteelScrew, SteelRod, <ore:plateDiamond>],
+[SteelRod, SteelScrew, Screwdriver]]);
 // -
 recipes.addShaped(DiamondChisel, [
 [Screwdriver, <ore:plateDiamond>, <ore:plateDiamond>],
-[<ore:screwDiamond>, <ore:stickDiamond>, <ore:plateDiamond>],
-[<ore:stickDiamond>, <ore:screwDiamond>, HHammer]]);
+[SteelScrew, SteelRod, <ore:plateDiamond>],
+[SteelRod, SteelScrew, HHammer]]);
 
 // --- Auto Chisel
 recipes.addShaped(<chisel:autoChisel>, [
@@ -142,6 +157,31 @@ recipes.addShaped(<chisel:mossy_templeblock>, [
 [<BiomesOPlenty:moss>, <BiomesOPlenty:moss>, <BiomesOPlenty:moss>],
 [<BiomesOPlenty:moss>, <chisel:templeblock>, <BiomesOPlenty:moss>],
 [<BiomesOPlenty:moss>, <BiomesOPlenty:moss>, <BiomesOPlenty:moss>]]);
+
+// --- Energised Voidstone
+recipes.addShaped(<chisel:voidstone2> * 8, [
+[<chisel:voidstone>, <chisel:voidstone>, <chisel:voidstone>],
+[<chisel:voidstone>, <ore:dustGlowstone>, <chisel:voidstone>],
+[<chisel:voidstone>, <chisel:voidstone>, <chisel:voidstone>]]);
+
+
+
+
+// --- Assembler Recipes ---
+
+
+
+// --- Chisel
+Assembler.addRecipe(Chisel, <gregtech:gt.metaitem.01:17032> * 2, <minecraft:stick> * 2, 300, 30);
+
+// --- Obsidian Chisel
+Assembler.addRecipe(ObsidianChisel, <gregtech:gt.metaitem.01:17804> * 2, <gregtech:gt.metaitem.01:23304> * 2, 400, 30);
+
+// --- Diamond Chisel
+Assembler.addRecipe(DiamondChisel, <gregtech:gt.metaitem.01:17500> * 2, <gregtech:gt.metaitem.01:23305> * 2, 600, 30);
+
+
+
 
 // --- Cobblestone
 mods.chisel.Groups.addGroup("CobblestoneBricks");
@@ -251,6 +291,46 @@ mods.chisel.Groups.addVariation("limestone", <BiomesOPlenty:rocks>);
 mods.chisel.Groups.addVariation("amber", <gregtech:gt.blockgem1:1>);
 // -
 mods.chisel.Groups.addVariation("amber", <BiomesOPlenty:gemOre:15>);
+
+// --- Endstone
+mods.chisel.Groups.addGroup("endstone");
+// -
+mods.chisel.Groups.addVariation("endstone", <minecraft:end_stone>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:1>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:2>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:3>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:4>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:5>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:6>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:7>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:8>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:9>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:10>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:11>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:12>);
+// -
+mods.chisel.Groups.addVariation("endstone", <chisel:end_Stone:13>);
+// -
+mods.chisel.Groups.addVariation("endstone", <TConstruct:decoration.multibrick:12>);
+// -
+mods.chisel.Groups.addVariation("endstone", <TConstruct:decoration.multibrickfancy:12>);
+
+
+// --- Chiselgroup Concrete
+mods.chisel.Groups.addVariation("concrete", <gregtech:gt.blockconcretes:8>);
+
 
 
 

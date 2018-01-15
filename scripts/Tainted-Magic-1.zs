@@ -355,7 +355,7 @@ game.setLocalization("tc.research_text.CrystalDaggerGTNH", "Drip, drip, drop..."
 mods.thaumcraft.Research.addPage("CrystalDaggerGTNH", "tc.research_page.CrystalDaggerGTNH");
 game.setLocalization("tc.research_page.CrystalDaggerGTNH", "After having discovered the Essentia Crystallizer, you've managed to create a dagger that crystallizes the blood of your foes.<BR>Whenever a living creature is killed by this blade, a few drops of blood will be crystallized. It also seems that any blade that possesses the same Bloodlust effect will also crystallize any creature's blood upon death.<BR>You are certain that this is no ordinary blood, it is particularly interesting because Crimson Cult Attire seems to have similar properties.");
 mods.thaumcraft.Arcane.addShaped("CrystalDaggerGTNH",  <TaintedMagic:ItemCrystalDagger>, "terra 100, ignis 100, perditio 100, ordo 50, aer 50", [
-[<ore:screwThaumium>, <ore:craftingToolWrench>, <TGregworks:tGregToolPartKnifeBlade:123>.withTag({material: "Shadow"})], 
+[<ore:screwThaumium>, <ore:craftingToolWrench>, <TGregworks:tGregToolPartKnifeBlade:1622>.withTag({material: "Shadow"})], 
 [null, <Thaumcraft:blockTube:7>, null], 
 [<Forestry:oakStick>, <ore:craftingToolScrewdriver>, <ore:screwThaumium>]]);
 mods.thaumcraft.Research.addArcanePage("CrystalDaggerGTNH", <TaintedMagic:ItemCrystalDagger>);
@@ -625,8 +625,8 @@ game.setLocalization("tc.research_name.VoidSashGTNH", "Voidwalker's Sash of Runi
 game.setLocalization("tc.research_text.VoidSashGTNH", "Gotta go fast");
 mods.thaumcraft.Research.addPage("VoidSashGTNH", "tc.research_page.VoidSashGTNH");
 game.setLocalization("tc.research_page.VoidSashGTNH", "After extensive study of Runic Shielding, you had a bizarre idea.<BR>Using Void Metal, Shadowmetal, the Primordial Pearl, a little Shadow Cloth and a fine mixture of essentia; a sash of runic shielding more powerful than you had ever believed possible was created. The Voidwalker's Sash of Runic Shielding offers §6Runic Shield +20§0 and can be equipped in the belt slot.<BR>If you are wearing the sash alongside the Boots of the Voidwalker, your speed and jump height will be increased greatly. One would Shift+Right-click with the sash to toggle this effect.");
-mods.thaumcraft.Infusion.addRecipe("VoidSashGTNH", <Thaumcraft:ItemGirdleRunic>,
-[<Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:1>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.02:30508>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:1>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>], 
+mods.thaumcraft.Infusion.addRecipe("VoidSashGTNH", <Thaumcraft:ItemEldritchObject:3>,
+[<Thaumcraft:ItemGirdleRunic>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:1>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.02:30508>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:1>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>], 
 "iter 48, praecantatio 64, tutamen 84, vacuos 72, volatus 32, alienis 24, aer 16", <TaintedMagic:ItemVoidwalkerSash>, 12);
 mods.thaumcraft.Research.addInfusionPage("VoidSashGTNH", <TaintedMagic:ItemVoidwalkerSash>);
 mods.thaumcraft.Warp.addToResearch("VoidSashGTNH", 4);
@@ -703,7 +703,7 @@ game.setLocalization("tc.research_text.ThaumiumKatanaGTNH", "Nothing will surviv
 mods.thaumcraft.Research.addPage("ThaumiumKatanaGTNH", "tc.research_page.ThaumiumKatanaGTNH");
 game.setLocalization("tc.research_page.ThaumiumKatanaGTNH", "Using a design similar to Thaumium Fortress Armor, you have designed a blade that will fit the set perfectly.<BR>By improving the construction process of a Thaumium Sword, you have increased the damage it will deal. This blade will also never take damage from use.<BR>Furthermore, you can charge your blade by holding down right click. Upon releasing, a strike will be delivered with increased damage based on how charged the blade is. At full charge, the blade has the potential to deal up to 2 times its attack damage. The blade will remain sheathed at your hip when it is not in use.");
 mods.thaumcraft.Infusion.addRecipe("ThaumiumKatanaGTNH", <Thaumcraft:ItemSwordThaumium>,
-[<gregtech:gt.metaitem.01:17804>, <gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17086>, <gregtech:gt.metaitem.02:29501>, <Railcraft:part.plate:1>, <gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17804>, <gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17086>, <gregtech:gt.metaitem.02:29501>, <Railcraft:part.plate:1>, <gregtech:gt.metaitem.01:17330>], 
+[<gregtech:gt.metaitem.01:17804>, <gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17086>, <gregtech:gt.metaitem.02:29501>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17804>, <gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17086>, <gregtech:gt.metaitem.02:29501>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17330>], 
 "metallum 64, praecantatio 32, telum 48, mortuus 24, potentia 16, motus 8", <TaintedMagic:ItemKatana>, 6);
 mods.thaumcraft.Research.addInfusionPage("ThaumiumKatanaGTNH", <TaintedMagic:ItemKatana>);
 mods.thaumcraft.Warp.addToResearch("ThaumiumKatanaGTNH", 3);
@@ -779,8 +779,8 @@ game.setLocalization("tc.research_name.RoD_WarpwoodGTNH", "Warpwood Wand Rod");
 game.setLocalization("tc.research_text.RoD_WarpwoodGTNH", "The wand chooses the wizard...");
 mods.thaumcraft.Research.addPage("RoD_WarpwoodGTNH", "tc.research_page.RoD_WarpwoodGTNH.1");
 game.setLocalization("tc.research_page.RoD_WarpwoodGTNH.1", "Ever since you discovered Warpwood, you have wondered if it would be possible to forge this wood into a wand. The Primordial Pearl has given you the answer to the question.<BR>Since the wood is imbued with warp, you think it's only logical to use a Zombie Brain as a place to store the insanity. And, Using the power of the Primordial Pearl as the core of this rod, the power is immense.<BR>The wood is also extremely dense, making it able to store huge amounts of vis - 250 of each, that is.<BR>(Continued)");
-mods.thaumcraft.Infusion.addRecipe("RoD_WarpwoodGTNH", <TaintedMagic:BlockWarpwoodLog>,
-[<Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <Thaumcraft:ItemZombieBrain>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>], 
+mods.thaumcraft.Infusion.addRecipe("RoD_WarpwoodGTNH", <Thaumcraft:ItemEldritchObject:3>,
+[<TaintedMagic:BlockWarpwoodLog>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <Thaumcraft:ItemZombieBrain>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>], 
 "alienis 64, arbor 64, praecantatio 64, tenebrae 48, instrumentum 32, terra 24", <TaintedMagic:ItemWandRod>, 9);
 mods.thaumcraft.Research.addInfusionPage("RoD_WarpwoodGTNH", <TaintedMagic:ItemWandRod>);
 mods.thaumcraft.Warp.addToResearch("RoD_WarpwoodGTNH", 3);
@@ -926,8 +926,8 @@ game.setLocalization("tc.research_name.CaP_ShadowmetalGTNH", "Shadowmetal Wand C
 game.setLocalization("tc.research_text.CaP_ShadowmetalGTNH", "What a drag");
 mods.thaumcraft.Research.addPage("CaP_ShadowmetalGTNH", "tc.research_page.CaP_ShadowmetalGTNH");
 game.setLocalization("tc.research_page.CaP_ShadowmetalGTNH", "With the discovery of Void Metal Wand Caps you wondered if you could improve their performance even further. You tested this theory by infusing the caps with some Shadowmetal, as well as the primal aspects of a primordial pearl. It proved very successful.<BR>The Shadowmetal Caps seem to be extremely efficient at channeling vis, and will grant a heavy discount of 30% for all primal aspects.<BR>The Primordial Pearl is not consumed during the crafting process.");
-mods.thaumcraft.Infusion.addRecipe("PrimalBladeGTNH", <dreamcraft:item.ChargedVoidWandCap>,
-[<Thaumcraft:ItemEldritchObject:3>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17970>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:3>], 
+mods.thaumcraft.Infusion.addRecipe("CaP_ShadowmetalGTNH", <Thaumcraft:ItemEldritchObject:3>,
+[<dreamcraft:item.ChargedVoidWandCap>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17970>, <TaintedMagic:ItemMaterial:3>, <gregtech:gt.metaitem.01:17368>, <gregtech:gt.metaitem.01:17970>, <gregtech:gt.metaitem.01:17368>, <TaintedMagic:ItemMaterial:3>], 
 "alienis 96, praecantatio 96, tenebrae 84, metallum 72, vacuos 64, cognitio 32, lucrum 16", <dreamcraft:item.ShadowmetalCap>, 12);
 mods.thaumcraft.Research.addInfusionPage("CaP_ShadowmetalGTNH", <dreamcraft:item.ShadowmetalCap>);
 mods.thaumcraft.Warp.addToResearch("CaP_ShadowmetalGTNH", 8);

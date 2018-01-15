@@ -92,7 +92,7 @@ recipes.remove(<Genetics:registry>);
 // --- Gene Database
 mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 2880, 
 [<gregtech:gt.metaitem.01:27533>, <gregtech:gt.metaitem.01:17500>, <gregtech:gt.metaitem.01:27533>, 
-<gregtech:gt.metaitem.01:17500>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17500>, 
+<gregtech:gt.metaitem.01:17500>, <gregtech:gt.metaitem.01:32708>, <gregtech:gt.metaitem.01:17500>, 
 <gregtech:gt.metaitem.01:27533>, <gregtech:gt.metaitem.01:17500>, <gregtech:gt.metaitem.01:27533>], 
 <dreamcraft:item.Display>, <Genetics:database>);
 
@@ -113,7 +113,7 @@ mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 4320,
 // --- Intergrated Circuit
 recipes.addShaped(<Genetics:misc:9>, [
 [<ore:screwStainlessSteel>, <ore:craftingToolScrewdriver>, <ore:screwStainlessSteel>],
-[<gregtech:gt.metaitem.01:32715>, <Forestry:chipsets:1>, <gregtech:gt.metaitem.01:32715>],
+[<ore:circuitAdvanced>, <Forestry:chipsets:1>, <ore:circuitAdvanced>],
 [<ore:screwStainlessSteel>, <ore:craftingToolWrench>, <ore:screwStainlessSteel>]]);
 
 // --- Isolator
@@ -197,13 +197,17 @@ Assembler.addRecipe(<Genetics:misc:6>, <minecraft:glass_pane> * 4, <gregtech:gt.
 Assembler.addRecipe(<Genetics:misc:7>, <Genetics:misc:6> * 10, <gregtech:gt.integrated_circuit:10> * 0, <liquid:molten.gold> * 576, 200, 96);
 
 // --- Intergrated Circuit
-Assembler.addRecipe(<Genetics:misc:9>, <Forestry:chipsets:1>,  <gregtech:gt.metaitem.01:32715> * 2, <liquid:molten.stainlesssteel> * 64, 400, 64);
+Assembler.addRecipe(<Genetics:misc:9>, <Forestry:chipsets:1>,  <IC2:itemPartCircuitAdv> * 2, <liquid:molten.stainlesssteel> * 64, 400, 64);
+// -
+Assembler.addRecipe(<Genetics:misc:9>, <Forestry:chipsets:1>,  <gregtech:gt.metaitem.03:32082> * 2, <liquid:molten.stainlesssteel> * 64, 400, 64);
+// -
+Assembler.addRecipe(<Genetics:misc:9>, <Forestry:chipsets:1>,  <gregtech:gt.metaitem.01:32703> * 2, <liquid:molten.stainlesssteel> * 64, 400, 64);
 
 // --- Integrated Casing
 Assembler.addRecipe(<Genetics:misc:11>, <Forestry:hardenedMachine>, <Genetics:misc:9> * 8, <liquid:molten.glowstone> * 288, 1500, 256);
 
 // --- Integrated CPU
-Assembler.addRecipe(<Genetics:misc:10>, <gregtech:gt.metaitem.01:32712>, <Genetics:misc:9> * 8, <liquid:molten.glowstone> * 144, 600, 120);
+Assembler.addRecipe(<Genetics:misc:10>, <gregtech:gt.metaitem.03:32104>, <Genetics:misc:9> * 8, <liquid:molten.glowstone> * 144, 600, 120);
 
 
 // --- Mixer Recipes ---
@@ -214,8 +218,3 @@ Mixer.addRecipe(<Genetics:misc:1>, null, [<gregtech:gt.metaitem.01:1810> * 4, <g
 
 // --- Fluorescent Dey
 Mixer.addRecipe(<Genetics:misc:2>, null, [<gregtech:gt.metaitem.01:1811> * 4, <gregtech:gt.metaitem.01:1810> * 4, <gregtech:gt.metaitem.02:32428>, <gregtech:gt.metaitem.02:32425>], <liquid:molten.blaze> * 144, 100, 30);
-
-// --- Growth Medium
-Mixer.addRecipe(<Genetics:misc:4>, null, [<gregtech:gt.metaitem.01:1803> * 4, <gregtech:gt.metaitem.01:1806> * 4, <Botany:misc:2> * 4, <witchery:ingredient:18>], <liquid:water> * 1000, 400, 16);
-// -
-Mixer.addRecipe(<Genetics:misc:4>, null, [<gregtech:gt.metaitem.01:1803> * 4, <gregtech:gt.metaitem.01:1806> * 4, <Botany:misc:2> * 4, <witchery:ingredient:18>], <liquid:ic2distilledwater> * 800, 200, 16);

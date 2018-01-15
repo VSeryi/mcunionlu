@@ -7,7 +7,8 @@
 import mods.gregtech.Centrifuge;
 import mods.ic2.Compressor;
 import mods.ic2.Extractor;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
+import mods.gregtech.Mixer;
 
 
 // --- Variables ---
@@ -160,6 +161,24 @@ recipes.remove(<harvestcraft:churn>);
 
 // --- Quern
 recipes.remove(<harvestcraft:quern>);
+
+// --- Boiled egg out of Tofu
+recipes.remove(<harvestcraft:boiledeggItem>);
+
+// --- Heavy Cream
+recipes.remove(<harvestcraft:heavycreamItem>);
+
+// --- Raspberry Juice
+recipes.remove(<harvestcraft:raspberryjuiceItem>);
+
+// --- Blackberry Juice
+recipes.remove(<harvestcraft:blackberryjuiceItem>);
+
+// --- Blueberry Juice
+recipes.remove(<harvestcraft:blueberryjuiceItem>);
+
+// --- Lemonade
+recipes.remove(<harvestcraft:lemonaideItem>);
 
 
 
@@ -365,6 +384,11 @@ recipes.addShaped(<harvestcraft:hardenedleatherbootsItem>, [
 recipes.addShaped(<harvestcraft:hardenedleatherItem>, [
 [<Backpack:tannedLeather>, <harvestcraft:waxItem>, <Backpack:tannedLeather>]]);
 
+// --- Fresh Milk
+recipes.addShapeless(<harvestcraft:freshmilkItem> * 4, [<minecraft:milk_bucket>.transformReplace(<minecraft:bucket>)]);
+
+recipes.addShapeless(<harvestcraft:freshmilkItem> * 2, [<IguanaTweaksTConstruct:clayBucketMilk>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>)]);
+
 // --- Fresh Water
 recipes.addShapeless(<harvestcraft:freshwaterItem> * 4, [<minecraft:water_bucket>.transformReplace(<minecraft:bucket>)]);
 
@@ -375,12 +399,14 @@ recipes.addShapeless(<gregtech:gt.metaitem.01:1817>, [<harvestcraft:potItem>, <h
 // -
 recipes.addShapeless(<gregtech:gt.metaitem.01:2817>, [<harvestcraft:potItem>, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>)]);
 // -
-recipes.addShapeless(<gregtech:gt.metaitem.01:2817>, [<harvestcraft:potItem>, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>)]);
+recipes.addShapeless(<gregtech:gt.metaitem.01:1817> * 2, [<harvestcraft:potItem>, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>)]);
 
 // --- Wet Tofu
 recipes.addShapeless(<dreamcraft:item.WetTofu>, [<harvestcraft:soybeanItem>, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>)]);
 // -
 recipes.addShapeless(<dreamcraft:item.WetTofu>, [<harvestcraft:soybeanItem>, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>)]);
+// -
+recipes.addShapeless(<dreamcraft:item.WetTofu>, [<harvestcraft:soybeanItem>, <harvestcraft:freshwaterItem>, <harvestcraft:freshwaterItem>]);
 
 // --- Firm Tofu
 recipes.addShapeless(<harvestcraft:firmtofuItem>, [<ore:craftingToolSoftHammer>, <dreamcraft:item.WetTofu>]);
@@ -392,16 +418,52 @@ recipes.addShapeless(<harvestcraft:silkentofuItem>, [<ore:craftingToolRollingPin
 recipes.addShaped(<harvestcraft:rainbowcurryItem>, [
 [<minecraft:red_flower:1>, <minecraft:tallgrass:1>, <BiomesOPlenty:flowers2:2>],
 [<BiomesOPlenty:flowers2:3>, <minecraft:red_flower>, <minecraft:yellow_flower>, ],
-[<minecraft:bowl>, <harvestcraft:curryItem>, <harvestcraft:skilletItem>]]);
-
-// --- Lootbag Seeds
-recipes.addShapeless(<enhancedlootbags:lootbag:35>, [<dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>]);
+[<minecraft:bowl>.reuse(), <harvestcraft:curryItem>, <harvestcraft:skilletItem>]]);
 
 // --- Market ---
-recipes.addShaped(<harvestcraft:market>, [
-[<ore:plateIron>, <ore:screwIron>, <ore:plateIron>],
-[<ore:gearGtSmallAnyBronze>, <minecraft:dispenser>, <ore:gearGtSmallAnyBronze>],
-[<ore:plateIron>, <ore:screwIron>, <ore:plateIron>]]);
+//recipes.addShaped(<harvestcraft:market>, [
+//[<ore:plateIron>, <ore:screwIron>, <ore:plateIron>],
+//[<ore:gearGtSmallAnyBronze>, <minecraft:dispenser>, <ore:gearGtSmallAnyBronze>],
+//[<ore:plateIron>, <ore:screwIron>, <ore:plateIron>]]);
+
+// --- Cooked Vension
+furnace.addRecipe(<harvestcraft:venisoncookedItem>, <harvestcraft:venisonrawItem>);
+
+// --- Cooked Turkey
+furnace.addRecipe(<harvestcraft:turkeycookedItem>, <harvestcraft:turkeyrawItem>);
+
+// --- Boiled Egg
+recipes.addShapeless(<harvestcraft:boiledeggItem>, [<harvestcraft:potItem>, <minecraft:egg>]);
+
+// --- Heavy Cream
+recipes.addShapeless(<harvestcraft:heavycreamItem>, [<minecraft:bowl>.giveBack(<minecraft:bowl>), <harvestcraft:soymilkItem>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem>, [<minecraft:bowl>.giveBack(<minecraft:bowl>), <harvestcraft:freshmilkItem>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem> * 4, [<minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:milk_bucket>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem> * 4, [<minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:bowl>.giveBack(<minecraft:bowl>), <minecraft:bowl>.giveBack(<minecraft:bowl>), <IguanaTweaksTConstruct:clayBucketMilk>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem>, [<harvestcraft:mixingbowlItem>, <harvestcraft:soymilkItem>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem>, [<harvestcraft:mixingbowlItem>, <harvestcraft:freshmilkItem>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem> * 4, [<harvestcraft:mixingbowlItem>, <minecraft:milk_bucket>]);
+// -
+recipes.addShapeless(<harvestcraft:heavycreamItem> * 4, [<harvestcraft:mixingbowlItem>, <IguanaTweaksTConstruct:clayBucketMilk>]);
+
+// --- Raspberry Juice
+recipes.addShapeless(<harvestcraft:raspberryjuiceItem>, [<ore:toolJuicer>, <ore:cropRaspberry>]);
+
+// --- Blackberry Juice
+recipes.addShapeless(<harvestcraft:blackberryjuiceItem>, [<ore:toolJuicer>, <ore:cropBlackberry>]);
+
+// --- Blueberry Juice
+recipes.addShapeless(<harvestcraft:blueberryjuiceItem>, [<ore:toolJuicer>, <ore:cropBlueberry>]);
+
+// --- Lemonade
+recipes.addShapeless(<harvestcraft:lemonaideItem>, [<ore:toolJuicer>, <ore:cropLemon>, <ore:listAllsugar>]);
+
 
 
 
@@ -448,8 +510,6 @@ Compressor.addRecipe(<harvestcraft:waxItem>, <harvestcraft:beeswaxItem> * 4);
 // -
 Compressor.addRecipe(<harvestcraft:waxItem>, <Forestry:beeswax> * 4);
 
-// --- Compressed Salt Block
-Compressor.addRecipe(<harvestcraft:spamcompressedsaltBlockalt>, <gregtech:gt.metaitem.01:2817> * 9);
 
 
 
@@ -476,7 +536,7 @@ Extractor.addRecipe(<harvestcraft:carrotjuiceItem>, <minecraft:carrot>);
 // -
 Extractor.addRecipe(<harvestcraft:carrotjuiceItem>, <BiomesOPlenty:food:2> * 2);
 
-// --- Straw Berry Juice
+// --- Strawberry Juice
 Extractor.addRecipe(<harvestcraft:strawberryjuiceItem>, <harvestcraft:strawberryItem>);
 
 // --- Grape Juice
@@ -484,7 +544,7 @@ Extractor.addRecipe(<harvestcraft:grapejuiceItem>, <gregtech:gt.metaitem.02:3255
 // -
 Extractor.addRecipe(<harvestcraft:grapejuiceItem>, <harvestcraft:grapeItem>);
 
-// --- Blue Berry Juice
+// --- Blueberry Juice
 Extractor.addRecipe(<harvestcraft:blueberryjuiceItem>, <ExtraTrees:food:45>);
 // -
 Extractor.addRecipe(<harvestcraft:blueberryjuiceItem>, <harvestcraft:blueberryItem>);
@@ -498,14 +558,14 @@ Extractor.addRecipe(<harvestcraft:cherryjuiceItem>, <harvestcraft:cherryItem>);
 // -
 Extractor.addRecipe(<harvestcraft:cherryjuiceItem>, <Forestry:fruits>);
 
-// --- Black Berry Juice
+// --- Blackberry Juice
 Extractor.addRecipe(<harvestcraft:blackberryjuiceItem>, <ExtraTrees:food:43>);
 // -
 Extractor.addRecipe(<harvestcraft:blackberryjuiceItem>, <harvestcraft:blackberryItem>);
 // -
 Extractor.addRecipe(<harvestcraft:blackberryjuiceItem>, <Natura:berry:2> * 4);
 
-// --- Rasp Berry Juice
+// --- Raspberry Juice
 Extractor.addRecipe(<harvestcraft:raspberryjuiceItem>, <harvestcraft:raspberryItem>);
 // -
 Extractor.addRecipe(<harvestcraft:raspberryjuiceItem>, <ExtraTrees:food:44>);
@@ -615,15 +675,216 @@ Extractor.addRecipe(<harvestcraft:beeswaxItem>, <harvestcraft:waxcombItem>);
 // -
 Extractor.addRecipe(<harvestcraft:beeswaxItem>, <harvestcraft:candleberryItem> * 4);
 
+// --- Mayo
+Extractor.addRecipe(<harvestcraft:mayoItem>, <minecraft:egg>);
+
+// --- Tomato
+Extractor.addRecipe(<harvestcraft:ketchupItem>, <harvestcraft:tomatoItem>);
+// -
+Extractor.addRecipe(<harvestcraft:ketchupItem>, <gregtech:gt.metaitem.02:32552>);
+
+// --- Penut Butter
+Extractor.addRecipe(<harvestcraft:peanutbutterItem>, <harvestcraft:peanutItem>);
+
+// --- Mustard
+Extractor.addRecipe(<harvestcraft:mustardItem>, <harvestcraft:mustardseedsItem>);
+
+// --- Almond Butter
+Extractor.addRecipe(<harvestcraft:almondbutterItem>, <harvestcraft:almondItem>);
+// -
+Extractor.addRecipe(<harvestcraft:almondbutterItem>, <ExtraTrees:food:9>);
+
+// --- Cashew Butter
+Extractor.addRecipe(<harvestcraft:cashewbutterItem>, <harvestcraft:cashewItem>);
+// -
+Extractor.addRecipe(<harvestcraft:cashewbutterItem>, <ExtraTrees:food:51>);
+
+// --- Chestnut Butter
+Extractor.addRecipe(<harvestcraft:chestnutbutterItem>, <harvestcraft:chestnutItem>);
+// -
+Extractor.addRecipe(<harvestcraft:chestnutbutterItem>, <Forestry:fruits:2>);
+
+// --- Pistachio Butter
+Extractor.addRecipe(<harvestcraft:pistachiobutterItem>, <harvestcraft:pistachioItem>);
 
 
 
-// --- Macerator Recipes ---
+
+// --- Pulverizer Recipes ---
 
 
 
-// --- Salt
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2817> * 9, <harvestcraft:spamcompressedsaltBlockalt>);
 
 // --- Corn Meal
-Macerator.addRecipe(<harvestcraft:cornmealItem>, <harvestcraft:cornItem>);
+Pulverizer.addRecipe([<harvestcraft:cornmealItem>], <harvestcraft:cornItem>, [10000], 300, 2);
+
+
+
+// --- Mixer recipes ---
+
+
+
+
+// --- Heavy Cream
+Mixer.addRecipe(<harvestcraft:heavycreamItem>, null, [<harvestcraft:freshmilkItem>], null, 1200, 2);
+// -
+Mixer.addRecipe(<harvestcraft:heavycreamItem>, null, [null], <liquid:milk> * 250, 1200, 2);
+
+// --- Butter
+Mixer.addRecipe(<harvestcraft:butterItem>, null, [<harvestcraft:heavycreamItem>, <gregtech:gt.metaitem.01:817>], null, 1200, 2);
+
+// --- Melon Smoothie
+Mixer.addRecipe(<harvestcraft:melonsmoothieItem>, null, [<minecraft:melon>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Strawberry Smoothie
+Mixer.addRecipe(<harvestcraft:strawberrysmoothieItem>, null, [<harvestcraft:strawberryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Lemon Smoothie
+Mixer.addRecipe(<harvestcraft:lemonsmoothieItem>, null, [<harvestcraft:lemonItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:lemonsmoothieItem>, null, [<gregtech:gt.metaitem.02:32551>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Blue Berry Smoothie
+Mixer.addRecipe(<harvestcraft:blueberrysmoothieItem>, null, [<harvestcraft:blueberryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:blueberrysmoothieItem>, null, [<Natura:berry:1>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Cherry Smoothie
+Mixer.addRecipe(<harvestcraft:cherrysmoothieItem>, null, [<harvestcraft:cherryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:cherrysmoothieItem>, null, [<ExtraTrees:food:4>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:cherrysmoothieItem>, null, [<ExtraTrees:food:5>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:cherrysmoothieItem>, null, [<ExtraTrees:food:6>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Star Fruit Smoothie
+Mixer.addRecipe(<harvestcraft:starfruitsmoothieItem>, null, [<harvestcraft:starfruitItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Banana Smoothie
+Mixer.addRecipe(<harvestcraft:bananasmoothieItem>, null, [<harvestcraft:bananaItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:bananasmoothieItem>, null, [<ExtraTrees:food:28>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:bananasmoothieItem>, null, [<ExtraTrees:food:29>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Orange Smoothie
+Mixer.addRecipe(<harvestcraft:orangesmoothieItem>, null, [<harvestcraft:orangeItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:orangesmoothieItem>, null, [<ExtraTrees:food:1>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:orangesmoothieItem>, null, [<ExtraTrees:food:18>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:orangesmoothieItem>, null, [<ExtraTrees:food:13>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:orangesmoothieItem>, null, [<ExtraTrees:food:21>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Papaya Smoothie
+Mixer.addRecipe(<harvestcraft:papayasmoothieItem>, null, [<harvestcraft:papayaItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:papayasmoothieItem>, null, [<Forestry:fruits:6>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Peach Smoothie
+Mixer.addRecipe(<harvestcraft:peachsmoothieItem>, null, [<harvestcraft:peachItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:peachsmoothieItem>, null, [<ExtraTrees:food:12>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:peachsmoothieItem>, null, [<BiomesOPlenty:food:3>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Lime Smoothie
+Mixer.addRecipe(<harvestcraft:limesmoothieItem>, null, [<harvestcraft:limeItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:limesmoothieItem>, null, [<ExtraTrees:food:3>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:limesmoothieItem>, null, [<ExtraTrees:food:17>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:limesmoothieItem>, null, [<ExtraTrees:food:16>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Mango Smoothie
+Mixer.addRecipe(<harvestcraft:mangosmoothieItem>, null, [<harvestcraft:mangoItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:mangosmoothieItem>, null, [<ExtraTrees:food:57>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Pomegranate Smoothie
+Mixer.addRecipe(<harvestcraft:pomegranatesmoothieItem>, null, [<harvestcraft:pomegranateItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Blackberry Smoothie
+Mixer.addRecipe(<harvestcraft:blackberrysmoothieItem>, null, [<harvestcraft:blackberryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:blackberrysmoothieItem>, null, [<Natura:berry:2>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:blackberrysmoothieItem>, null, [<ExtraTrees:food:43>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Raspberry Smoothie
+Mixer.addRecipe(<harvestcraft:raspberrysmoothieItem>, null, [<harvestcraft:raspberryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:raspberrysmoothieItem>, null, [<Natura:berry>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:raspberrysmoothieItem>, null, [<ExtraTrees:food:44>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Kiwi Smoothie
+Mixer.addRecipe(<harvestcraft:kiwismoothieItem>, null, [<harvestcraft:kiwiItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Apricot Smoothie
+Mixer.addRecipe(<harvestcraft:apricotsmoothieItem>, null, [<harvestcraft:apricotItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:apricotsmoothieItem>, null, [<ExtraTrees:food:10>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Grapefruit Smoothie
+Mixer.addRecipe(<harvestcraft:grapefruitsmoothieItem>, null, [<harvestcraft:grapefruitItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:grapefruitsmoothieItem>, null, [<ExtraTrees:food:11>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Persimmon Smoothie
+Mixer.addRecipe(<harvestcraft:persimmonsmoothieItem>, null, [<harvestcraft:persimmonItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:persimmonsmoothieItem>, null, [<BiomesOPlenty:food:8>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Gooseberry Smoothie
+Mixer.addRecipe(<harvestcraft:gooseberrysmoothieItem>, null, [<harvestcraft:gooseberryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:gooseberrysmoothieItem>, null, [<ExtraTrees:food:48>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Apple Smoothie
+Mixer.addRecipe(<harvestcraft:applesmoothieItem>, null, [<minecraft:apple>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:applesmoothieItem>, null, [<ExtraTrees:food>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Coconut Smoothie
+Mixer.addRecipe(<harvestcraft:coconutsmoothieItem>, null, [<harvestcraft:coconutItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:coconutsmoothieItem>, null, [<ExtraTrees:food:50>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Cranberry Smoothie
+Mixer.addRecipe(<harvestcraft:cranberrysmoothieItem>, null, [<harvestcraft:cranberryItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:cranberrysmoothieItem>, null, [<ExtraTrees:food:46>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Grape Smoothie
+Mixer.addRecipe(<harvestcraft:grapesmoothieItem>, null, [<harvestcraft:grapeItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:grapesmoothieItem>, null, [<gregtech:gt.metaitem.02:32554>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Pear Smoothie
+Mixer.addRecipe(<harvestcraft:pearsmoothieItem>, null, [<harvestcraft:pearItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:pearsmoothieItem>, null, [<ExtraTrees:food:22>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:pearsmoothieItem>, null, [<BiomesOPlenty:food:12>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:pearsmoothieItem>, null, [<ExtraTrees:food:23>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Plum Smoothie
+Mixer.addRecipe(<harvestcraft:plumsmoothieItem>, null, [<harvestcraft:plumItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:plumsmoothieItem>, null, [<Forestry:fruits:4>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:plumsmoothieItem>, null, [<ExtraTrees:food:8>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Fig Smoothie
+Mixer.addRecipe(<harvestcraft:figsmoothieItem>, null, [<harvestcraft:figItem>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+// -
+Mixer.addRecipe(<harvestcraft:figsmoothieItem>, null, [<ExtraTrees:food:32>, <gregtech:gt.metaitem.01:2702>], null, 400, 2);
+
+// --- Salad Dressing
+Mixer.addRecipe(<harvestcraft:saladdressingItem>, null, [<harvestcraft:oliveoilItem>, <harvestcraft:vinegarItem>, <gregtech:gt.metaitem.01:817> * 2], null, 400, 2);

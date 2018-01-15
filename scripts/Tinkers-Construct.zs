@@ -13,7 +13,6 @@ import mods.ic2.Compressor;
 import mods.ic2.Extractor;
 import mods.gregtech.Extruder;
 import mods.gregtech.FluidExtractor;
-import mods.ic2.Macerator;
 import mods.gregtech.Mixer;
 import mods.nei.NEI;
 import mods.gregtech.Pulverizer;
@@ -144,11 +143,6 @@ mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:MetalBlock:8>);
 
 // --- Block of Steel --- Refined Iron
 recipes.remove(<TConstruct:MetalBlock:9>);
-// -
-mods.tconstruct.Casting.removeBasinRecipe(<IC2:blockMetal:5>);
-
-// --- Block of Ender ---
-//mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:MetalBlock:10>);
 
 // --- Block of Glue
 mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:GlueBlock>);
@@ -196,6 +190,10 @@ mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:Smeltery:4>);
 // --- Seared Cobblestone
 mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:Smeltery:5>);
 
+// --- Molten Block of Ender
+mods.tconstruct.Casting.removeBasinRecipe(EnderBlock);
+
+
 
 // --- Casting Recipes ---
 
@@ -229,17 +227,11 @@ mods.tconstruct.Smeltery.removeMelting(<ore:nuggetManyullyn>);
 // --- Manyullyn Block
 mods.tconstruct.Smeltery.removeMelting(<ore:blockManyullyn>);
 
+// --- Ender Block
+mods.tconstruct.Smeltery.removeMelting(<ore:blockEnder>);
+
 // --- Alumium Ingot
 recipes.remove(<TConstruct:materials:11>);
-
-// --- Steel Ingot
-mods.tconstruct.Smeltery.removeMelting(<IC2:itemIngot:3>);
-
-// --- Steel Nuggets
-mods.tconstruct.Casting.removeTableRecipe(<ore:nuggetSteel>);
-
-// --- Steel Dust
-mods.tconstruct.Smeltery.removeMelting(<gregtech:gt.metaitem.01:2305>);
 
 // --- Iron Gear
 mods.tconstruct.Casting.removeTableRecipe(<BuildCraft|Core:ironGearItem>);
@@ -319,6 +311,17 @@ mods.tconstruct.Casting.removeBasinRecipe(<ore:blockCobalt>);
 // --- Blood Infuse Iron Block
 mods.tconstruct.Casting.removeBasinRecipe(<BloodArsenal:blood_infused_iron_block>);
 
+// --- Sand to Glass
+mods.tconstruct.Smeltery.removeMelting(<minecraft:sand>);
+
+// --- Alumite
+mods.tconstruct.Smeltery.removeAlloy(<liquid:alumite.molten>);
+
+// --- Obsidian Dust
+mods.tconstruct.Smeltery.removeMelting(<ore:dustObsidian>);
+
+// --- Obsidian Dust
+furnace.remove(<ore:ingotObsidian>);
 
 
 
@@ -366,6 +369,18 @@ recipes.remove(<TConstruct:materials:22>);
 
 // --- Golden Apple
 mods.tconstruct.Casting.removeTableRecipe(<minecraft:golden_apple>);
+
+// --- Gear Mold
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:gearCast>);
+
+// --- Gear Mold Enderium
+mods.tconstruct.Casting.removeTableRecipe(<gregtech:gt.metaitem.02:31321>);
+
+// --- Gear Mold Ardite
+mods.tconstruct.Casting.removeTableRecipe(<gregtech:gt.metaitem.02:31382>);
+
+// --- Gear Mold Manyullyn
+mods.tconstruct.Casting.removeTableRecipe(<gregtech:gt.metaitem.02:31386>);
 
 // --- Hambone
 recipes.remove(<TConstruct:MeatBlock>);
@@ -558,6 +573,9 @@ mods.tconstruct.Casting.removeTableRecipe(<ore:nuggetArdite>);
 recipes.remove(<TConstruct:materials:30>);
 // -
 mods.tconstruct.Casting.removeTableRecipe(<ore:nuggetManyullyn>);
+
+// --- Steel Ingot
+recipes.remove(<TConstruct:materials:16>);
 
 
 // --- Stained Glass Pane ---
@@ -769,8 +787,6 @@ recipes.remove(<TConstruct:materials:15>);
 
 // --- Obsidian Ingot
 recipes.remove(<TConstruct:materials:18>);
-// -
-furnace.remove(<TConstruct:materials:18>);
 
 // --- Jeweled Apple
 recipes.remove(<TConstruct:diamondApple>);
@@ -838,6 +854,16 @@ recipes.removeShaped(<gregtech:gt.metaitem.01:11019>, [
 recipes.removeShaped(<gregtech:gt.metaitem.01:11019>, [
 [<TConstruct:materials:12>, null, null]]);
 
+// --- Compressed Sand 1
+mods.tconstruct.Smeltery.removeMelting(<ExtraUtilities:cobblestone_compressed:14>);
+
+// --- Compressed Sand 2
+mods.tconstruct.Smeltery.removeMelting(<ExtraUtilities:cobblestone_compressed:15>);
+
+// --- Steel Block
+mods.tconstruct.Casting.removeBasinRecipe(<IC2:blockMetal:5>);
+
+
 
 
 
@@ -858,8 +884,8 @@ mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:19>, <liquid:alumin
 // --- Small Pile
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:1019>, <liquid:aluminum.molten> * 36, 500, <gregtech:gt.blockmachines:1585>);
 
-// --- Red Sand
-mods.tconstruct.Smeltery.addMelting(<minecraft:sand:1>, <liquid:glass.molten> * 1000, 800, <minecraft:sand:1>);
+// --- Glass Dust
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:2890>, <liquid:glass.molten> * 1000, 800, <minecraft:sand>);
 
 // --- Aluminum Ore Berrys
 mods.tconstruct.Smeltery.addMelting(<TConstruct:oreBerries:4>, <liquid:aluminum.molten> * 16, 500, <gregtech:gt.blockmachines:1585>);
@@ -977,9 +1003,6 @@ mods.tconstruct.Smeltery.addMelting(<TConstruct:Cast:2>, <liquid:aluminumbrass.m
 
 // --- Bow Limb Cast
 mods.tconstruct.Smeltery.addMelting(<TConstruct:Cast:3>, <liquid:aluminumbrass.molten> * 72, 500, <TConstruct:MetalBlock:7>);
-
-// --- Gear Cast
-mods.tconstruct.Smeltery.addMelting(<TConstruct:gearCast>, <liquid:aluminumbrass.molten> * 72, 500, <TConstruct:MetalBlock:7>);
 
 // --- Gt Iron
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.blockores:32>, <liquid:iron.molten> * 144, 700, <minecraft:iron_ore>);
@@ -1238,6 +1261,18 @@ mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32316>, <liquid:ste
 // -
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32317>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
 // -
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32318>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
+// -
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32319>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
+// -
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32320>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
+// -
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32321>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
+// -
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32322>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
+// -
+mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32323>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
+// -
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32350>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
 // -
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:32351>, <liquid:steel.molten> * 576, 800, <IC2:blockMetal:5>);
@@ -1315,6 +1350,9 @@ mods.tconstruct.Casting.addTableRecipe(<TConstruct:materials:12>, <liquid:alumin
 // -
 mods.tconstruct.Smeltery.addMelting(<TConstruct:materials:12>, <liquid:aluminum.molten> * 144, 500, <TConstruct:MetalBlock:6>);
 
+// --- Steel Ingot
+//mods.tconstruct.Casting.addTableRecipe(<TConstruct:materials:16>, <liquid:steel.molten> * 144, <TConstruct:metalPattern>, false, 600);
+
 // --- Seared Stone
 mods.tconstruct.Casting.addBasinRecipe(<TConstruct:Smeltery:4>, <liquid:stone.seared> * 360, null, false, 245);
 
@@ -1325,6 +1363,9 @@ mods.tconstruct.Casting.addBasinRecipe(<TConstruct:Smeltery:5>, <liquid:stone.se
 mods.tconstruct.Smeltery.addMelting(<Thaumcraft:blockCosmeticSolid>, <liquid:obsidian.molten> * 288, 850, <minecraft:obsidian>);
 // -
 mods.tconstruct.Smeltery.addMelting(<Thaumcraft:blockCosmeticSolid:1>, <liquid:obsidian.molten> * 288, 850, <minecraft:obsidian>);
+
+// --- Molten Block of Ender
+mods.tconstruct.Casting.addBasinRecipe(EnderBlock, <liquid:ender> * 2250, null, false, 250);
 
 // --- Lead Items
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:2089>, <liquid:lead.molten> * 144, 400, <IC2:blockMetal:4>);
@@ -1338,6 +1379,12 @@ mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:17089>, <liquid:lea
 mods.tconstruct.Smeltery.addMelting(<gregtech:gt.metaitem.01:23089>, <liquid:lead.molten> * 72, 400, <IC2:blockMetal:4>);
 // -
 mods.tconstruct.Smeltery.addMelting(<IC2:blockMetal:4>, <liquid:lead.molten> * 1296, 400, <IC2:blockMetal:4>);
+
+// --- Ender Block
+mods.tconstruct.Smeltery.addMelting(<TConstruct:MetalBlock:10>, <liquid:ender> * 2250, 250, <TConstruct:MetalBlock:10>);
+
+// --- Glass Bottle
+mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_bottle>, <liquid:glass.molten> * 144, <gregtech:gt.metaitem.01:32305>, false, 200);
 
 
 // --- Seared Tank
@@ -1651,87 +1698,87 @@ recipes.addShapeless(<TConstruct:CraftingSlab:3>, [<ore:craftingToolSaw>, <TCons
 
 // --- Tool Forge Iron
 recipes.addShaped(<TConstruct:ToolForgeBlock>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockIron>, <TConstruct:CraftingSlab:1>, <ore:blockIron>],
-[<ore:blockIron>, <ore:craftingToolScrewdriver>, <ore:blockIron>]]);
+[<ore:blockIron>, <ore:craftingToolHardHammer>, <ore:blockIron>]]);
 
 // --- Tool Forge Gold
 recipes.addShaped(<TConstruct:ToolForgeBlock:1>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockGold>, <TConstruct:CraftingSlab:1>, <ore:blockGold>],
-[<ore:blockGold>, <ore:craftingToolScrewdriver>, <ore:blockGold>]]);
+[<ore:blockGold>, <ore:craftingToolHardHammer>, <ore:blockGold>]]);
 
 // --- Tool Forge Diamond
 recipes.addShaped(<TConstruct:ToolForgeBlock:2>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockDiamond>, <TConstruct:CraftingSlab:1>, <ore:blockDiamond>],
-[<ore:blockDiamond>, <ore:craftingToolScrewdriver>, <ore:blockDiamond>]]);
+[<ore:blockDiamond>, <ore:craftingToolHardHammer>, <ore:blockDiamond>]]);
 
 // --- Tool Forge Emerald
 recipes.addShaped(<TConstruct:ToolForgeBlock:3>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockEmerald>, <TConstruct:CraftingSlab:1>, <ore:blockEmerald>],
-[<ore:blockEmerald>, <ore:craftingToolScrewdriver>, <ore:blockEmerald>]]);
+[<ore:blockEmerald>, <ore:craftingToolHardHammer>, <ore:blockEmerald>]]);
 
 // --- Tool Forge Cobalt
 recipes.addShaped(<TConstruct:ToolForgeBlock:4>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockCobalt>, <TConstruct:CraftingSlab:1>, <ore:blockCobalt>],
-[<ore:blockCobalt>, <ore:craftingToolScrewdriver>, <ore:blockCobalt>]]);
+[<ore:blockCobalt>, <ore:craftingToolHardHammer>, <ore:blockCobalt>]]);
 
 // --- Tool Forge Ardite
 recipes.addShaped(<TConstruct:ToolForgeBlock:5>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockArdite>, <TConstruct:CraftingSlab:1>, <ore:blockArdite>],
-[<ore:blockArdite>, <ore:craftingToolScrewdriver>, <ore:blockArdite>]]);
+[<ore:blockArdite>, <ore:craftingToolHardHammer>, <ore:blockArdite>]]);
 
 // --- Tool Forge Manyullyn
 recipes.addShaped(<TConstruct:ToolForgeBlock:6>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockManyullyn>, <TConstruct:CraftingSlab:1>, <ore:blockManyullyn>],
-[<ore:blockManyullyn>, <ore:craftingToolScrewdriver>, <ore:blockManyullyn>]]);
+[<ore:blockManyullyn>, <ore:craftingToolHardHammer>, <ore:blockManyullyn>]]);
 
 // --- Tool Forge Copper
 recipes.addShaped(<TConstruct:ToolForgeBlock:7>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockCopper>, <TConstruct:CraftingSlab:1>, <ore:blockCopper>],
-[<ore:blockCopper>, <ore:craftingToolScrewdriver>, <ore:blockCopper>]]);
+[<ore:blockCopper>, <ore:craftingToolHardHammer>, <ore:blockCopper>]]);
 
 // --- Tool Forge Bronze
 recipes.addShaped(<TConstruct:ToolForgeBlock:8>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockBronze>, <TConstruct:CraftingSlab:1>, <ore:blockBronze>],
-[<ore:blockBronze>, <ore:craftingToolScrewdriver>, <ore:blockBronze>]]);
+[<ore:blockBronze>, <ore:craftingToolHardHammer>, <ore:blockBronze>]]);
 
 // --- Tool Forge Tin
 recipes.addShaped(<TConstruct:ToolForgeBlock:9>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockTin>, <TConstruct:CraftingSlab:1>, <ore:blockTin>],
-[<ore:blockTin>, <ore:craftingToolScrewdriver>, <ore:blockTin>]]);
+[<ore:blockTin>, <ore:craftingToolHardHammer>, <ore:blockTin>]]);
 
 // --- Tool Forge Aluminum
 recipes.addShaped(<TConstruct:ToolForgeBlock:10>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockAluminium>, <TConstruct:CraftingSlab:1>, <ore:blockAluminium>],
-[<ore:blockAluminium>, <ore:craftingToolScrewdriver>, <ore:blockAluminium>]]);
+[<ore:blockAluminium>, <ore:craftingToolHardHammer>, <ore:blockAluminium>]]);
 
 // --- Tool Forge Alumium Brass
 recipes.addShaped(<TConstruct:ToolForgeBlock:11>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockAluminiumBrass>, <TConstruct:CraftingSlab:1>, <ore:blockAluminiumBrass>],
-[<ore:blockAluminiumBrass>, <ore:craftingToolScrewdriver>, <ore:blockAluminiumBrass>]]);
+[<ore:blockAluminiumBrass>, <ore:craftingToolHardHammer>, <ore:blockAluminiumBrass>]]);
 
 // --- Tool Forge Alumite
 recipes.addShaped(<TConstruct:ToolForgeBlock:12>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockAlumite>, <TConstruct:CraftingSlab:1>, <ore:blockAlumite>],
-[<ore:blockAlumite>, <ore:craftingToolScrewdriver>, <ore:blockAlumite>]]);
+[<ore:blockAlumite>, <ore:craftingToolHardHammer>, <ore:blockAlumite>]]);
 
 // --- Tool Forge Steel
 recipes.addShaped(<TConstruct:ToolForgeBlock:13>, [
-[<ore:screwAluminium>, <TConstruct:SearedSlab:1>, <ore:screwAluminium>],
+[<TConstruct:heavyPlate:15>, <TConstruct:SearedSlab:1>, <TConstruct:heavyPlate:15>],
 [<ore:blockSteel>, <TConstruct:CraftingSlab:1>, <ore:blockSteel>],
-[<ore:blockSteel>, <ore:craftingToolScrewdriver>, <ore:blockSteel>]]);
+[<ore:blockSteel>, <ore:craftingToolHardHammer>, <ore:blockSteel>]]);
 
 // --- Slab Furnace
 recipes.addShapeless(<TConstruct:FurnaceSlab>, [<ore:craftingToolSaw>, <minecraft:furnace>]);
@@ -2243,6 +2290,11 @@ recipes.addShaped(<TConstruct:Redstone.Landmine:3>, [
 [<minecraft:repeater>, <minecraft:light_weighted_pressure_plate>, <minecraft:repeater>],
 [<minecraft:stone>, <Railcraft:detector:4>, <minecraft:stone>]]);
 
+// --- Aluminum Aluminium Exchange
+recipes.addShapeless(<TConstruct:materials:40>, [<gregtech:gt.metaitem.01:2019>]);
+// -
+recipes.addShapeless(<gregtech:gt.metaitem.01:2019>, [<TConstruct:materials:40>]);
+
 // --- Obsidian Sticks
 recipes.addShapeless(<TConstruct:toolRod:6>, [<RandomThings:ingredient:1>]);
 // -
@@ -2338,6 +2390,18 @@ recipes.addShaped(TBoots.withTag({TinkerArmor: {BaseDurability: 1035, BaseDefens
 [null, <minecraft:diamond_boots>, <ore:circuitAdvanced>],
 [<harvestcraft:hardenedleatherItem>, <gregtech:gt.metaitem.01:32642>, <gregtech:gt.metaitem.01:32642>]]);
 
+// --- Cobalt Ingot
+recipes.addShapeless(<TConstruct:materials:3>, [<gregtech:gt.metaitem.01:11033>]);
+// -
+recipes.addShapeless(<gregtech:gt.metaitem.01:11033>, [<TConstruct:materials:3>]);
+
+// --- Manyullyn Ingot
+recipes.addShapeless(<TConstruct:materials:5>, [<gregtech:gt.metaitem.01:11386>]);
+// -
+recipes.addShapeless(<gregtech:gt.metaitem.01:11386>, [<TConstruct:materials:5>]);
+
+// --- Alumite with Steel
+mods.tconstruct.Smeltery.addAlloy(<liquid:alumite.molten> * 32, [<liquid:aluminum.molten> * 80, <liquid:steel.molten> * 32, <liquid:obsidian.molten> * 32]);
 
 
 
@@ -2416,7 +2480,7 @@ Assembler.addRecipe(<TConstruct:explosive.slime>, <TConstruct:slime.gel:1>, <IC2
 Assembler.addRecipe(<TConstruct:explosive.slime:2>, <TConstruct:slime.gel>, <TConstruct:explosive.slime>, 600, 64);
 
 // --- Empty Canister
-Assembler.addRecipe(<TConstruct:heartCanister>, <gregtech:gt.metaitem.01:22019>, <gregtech:gt.metaitem.01:27316> * 4, 2400, 480);
+Assembler.addRecipe(<TConstruct:heartCanister>, <gregtech:gt.metaitem.01:22019>, <gregtech:gt.metaitem.01:27306> * 4, 2400, 480);
 
 
 
@@ -2459,6 +2523,8 @@ Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2033>, <TConstruct:materials:38>]
 
 // --- Block Of Manyullyn
 Compressor.addRecipe(<TConstruct:MetalBlock:2>, <TConstruct:materials:5> * 9);
+// -
+Compressor.addRecipe(<TConstruct:MetalBlock:2>, <gregtech:gt.metaitem.01:11386> * 9);
 
 // --- Block Of Alumite
 Compressor.addRecipe(<TConstruct:MetalBlock:8>, <TConstruct:materials:15> * 9);
@@ -2480,8 +2546,19 @@ Compressor.addRecipe(<TConstruct:materials:17>, <TConstruct:CraftedSoil:2> * 4);
 // --- Paper Stack
 Compressor.addRecipe(<TConstruct:materials>, <minecraft:paper> * 64);
 
-// --- Block of Ender
-Compressor.addRecipe(<TConstruct:MetalBlock:10>, <gregtech:gt.metaitem.01:2532> * 9);
+
+
+
+// --- Centrifuge Recipes ---
+
+
+// --- Raw Rubber out of Slime balls
+Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2896> * 2],  null, <TConstruct:strangeFood>, null, <liquid:refinedglue> * 50, [10000], 300, 5);
+// -
+Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2896> * 2],  null, <minecraft:slime_ball>, null, <liquid:refinedglue> * 50, [10000], 300, 5);
+// -
+Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2896> * 8],  null, <TConstruct:slime.gel:2>, null, <liquid:refinedglue> * 200, [10000], 300, 5);
+
 
 
 
@@ -2522,6 +2599,10 @@ Extractor.addRecipe(<TConstruct:strangeFood> * 4, <TConstruct:slime.gel>);
 
 // --- Green Slime Ball
 Extractor.addRecipe(<minecraft:slime_ball> * 4, <TConstruct:slime.gel:1>);
+
+// --- Raw Rubber from slime tree leaves
+Extractor.addRecipe(<gregtech:gt.metaitem.01:2896>, <TConstruct:slime.leaves> * 16);
+
 
 
 
@@ -3804,7 +3885,7 @@ Extruder.addRecipe(<TConstruct:BowLimbPart:251>, <BloodArsenal:blood_infused_iro
 
 
 // --- Liquid Ender
-FluidExtractor.addRecipe(null, <TConstruct:MetalBlock:10>, <liquid:ender> * 1000, 10000, 200, 48);
+FluidExtractor.addRecipe(null, <TConstruct:MetalBlock:10>, <liquid:ender> * 2250, 10000, 200, 48);
 // -
 FluidExtractor.addRecipe(null, <minecraft:ender_pearl>, <liquid:ender> * 250, 10000, 100, 48);
 
@@ -3829,36 +3910,36 @@ mods.tconstruct.Drying.addRecipe(<harvestcraft:muttonrawItem>, <TConstruct:jerky
 
 
 
-// --- Macerator Recipes ---
+// --- Pulverizer Recipes ---
 
 
 
 
 // --- Ardite Dust
-Macerator.addRecipe(<TConstruct:materials:38>, <TConstruct:materials:4>);
+Pulverizer.addRecipe([<TConstruct:materials:38>], <TConstruct:materials:4>, [10000], 300, 2);
 // -
-Macerator.addRecipe(<TConstruct:materials:38> * 9, <TConstruct:MetalBlock:1>);
+Pulverizer.addRecipe([<TConstruct:materials:38> * 9], <TConstruct:MetalBlock:1>, [10000], 300, 2);
 // -
-//Macerator.addRecipe(<TConstruct:materials:38> * 2, <TConstruct:SearedBrick:2>);
+//Pulverizer.addRecipe([<TConstruct:materials:38> * 2], <TConstruct:SearedBrick:2>, [10000], 300, 2);
 
 // --- Manyullyn Dust
-Macerator.addRecipe(<TConstruct:materials:41>, <TConstruct:materials:5>);
+Pulverizer.addRecipe([<TConstruct:materials:41>], <TConstruct:materials:5>, [10000], 300, 2);
 // -
-Macerator.addRecipe(<TConstruct:materials:41> * 9, <TConstruct:MetalBlock:2>);
+Pulverizer.addRecipe([<TConstruct:materials:41> * 9], <TConstruct:MetalBlock:2>, [10000], 300, 2);
 
 // --- Cobalt Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2033> * 9, <TConstruct:MetalBlock>);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2033> * 9], <TConstruct:MetalBlock>, [10000], 300, 2);
 
 // --- Aluminium Brass Dust
-Macerator.addRecipe(<TConstruct:materials:42> * 9, <TConstruct:MetalBlock:7>);
+Pulverizer.addRecipe([<TConstruct:materials:42> * 9], <TConstruct:MetalBlock:7>, [10000], 300, 2);
 // -
-Macerator.addRecipe(<TConstruct:materials:42>, <TConstruct:materials:14>);
+Pulverizer.addRecipe([<TConstruct:materials:42>], <TConstruct:materials:14>, [10000], 300, 2);
 
 // --- Ender Pearl Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2532> * 9, <TConstruct:MetalBlock:10>);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2532> * 9], <TConstruct:MetalBlock:10>, [10000], 300, 2);
 
 // --- Raw Aluminium
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2019>, <TConstruct:materials:12>);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2019>], <TConstruct:materials:12>, [10000], 300, 2);
 
 
 

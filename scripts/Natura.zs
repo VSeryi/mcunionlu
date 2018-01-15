@@ -185,13 +185,6 @@ recipes.remove(<harvestcraft:blueberryItem>);
 // -
 recipes.remove(<harvestcraft:raspberryItem>);
 
-//  --- Juice
-recipes.remove(<harvestcraft:raspberryjuiceItem>);
-// -
-recipes.remove(<harvestcraft:blueberryjuiceItem>);
-// -
-recipes.remove(<harvestcraft:blackberryjuiceItem>);
-
 // --- Blaze Rail
 recipes.remove(<Natura:Blazerail>);
 
@@ -231,10 +224,31 @@ recipes.remove(<Natura:natura.bow.darkwood>);
 // --- Fuse Wood Bow
 recipes.remove(<Natura:natura.bow.fusewood>);
 
+// --- Charcoal out of Nature Wood
+furnace.remove(<minecraft:coal:1>, <*>);
 
 
 
+// --- Adding Natura fruits to oredict
 
+<ore:listAllfruit>.add(<Natura:berry:0>);
+<ore:listAllberry>.add(<Natura:berry:0>);
+<ore:listAllfruit>.add(<Natura:berry:1>);
+<ore:listAllberry>.add(<Natura:berry:1>);
+<ore:listAllfruit>.add(<Natura:berry:2>);
+<ore:listAllberry>.add(<Natura:berry:2>);
+<ore:listAllfruit>.add(<Natura:berry:3>);
+<ore:listAllberry>.add(<Natura:berry:3>);
+<ore:listAllfruit>.add(<Natura:berry.nether:0>);
+<ore:listAllberry>.add(<Natura:berry.nether:0>);
+<ore:listAllfruit>.add(<Natura:berry.nether:1>);
+<ore:listAllberry>.add(<Natura:berry.nether:1>);
+<ore:listAllfruit>.add(<Natura:berry.nether:2>);
+<ore:listAllberry>.add(<Natura:berry.nether:2>);
+<ore:listAllfruit>.add(<Natura:berry.nether:3>);
+<ore:listAllberry>.add(<Natura:berry.nether:3>);
+<ore:listAllfruit>.add(<Natura:saguaro.fruit>);
+<ore:cropCactusfruit>.add(<Natura:saguaro.fruit>);
 
 
 // --- Adding Recipes ---
@@ -378,7 +392,7 @@ recipes.addShaped(<Natura:pressureplate.sakura> * 2, [[Saw, <Natura:plankSlab1:1
 recipes.addShaped(<Natura:trapdoor.sakura>, [
 [<Natura:plankSlab1:1>, <Natura:natura.stick:1>, <Natura:plankSlab1:1>],
 [<Natura:natura.stick:1>, Flint, <Natura:natura.stick:1>],
-[<Natura:plankSlab1:1>, Stick, <Natura:plankSlab1:1>]]);
+[<Natura:plankSlab1:1>, <Natura:natura.stick:1>, <Natura:plankSlab1:1>]]);
 // --- 
 recipes.addShaped(<Natura:trapdoor.sakura> * 2, [
 [<Natura:plankSlab1:1>, <Natura:natura.stick:1>, <Natura:plankSlab1:1>],

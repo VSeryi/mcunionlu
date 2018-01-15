@@ -6,8 +6,6 @@
 
 
 import mods.gregtech.Assembler;
-import mods.ic2.Compressor;
-import mods.ic2.Macerator;
 import mods.nei.NEI;
 
 
@@ -84,7 +82,7 @@ recipes.remove(<AdvancedSolarPanel:asp_crafting_items:13>);
 // --- MT Core fore Molecular Transformer
 recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:12>, [
 [<AdvancedSolarPanel:asp_crafting_items:5>, <IC2:reactorReflectorThick:1>, <AdvancedSolarPanel:asp_crafting_items:5>],
-[<AdvancedSolarPanel:asp_crafting_items:5>, <ore:craftingToolWrench>, <AdvancedSolarPanel:asp_crafting_items:5>],
+[<ore:plateTitanium>, <ore:craftingToolWrench>, <ore:plateTitanium>],
 [<AdvancedSolarPanel:asp_crafting_items:5>, <IC2:reactorReflectorThick:1>, <AdvancedSolarPanel:asp_crafting_items:5>]]);
 
 // --- Iridium Iron Plate
@@ -96,19 +94,19 @@ recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:6>, [
 // --- Advanced Solar Helm
 recipes.addShaped(<AdvancedSolarPanel:advanced_solar_helmet>, [
 [<ore:craftingToolWrench>, <AdvancedSolarPanel:BlockAdvSolarPanel>, <ore:craftingToolScrewdriver>],
-[<ore:circuitAdvanced>, <IC2:itemArmorNanoHelmet:26>, <ore:circuitAdvanced>],
+[<ore:circuitAdvanced>, <IC2:itemArmorNanoHelmet:1>, <ore:circuitAdvanced>],
 [<ore:cableGt04Aluminium>, <gregtech:gt.blockmachines:22>, <ore:cableGt04Aluminium>]]);
 
 // --- Hybrid Solar Helm
 recipes.addShaped(<AdvancedSolarPanel:hybrid_solar_helmet>, [
 [<ore:craftingToolWrench>, <AdvancedSolarPanel:BlockAdvSolarPanel:1>, <ore:craftingToolScrewdriver>],
-[<ore:circuitMaster>, <IC2:itemArmorQuantumHelmet:26>, <ore:circuitMaster>],
+[<ore:circuitMaster>, <IC2:itemArmorQuantumHelmet:1>, <ore:circuitMaster>],
 [<ore:cableGt04Platinum>, <gregtech:gt.blockmachines:23>, <ore:cableGt04Platinum>]]);
 
 // --- Ultimate Solar Helm
 recipes.addShaped(<AdvancedSolarPanel:ultimate_solar_helmet>, [
-[<ore:craftingToolWrench>, <dreamcraft:item.NanoCircuit>, <ore:craftingToolScrewdriver>],
-[<ore:craftingSolarPanelHV>, <AdvancedSolarPanel:hybrid_solar_helmet:26>, <ore:craftingSolarPanelHV>],
+[<ore:craftingToolWrench>, <ore:circuitUltimate>, <ore:craftingToolScrewdriver>],
+[<ore:craftingSolarPanelHV>, <AdvancedSolarPanel:hybrid_solar_helmet:1>, <ore:craftingSolarPanelHV>],
 [<ore:cableGt04VanadiumGallium>, <gregtech:gt.blockmachines:24>, <ore:cableGt04VanadiumGallium>]]);
 
 // --- Irradiant Glass Panel
@@ -126,7 +124,7 @@ recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:8>, [
 // --- Quantum Core
 recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:13>, [
 [<AdvancedSolarPanel:asp_crafting_items:4>, <ore:plateNetherStar>, <AdvancedSolarPanel:asp_crafting_items:4>],
-[<ore:plateNetherStar>, <dreamcraft:item.QuantumCircuit>, <ore:plateNetherStar>],
+[<ore:plateNetherStar>, <dreamcraft:item.NanoCircuit>, <ore:plateNetherStar>],
 [<AdvancedSolarPanel:asp_crafting_items:4>, <ore:plateNetherStar>, <AdvancedSolarPanel:asp_crafting_items:4>]]);
 
 
@@ -176,29 +174,6 @@ Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:3>, <gregtech:gt.bloc
 Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:3>, <gregtech:gt.blockmachines:14>, <gregtech:gt.metaitem.01:32755>, <liquid:molten.solderingalloy> * 288, 1400, 4096);
 // -
 Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:3>, <gregtech:gt.blockmachines:14>, <gregtech:gt.metaitem.01:32755>, <liquid:molten.lead> * 1152, 1400, 4096);
-
-
-
-
-// --- Compressor Recipes ---
-
-
-
-// --- Sunnarium Dust
-Compressor.addRecipe(<AdvancedSolarPanel:asp_crafting_items>, <gregtech:gt.metaitem.01:2318>);
-
-// --- Sunnarium Parts
-Compressor.addRecipe(<AdvancedSolarPanel:asp_crafting_items>, <AdvancedSolarPanel:asp_crafting_items:9> * 9);
-
-
-
-// --- Macerator Recipes
-
-
-
-// --- Sunnarium Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2318>, <AdvancedSolarPanel:asp_crafting_items>);
-
 
 
 

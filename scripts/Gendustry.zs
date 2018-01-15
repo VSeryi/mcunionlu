@@ -132,9 +132,9 @@ val SteelBars = <dreamcraft:item.SteelBars>;
 val OsmiumBars = <dreamcraft:item.OsmiumBars>;
 val TitaniumRotor = <gregtech:gt.metaitem.02:21028>;
 val Sugar = <minecraft:sugar>;
-val AdvBattery = <IC2:itemBatChargeAdv:26>;
-val Battery = <IC2:itemBatChargeRE:26>;
-val CrystalBattery = <IC2:itemBatChargeCrystal:26>;
+val AdvBattery = <IC2:itemBatChargeAdv:1>;
+val Battery = <IC2:itemBatChargeRE:1>;
+val CrystalBattery = <IC2:itemBatChargeCrystal:1>;
 val DTank = <irontank:diamondTank>;
 val Coil = <IC2:itemRecipePart>;
 val ApicultureChest = <Forestry:apicultureChest>;
@@ -329,7 +329,7 @@ recipes.addShaped(BeeReceptacle, [
 // --- Power Module
 recipes.addShaped(PowerModule, [
 [VanadiumGalliumCable, <gendustry:HoneyComb:702>, VanadiumGalliumCable],
-[IridiumAlloyCasing, NanoCircuits, IridiumAlloyCasing],
+[IridiumAlloyCasing, <ore:circuitMaster>, IridiumAlloyCasing],
 [OsmiumSmallGear, LuVMotor, OsmiumSmallGear]]);
 
 // --- Plains Emulation Upgrade
@@ -504,12 +504,26 @@ Assembler.addRecipe(MutagenTank, DTank, <gregtech:gt.metaitem.01:18052>, 300, 19
 
 // --- Genetics Processor
 Assembler.addRecipe(GeneticsProcessor, <dreamcraft:item.GeneticCircuit>, <gregtech:gt.metaitem.01:32705>, 400, 1920);
+// -
+Assembler.addRecipe(GeneticsProcessor, <dreamcraft:item.GeneticCircuit>, <gregtech:gt.metaitem.03:32084>, 400, 1920);
+// -
+Assembler.addRecipe(GeneticsProcessor, <dreamcraft:item.GeneticCircuit>, <gregtech:gt.metaitem.03:32086>, 400, 1920);
+// -
+Assembler.addRecipe(GeneticsProcessor, <dreamcraft:item.GeneticCircuit>, <gregtech:gt.metaitem.03:32089>, 400, 1920);
 
 // --- Environmental Processor
 Assembler.addRecipe(EnviroProcessor, <dreamcraft:item.EnvironmentalCircuit>, <gregtech:gt.metaitem.01:32705>, 400, 1920);
+// -
+Assembler.addRecipe(EnviroProcessor, <dreamcraft:item.EnvironmentalCircuit>, <gregtech:gt.metaitem.03:32084>, 400, 1920);
+// -
+Assembler.addRecipe(EnviroProcessor, <dreamcraft:item.EnvironmentalCircuit>, <gregtech:gt.metaitem.03:32086>, 400, 1920);
+// -
+Assembler.addRecipe(EnviroProcessor, <dreamcraft:item.EnvironmentalCircuit>, <gregtech:gt.metaitem.03:32089>, 400, 1920);
 
 // --- Upgrade Frame
-Assembler.addRecipe(UpFrame, <dreamcraft:item.IndustryFrame>, <dreamcraft:item.HighEnergyFlowCircuit>, 400, 1920);
+Assembler.addRecipe(UpFrame, <dreamcraft:item.IndustryFrame>, <gregtech:gt.metaitem.03:32087>, 400, 1920);
+// -
+Assembler.addRecipe(UpFrame, <dreamcraft:item.IndustryFrame>, <gregtech:gt.metaitem.03:32092>, 400, 1920);
 
 // --- Item Ijector Cover
 Assembler.addRecipe(<gendustry:EjectCover>, <gregtech:gt.metaitem.01:17052>, <IC2:upgradeModule:3>, 200, 1920);

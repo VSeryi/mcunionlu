@@ -10,7 +10,7 @@ import mods.gregtech.BlastFurnace;
 import mods.gregtech.ChemicalBath;
 import mods.gregtech.Extruder;
 import mods.gregtech.FluidSolidifier;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
 
 
 
@@ -402,6 +402,19 @@ recipes.removeShaped(<EnderIO:itemAlloy:6>, [
 [<ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>],
 [<ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>]]);
 
+// --- Ender Pearl
+recipes.removeShaped(<minecraft:ender_pearl>, [
+[<EnderIO:itemPowderIngot:5>, <EnderIO:itemPowderIngot:5>, <EnderIO:itemPowderIngot:5>],
+[<EnderIO:itemPowderIngot:5>, <EnderIO:itemPowderIngot:5>, <EnderIO:itemPowderIngot:5>],
+[<EnderIO:itemPowderIngot:5>, <EnderIO:itemPowderIngot:5>, <EnderIO:itemPowderIngot:5>]]);
+// -
+recipes.removeShaped(<minecraft:ender_pearl>, [
+[null, <EnderZoo:enderFragment>, null],
+[<EnderZoo:enderFragment>, <EnderZoo:enderFragment>, <EnderZoo:enderFragment>],
+[null, <EnderZoo:enderFragment>, null]]);
+
+
+
 
 
 
@@ -468,6 +481,11 @@ recipes.addShaped(<EnderIO:blockCapBank:3>.withTag({type: "VIBRANT", storedEnerg
 [Capacitor3, AdvCircuit, Capacitor3],
 [VCrystal, MCasing, VCrystal],
 [Capacitor3, <gregtech:gt.metaitem.01:32540>, Capacitor3]]);
+//-
+recipes.addShaped(<EnderIO:blockCapBank:3>.withTag({type: "VIBRANT", storedEnergyRF: 0}), [
+[Capacitor3, AdvCircuit, Capacitor3],
+[VCrystal, MCasing, VCrystal],
+[Capacitor3, <miscutils:MU-metaitem.01:32054>, Capacitor3]]);
 
 // --- Painting Machine
 recipes.addShaped(<EnderIO:blockPainter>, [
@@ -745,13 +763,13 @@ mods.avaritia.ExtremeCrafting.addShaped(<EnderIO:blockCapBank>.withTag({type: "C
 
 
 // --- Basic Capacitor
-Assembler.addRecipe(Capacitor, <gregtech:gt.metaitem.01:23080>, <gregtech:gt.metaitem.01:17031>,  <liquid:molten.plastic> * 144, 100, 4);
+Assembler.addRecipe(Capacitor, <gregtech:gt.metaitem.01:26080> * 4, <gregtech:gt.metaitem.01:29031> * 4,  <liquid:molten.plastic> * 288, 200, 30);
 
 // --- Double Layer Capacitor
-Assembler.addRecipe(Capacitor2, Capacitor * 2, <gregtech:gt.metaitem.01:2535>,  <liquid:molten.energeticalloy> * 864, 150, 40);
+Assembler.addRecipe(Capacitor2, Capacitor * 2, <gregtech:gt.metaitem.01:2535>,  <liquid:molten.energeticalloy> * 864, 150, 120);
 
 // --- Octadic Capacitor
-Assembler.addRecipe(Capacitor3, Capacitor2 * 2, <minecraft:glowstone_dust> * 4,  <liquid:molten.vibrantalloy> * 864, 200, 400);
+Assembler.addRecipe(Capacitor3, Capacitor2 * 2, <minecraft:glowstone_dust> * 4,  <liquid:molten.vibrantalloy> * 864, 200, 480);
 
 // --- Vacuum Chest
 Assembler.addRecipe(<EnderIO:blockVacuumChest>, <gregtech:gt.blockmachines:9231>, <ExtraUtilities:enderCollector>, 200, 64);
@@ -844,7 +862,7 @@ Assembler.addRecipe(<EnderIO:itemMEConduit:1>, <EnderIO:itemMEConduit>, <gregtec
 Assembler.addRecipe(<EnderIO:itemOCConduit>, <appliedenergistics2:item.ItemMultiPart:16>, <gregtech:gt.metaitem.01:17381>, <liquid:molten.plastic> * 144, 100, 480);
 
 // --- Basic Item Filter
-Assembler.addRecipe(<EnderIO:itemBasicFilterUpgrade>, <IC2:itemPartCarbonMesh> * 2, <minecraft:iron_bars>, 300, 30);
+Assembler.addRecipe(<EnderIO:itemBasicFilterUpgrade>, <gregtech:gt.metaitem.01:32729>, <minecraft:iron_bars>, 300, 30);
 
 // --- Advanced Item Filter
 Assembler.addRecipe(<EnderIO:itemBasicFilterUpgrade:1>, <EnderIO:itemBasicFilterUpgrade>, ZLogic, 300, 64);
@@ -895,9 +913,9 @@ FluidSolidifier.addRecipe(<EnderIO:blockDarkSteelAnvil>, <gregtech:gt.metaitem.0
 
 
 
-// --- Macerating Recipes ---
+// --- Pulverizer Recipes ---
 
 
 
 // --- Binder Composite
-Macerator.addRecipe(<EnderIO:itemMaterial:2> * 9, <IC2:itemPartCFPowder>);
+Pulverizer.addRecipe([<EnderIO:itemMaterial:2> * 9], <IC2:itemPartCFPowder>, [10000], 300, 2);

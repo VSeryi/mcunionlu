@@ -7,7 +7,7 @@ import mods.gregtech.Centrifuge;
 import mods.ic2.Compressor;
 import mods.gregtech.CuttingSaw;
 import mods.gregtech.Lathe;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
 
 
 // --- Variables ---
@@ -189,6 +189,89 @@ recipes.remove(<BloodArsenal:vampire_ring>);
 // --- Soul Fragment
 mods.bloodmagic.Altar.removeRecipe(<BloodArsenal:soul_fragment>);
 
+// --- Blood Infused Pickaxe Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:pickaxeHead:251>);
+
+// --- Blood Infused Shovel Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:shovelHead:251>);
+
+// --- Blood Infused Axe Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:hatchetHead:251>);
+
+// --- Blood Infused Large Plate
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:heavyPlate:251>);
+
+// --- Blood Infused Large Tool Rod
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:toughRod:251>);
+
+// --- Blood Infused Large Binding
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:toughBinding:251>);
+
+// --- Blood Infused Sward Blade
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:swordBlade:251>);
+
+// --- Blood Infused Wild Guard
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:wideGuard:251>);
+
+// --- Blood Infused Hand Guard
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:handGuard:251>);
+
+// --- Blood Infused Cross Bar
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:crossbar:251>);
+
+// --- Blood Infused Knife Blade
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:knifeBlade:251>);
+
+// --- Blood Infused Frying Pan
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:frypanHead:251>);
+
+// --- Blood Infused Sign
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:signHead:251>);
+
+// --- Blood Infused Chisel Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:chiselHead:251>);
+
+// --- Blood Infused Large Axe Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:broadAxeHead:251>);
+
+// --- Blood Infused Excavator
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:excavatorHead:251>);
+
+// --- Blood Infused Large Sword Blade
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:largeSwordBlade:251>);
+
+// --- Blood Infused Hammer Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:hammerHead:251>);
+
+// --- Blood Infused Arrow Head
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:arrowhead:251>);
+
+// --- Blood Infused Shuriken
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:ShurikenPart:251>);
+
+// --- Blood Infused Bow Limb
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:BowLimbPart:251>);
+
+// --- Blood Infused Cross Bow Limb
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:CrossbowLimbPart:251>);
+
+// --- Blood Infused Cross Bow
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:CrossbowBodyPart:251>);
+
+// --- Blood Infused Full Guard
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:fullGuard:251>);
+
+// --- Blood Infused Scythe Blade
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:scytheBlade:251>);
+
+// --- Blood Infused Binding
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:binding:251>);
+
+// --- Blood Infused Tool Rod
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:toolRod:251>);
+
+
+
 
 
 // --- Adding Recipes ---
@@ -320,6 +403,7 @@ mods.bloodmagic.BloodOrb.addShaped(<BloodArsenal:vampire_ring>, [
 
 
 
+
 // --- Altar Recipes ---
 
 
@@ -411,13 +495,6 @@ Centrifuge.addRecipe([<BloodArsenal:blood_money:2>, <BloodArsenal:blood_money:2>
 
 
 
-// --- Blood Infused Diamond Block
-Compressor.addRecipe(<BloodArsenal:blood_infused_diamond_block>, <BloodArsenal:blood_infused_diamond_bound> * 9);
-
-// --- Blood Infused Iron Block
-Compressor.addRecipe(<BloodArsenal:blood_infused_iron_block>, <BloodArsenal:blood_infused_iron> * 9);
-// -
-Compressor.addRecipe(<BloodArsenal:blood_infused_iron_block>, <gregtech:gt.metaitem.01:11977> * 9);
 
 // --- Blood Mony x4
 Compressor.addRecipe(<BloodArsenal:blood_money:1>, <BloodArsenal:blood_money> * 4);
@@ -457,12 +534,14 @@ Lathe.addRecipe([<BloodArsenal:blood_infused_stick> * 2], <BloodArsenal:blood_in
 
 
 
-// --- Macerator Recipes ---
+
+
+// --- Pulverizer Recipes ---
 
 
 
 // --- Blood Infused Diamond Block
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2977>, <BloodArsenal:blood_infused_iron>);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2977>], <BloodArsenal:blood_infused_iron>, [10000], 300, 2);
 
 // --- Blood Infused Iron Block
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2977> * 9, <BloodArsenal:blood_infused_iron_block>);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2977> * 9], <BloodArsenal:blood_infused_iron_block>, [10000], 300, 2);

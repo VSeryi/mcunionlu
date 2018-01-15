@@ -83,6 +83,5 @@
 	<loot item="Forestry:ffarm" damage="3" nbt="{FarmBlock:0}" weight="20" count_min="4" count_max="8"/>
 	<loot item="Forestry:ffarm" damage="4" nbt="{FarmBlock:0}" weight="20" count_min="4" count_max="8"/>
 	<loot item="Forestry:ffarm" damage="5" nbt="{FarmBlock:0}" weight="20" count_min="4" count_max="8"/>
-	<loot item="Forestry:factory" damage="1" weight="10" count_min="1" count_max="1"/>
-		
+	<loot item="Forestry:factory" damage="1" weight="10" count_min="1" count_max="1"/>	
 </LootGroup>

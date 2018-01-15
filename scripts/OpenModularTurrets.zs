@@ -384,7 +384,7 @@ recipes.addShaped(<openmodularturrets:fenceTierOne> * 5, [
 // --- IO Bus
 recipes.addShaped(<openmodularturrets:ioBus>, [
 [<ore:screwIron>, <ore:plateGold>, <ore:craftingToolWrench>],
-[<ore:circuitPrimitive>, <ore:dustRedstone>, <ore:circuitPrimitive>],
+[<ore:circuitBasic>, <ore:dustRedstone>, <ore:circuitBasic>],
 [<ore:craftingToolScrewdriver>, <ore:plateIron>, <ore:screwIron>]]);
 
 // --- Based Power Expander Tier 1
@@ -420,19 +420,19 @@ recipes.addShaped(<openmodularturrets:bulletCraftable> * 64, [
 
 
 // --- Fence Tier 1
-Assembler.addRecipe(<openmodularturrets:fenceTierOne>, <minecraft:iron_bars>, <gregtech:gt.metaitem.01:28305>,  100, 16);
+Assembler.addRecipe(<openmodularturrets:fenceTierOne> * 4, <minecraft:iron_bars>, <gregtech:gt.metaitem.01:28305>,  100, 16);
 
 // --- Fence Tier 2
-Assembler.addRecipe(<openmodularturrets:fenceTierTwo> * 2, <dreamcraft:item.SteelBars>, <gregtech:gt.metaitem.01:28019>, 100, 30);
+Assembler.addRecipe(<openmodularturrets:fenceTierTwo> * 4, <dreamcraft:item.SteelBars>, <gregtech:gt.metaitem.01:28019>, 100, 30);
 
 // --- Fence Tier 3
-Assembler.addRecipe(<openmodularturrets:fenceTierThree> * 2, <EnderIO:blockDarkIronBars>, <gregtech:gt.metaitem.01:28306>, 100, 64);
+Assembler.addRecipe(<openmodularturrets:fenceTierThree> * 4, <EnderIO:blockDarkIronBars>, <gregtech:gt.metaitem.01:28306>, 100, 64);
 
 // --- Fence Tier 4
-Assembler.addRecipe(<openmodularturrets:fenceTierFour> * 2, <dreamcraft:item.TungstenSteelBars>, <gregtech:gt.metaitem.01:28028>, 100, 120);
+Assembler.addRecipe(<openmodularturrets:fenceTierFour> * 4, <dreamcraft:item.TungstenSteelBars>, <gregtech:gt.metaitem.01:28028>, 100, 120);
 
 // --- Fence Tier 5
-Assembler.addRecipe(<openmodularturrets:fenceTierFive> * 2, <dreamcraft:item.IridiumBars>, <gregtech:gt.metaitem.01:28316>, 100, 256);
+Assembler.addRecipe(<openmodularturrets:fenceTierFive> * 4, <dreamcraft:item.IridiumBars>, <gregtech:gt.metaitem.01:28316>, 100, 256);
 
 // --- Based Power Expander Tier 1
 Assembler.addRecipe(<openmodularturrets:expanderPowerTierOne>, <gregtech:gt.blockmachines:4905>, <gregtech:gt.metaitem.01:32500>, 400, 16);
@@ -468,7 +468,7 @@ Assembler.addRecipe(<openmodularturrets:expanderInvTierFive>, <gregtech:gt.block
 Assembler.addRecipe(<openmodularturrets:barrelTierOne>, <gregtech:gt.metaitem.01:17809> * 4, <gregtech:gt.metaitem.01:28032> * 2, 200, 16);
 
 // --- Barrel Tier 2
-Assembler.addRecipe(<openmodularturrets:barrelTierTwo>, <Railcraft:part.plate> * 4, <gregtech:gt.metaitem.01:28305> * 2, 200, 30);
+Assembler.addRecipe(<openmodularturrets:barrelTierTwo>, <gregtech:gt.metaitem.01:17032> * 4, <gregtech:gt.metaitem.01:28305> * 2, 200, 30);
 
 // --- Barrel Tier 3
 Assembler.addRecipe(<openmodularturrets:barrelTierThree>, <gregtech:gt.metaitem.01:17364> * 4, <gregtech:gt.metaitem.01:28306> * 2, 200, 64);
@@ -495,7 +495,7 @@ Assembler.addRecipe(<openmodularturrets:chamberTierFour>, <gregtech:gt.metaitem.
 Assembler.addRecipe(<openmodularturrets:chamberTierFive>, <gregtech:gt.metaitem.01:32643>, <gregtech:gt.metaitem.02:24084>, 200, 256);
 
 // --- IO Bus
-Assembler.addRecipe(<openmodularturrets:ioBus>, <gregtech:gt.metaitem.01:32700> * 2, <gregtech:gt.metaitem.01:17086>, <liquid:molten.iron> * 72, 100, 30);
+Assembler.addRecipe(<openmodularturrets:ioBus>, <IC2:itemPartCircuit> * 2, <gregtech:gt.metaitem.01:17086>, <liquid:molten.iron> * 72, 100, 30);
 
 // --- Ammo Bullet
 Assembler.addRecipe(<openmodularturrets:bulletCraftable> * 64, <gregtech:gt.metaitem.01:29305> * 4, <minecraft:gunpowder>, <liquid:molten.iron> * 144, 200, 30);

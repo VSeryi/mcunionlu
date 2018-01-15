@@ -643,9 +643,9 @@ mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:3>, [
 
 // --- Stone Brace
 mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:4>, [
-[<AWWayofTime:apprenticeBloodOrb>, <dreamcraft:item.StonePlate>, <AWWayofTime:reinforcedSlate>],
-[<dreamcraft:item.StonePlate>, <AWWayofTime:bloodMagicBaseItems:3>, <dreamcraft:item.StonePlate>],
-[<AWWayofTime:reinforcedSlate>, <dreamcraft:item.StonePlate>, null]]);
+[<AWWayofTime:apprenticeBloodOrb>, <ore:plateStone>, <AWWayofTime:reinforcedSlate>],
+[<ore:plateStone>, <AWWayofTime:bloodMagicBaseItems:3>, <ore:plateStone>],
+[<AWWayofTime:reinforcedSlate>, <ore:plateStone>, null]]);
 
 // --- Obsidian Brace
 mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:25>, [
@@ -761,15 +761,15 @@ mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:8>, [
 [<AWWayofTime:blankSlate>, <AWWayofTime:magicianBloodOrb>, <AWWayofTime:blankSlate>],
 [<AWWayofTime:reinforcedSlate>, <ore:plateTitanium>, <AWWayofTime:reinforcedSlate>]]);
 
-// --- Output Spell Cable
-mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:9>, [
+// ---  Input Spell Cable
+mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:14>, [
 [<AWWayofTime:blankSlate>, <AWWayofTime:simpleCatalyst>, null],
 [<AWWayofTime:reinforcedSlate>, <AWWayofTime:magicianBloodOrb>, <AWWayofTime:bloodMagicBaseItems:2>],
-[<AWWayofTime:blankSlate>, <AWWayofTime:simpleCatalyst>, null]]);
+[<AWWayofTime:blankSlate>, <AWWayofTime:simpleCatalyst>, <AWWayofTime:bloodMagicBaseItems:2>]]);
 
-// --- Input Spell Cable
-mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:14>, [
-[null, <AWWayofTime:simpleCatalyst>, <AWWayofTime:blankSlate>],
+// --- Output Spell Cable
+mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:bloodMagicBaseItems:9>, [
+[<AWWayofTime:bloodMagicBaseItems:2>, <AWWayofTime:simpleCatalyst>, <AWWayofTime:blankSlate>],
 [<AWWayofTime:bloodMagicBaseItems:2>, <AWWayofTime:magicianBloodOrb>, <AWWayofTime:reinforcedSlate>],
 [null, <AWWayofTime:simpleCatalyst>, <AWWayofTime:blankSlate>]]);
 
@@ -913,7 +913,7 @@ mods.bloodmagic.Altar.addRecipe(<IC2:itemFluidCell>.withTag({Fluid: {FluidName: 
 mods.bloodmagic.Altar.addRecipe(<AWWayofTime:alchemyFlask>, <Thaumcraft:ItemEssence>, 2, 4000);
 
 // --- Unbound Crystal
-mods.bloodmagic.Altar.addRecipe(<AWWayofTime:blankSpell>, <IC2:itemBatLamaCrystal:26>, 2, 5000);
+mods.bloodmagic.Altar.addRecipe(<AWWayofTime:blankSpell>, <IC2:itemBatLamaCrystal:1>, 2, 5000);
 
 // --- Dagger of Sacrifice
 mods.bloodmagic.Altar.addRecipe(<AWWayofTime:daggerOfSacrifice>, <AWWayofTime:sacrificialKnife>, 2, 10000);

@@ -425,7 +425,8 @@ game.setLocalization("tc.research_text.ENCHANTEDEARTH", "[MC] Magical Dirt");
 mods.thaumcraft.Research.addPrereq("ENCHANTEDEARTH", "MB_EssenceLife", false);
 mods.thaumcraft.Research.addSibling("ENCHANTEDEARTH", "INFUSION");
 mods.thaumcraft.Research.setConcealed("ENCHANTEDEARTH", true);
-mods.thaumcraft.Research.addPage("ENCHANTEDEARTH", "Enchanted Earth");
+mods.thaumcraft.Research.addPage("ENCHANTEDEARTH", "MagicBees.research_page.ENCHANTEDEARTH");
+game.setLocalization("tc.research_page.ENCHANTEDEARTH", "Enchanted Earth makes plants and trees grow a bit faster in a 3x3 area around it.");
 mods.thaumcraft.Arcane.addShaped("ENCHANTEDEARTH", <MagicBees:magicbees.enchantedEarth>, "ordo 10, aqua 10, terra 10", [
 [<minecraft:dirt>, null, <minecraft:dirt>],
 [null, <MagicBees:miscResources:7>, null],
@@ -550,3 +551,53 @@ mods.thaumcraft.Research.refreshResearchRecipe("MB_Scoop");
 
 // --- Thaumic Grafter
 mods.thaumcraft.Research.refreshResearchRecipe("MB_Grafte");
+
+
+
+// --- Ore dict stuff ---
+
+
+
+
+// --- Combs
+oreDict.beeComb.add(<MagicBees:comb>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:1>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:2>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:3>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:4>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:5>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:6>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:7>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:8>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:9>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:10>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:11>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:12>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:13>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:14>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:15>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:16>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:17>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:18>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:19>);
+// -
+oreDict.beeComb.add(<MagicBees:comb:20>);

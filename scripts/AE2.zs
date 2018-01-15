@@ -9,7 +9,7 @@ import mods.gregtech.Assembler;
 import mods.ic2.Compressor;
 import mods.gregtech.Centrifuge;
 import mods.gregtech.ChemicalReactor;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
 import mods.nei.NEI;
 import mods.gregtech.Wiremill;
 
@@ -62,12 +62,11 @@ val CopperCable = <ore:cableGt01Copper>;
 val PlatinumCable = <ore:cableGt04Platinum>;
 val AdvAssembler = <gregtech:gt.blockmachines:212>;
 
-val NANDChip = <gregtech:gt.metaitem.01:32700>;
 val BasicCircuit = <ore:circuitBasic>;
 val GoodCircuit = <ore:circuitGood>;
 val AdvCircuit = <ore:circuitAdvanced>;
-val DataCircuit = <gregtech:gt.metaitem.01:32704>;
-val EFlow = <gregtech:gt.metaitem.01:32706>;
+val DataCircuit = <ore:circuitData>;
+val EFlow = <ore:circuitMaster>;
 
 val StainlessPlate = <ore:plateStainlessSteel>;
 val EVBatBuffer = <gregtech:gt.blockmachines:194>;
@@ -134,7 +133,7 @@ val IronRod = <ore:stickIron>;
 
 
 // --- Removing Recipes ---
-
+mods.appeng.Grinder.removeRecipe(<*>);
 
 // --- Blocks ---
 
@@ -215,7 +214,7 @@ recipes.remove(<appliedenergistics2:tile.BlockVibrationChamber>);
 recipes.remove(<appliedenergistics2:tile.BlockSecurity>);
 
 // --- Creative Energy Cell
-recipes.remove(<appliedenergistics2:tile.BlockCreativeEnergyCell>);
+mods.avaritia.ExtremeCrafting.remove(<appliedenergistics2:tile.BlockCreativeEnergyCell>);
 
 
 
@@ -534,7 +533,7 @@ recipes.addShaped(MEChest, [
 recipes.addShaped(<appliedenergistics2:tile.BlockDrive>, [
 [TitaniumPlate, DiamondCircuit, TitaniumPlate], 
 [FluixGlassCable, <appliedenergistics2:tile.BlockChest>, FluixGlassCable], 
-[TitaniumPlate, <IC2:itemPartCircuitAdv>, TitaniumPlate]]);
+[TitaniumPlate, <ore:circuitAdvanced>, TitaniumPlate]]);
 
 // --- Crystal Growth Accelerator
 recipes.addShaped(CrystalAccelerator, [
@@ -550,9 +549,9 @@ recipes.addShaped(CraftingUnit, [
 
 // --- Molecular Assembler
 recipes.addShaped(MolecularAssembler, [
-[TitaniumPlate, ClearGlass, TitaniumPlate],
+[TitaniumPlate, <ore:blockGlass>, TitaniumPlate],
 [AnnihilationCore, AdvAssembler, FormationCore],
-[TitaniumPlate, ClearGlass, TitaniumPlate]]);
+[TitaniumPlate, <ore:blockGlass>, TitaniumPlate]]);
 
 // --- Charger
 recipes.addShaped(Charger, [
@@ -902,7 +901,7 @@ recipes.addShaped(<appliedenergistics2:item.ToolMassCannon>, [
 
 // --- Memory Card
 recipes.addShaped(<appliedenergistics2:item.ToolMemoryCard>, [
-[CertusCircuit, <gregtech:gt.metaitem.01:32704>, TitaniumPlate],
+[CertusCircuit, <ore:circuitData>, TitaniumPlate],
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
 [null, null, null]]);
 
@@ -1089,27 +1088,27 @@ recipes.addShaped(UStorageHousing, [
 
 // --- Storage Cell Component - 1K
 recipes.addShaped(StorageComponent1K, [
-[NANDChip, <dreamcraft:item.ChargedCertusQuartzDust>, NANDChip],
+[BasicCircuit, <dreamcraft:item.ChargedCertusQuartzDust>, BasicCircuit],
 [<dreamcraft:item.ChargedCertusQuartzDust>, <dreamcraft:item.LogicProcessorItemGoldCore>, <dreamcraft:item.ChargedCertusQuartzDust>],
-[NANDChip, <dreamcraft:item.ChargedCertusQuartzDust>, NANDChip]]);
+[BasicCircuit, <dreamcraft:item.ChargedCertusQuartzDust>, BasicCircuit]]);
 
 // --- Storage Cell Component - 4K
 recipes.addShaped(StorageComponent4K, [
-[BasicCircuit, StorageComponent1K, BasicCircuit],
+[GoodCircuit, StorageComponent1K, GoodCircuit],
 [StorageComponent1K, <dreamcraft:item.LogicProcessorItemGoldCore>, StorageComponent1K],
-[BasicCircuit, StorageComponent1K, BasicCircuit]]);
+[GoodCircuit, StorageComponent1K, GoodCircuit]]);
 
 // --- Storage Cell Component - 16K
 recipes.addShaped(StorageComponent16K, [
-[GoodCircuit, StorageComponent4K, GoodCircuit],
+[AdvCircuit, StorageComponent4K, AdvCircuit],
 [StorageComponent4K, <dreamcraft:item.EngineeringProcessorItemDiamondCore>, StorageComponent4K],
-[GoodCircuit, StorageComponent4K, GoodCircuit]]);
+[AdvCircuit, StorageComponent4K, AdvCircuit]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped(StorageComponent64K, [
-[AdvCircuit, StorageComponent16K, AdvCircuit],
+[DataCircuit, StorageComponent16K, DataCircuit],
 [StorageComponent16K, <dreamcraft:item.EngineeringProcessorItemDiamondCore>, StorageComponent16K],
-[AdvCircuit, StorageComponent16K, AdvCircuit]]);
+[DataCircuit, StorageComponent16K, DataCircuit]]);
 
 // --- 2 Spatial Component
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:32>, [
@@ -1298,21 +1297,11 @@ ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, <l
 ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, <liquid:ic2distilledwater> * 1000, <dreamcraft:item.ChargedCertusQuartzDust> * 3, <gregtech:gt.metaitem.01:2017>, null, 700, 30);
 
 
-// --- Compressor Recipes ---
 
-// --- Fluix Block ---
-Compressor.addRecipe(FluixBlock, PureFluixCrystal * 9);
-// -
-Compressor.addRecipe(FluixBlock, FluixCrystal * 4);
-// -
-Compressor.addRecipe(CertusQBlock, PureCertusQCrystal * 9);
-
-
-
-// --- Macerator Recipes ---
+// --- Pulverizer Recipes ---
 
 // --- Fluix Dust
-Macerator.addRecipe(FluixDust * 4, <appliedenergistics2:tile.BlockFluix>);
+Pulverizer.addRecipe([FluixDust * 4], <appliedenergistics2:tile.BlockFluix>, [10000], 300, 2);
 
 
 

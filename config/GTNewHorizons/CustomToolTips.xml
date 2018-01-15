@@ -9,10 +9,19 @@
     <ToolTip ItemName="GregsLighting:ic2ElectricFloodlight" ToolTip="§4Maximum voltage in: 32 EU/t"/>
 	<ToolTip ItemName="GalaxySpace:item.JetPack" ToolTip="§4Disabled Item; No recipe"/>
 	<ToolTip ItemName="GalaxySpace:item.JetPack:100" ToolTip="§4Disabled Item; No recipe"/>
+	<ToolTip ItemName="IguanaTweaksTConstruct:clayBucketLava" ToolTip="§4You need Gloves for it?"/>
+	<ToolTip ItemName="minecraft:lava_bucket" ToolTip="§4You need Gloves for it?"/>
+	<ToolTip ItemName="appliedenergistics2:tile.BlockDrive" ToolTip="§4Do not move chests with AE drives; It may corrupt your profile. No refunds!"/>
+	<ToolTip ItemName="Thaumcraft:ItemManaBean" ToolTip="§4left click disabled"/>
+	
+//Chisel
+	<ToolTip ItemName="chisel:chisel" ToolTip="§5Chisel from chisel Mod"/>
+	<ToolTip ItemName="chisel:diamondChisel" ToolTip="§5Chisel from Chisel Mod"/>
+	<ToolTip ItemName="chisel:obsidianChisel" ToolTip="§5Chisel from Chisel Mod"/>
+			
+//Core Mod
 	<ToolTip ItemName="dreamcraft:item.OvenGlove" ToolTip="§3Put both Gloves in the Baubles Ring Slot"/>
 	<ToolTip ItemName="dreamcraft:item.OvenGlove:1" ToolTip="§3Put both Gloves in the Baubles Ring Slot"/>
-	<ToolTip ItemName="minecraft:lava_bucket" ToolTip="§4You need Gloves for it?"/>
-	<ToolTip ItemName="IguanaTweaksTConstruct:clayBucketLava" ToolTip="§4You need Gloves for it?"/>
 	<ToolTip ItemName="dreamcraft:dreamcraft_Pollution_bucket" ToolTip="§4Very toxic"/>
 	<ToolTip ItemName="dreamcraft:item.NanoScubaHelmet" ToolTip="§4Don't try to wear this, you can't"/>
 	<ToolTip ItemName="dreamcraft:item.NanoPlatedLeggings" ToolTip="§4Don't try to wear this, you can't"/>
@@ -31,9 +40,18 @@
 	<ToolTip ItemName="dreamcraft:tile.BloodyThaumium" ToolTip="§5Used for Blood Altar Tier 3 Pillars"/>
 	<ToolTip ItemName="dreamcraft:tile.BloodyVoid" ToolTip="§5Used for Blood Altar Tier 4 Pillars"/>
 	<ToolTip ItemName="dreamcraft:tile.BloodyIchorium" ToolTip="§5Used for Blood Altar Tier 6 Pillars"/>
-	<ToolTip ItemName="appliedenergistics2:tile.BlockDrive" ToolTip="§4Do not move chests with AE drives; It may corrupt your profile. No refunds!"/>
-	<ToolTip ItemName="gregtech:gt.blockmachines:1110" ToolTip="§4Nitro Diesel works in MV and above"/>
-	<ToolTip ItemName="gregtech:gt.metaitem.01:30709" ToolTip="§4works in MV Diesel Generator and above"/>
+	<ToolTip ItemName="dreamcraft:tile.BronzePlatedReinforcedStone" ToolTip="§3Hardness 100 §4Blast Resistance 150"/>
+	<ToolTip ItemName="dreamcraft:tile.SteelPlatedReinforcedStone" ToolTip="§3Hardness 150 §4Blast Resistance 210"/>
+	<ToolTip ItemName="dreamcraft:tile.TitaniumPlatedReinforcedStone" ToolTip="§3Hardness 200 §4Blast Resistance 240"/>
+	<ToolTip ItemName="dreamcraft:tile.TungstensteelPlatedReinforcedStone" ToolTip="§3Hardness 250 §4Blast Resistance 300"/>
+	<ToolTip ItemName="dreamcraft:tile.NaquadahPlatedReinforcedStone" ToolTip="§3Hardness 300 §4Blast Resistance 420"/>
+	<ToolTip ItemName="dreamcraft:tile.NeutroniumPlatedReinforcedStone" ToolTip="§3Hardness 600 §4Blast Resistance 500"/>
+
+//Gregtech	
+	<ToolTip ItemName="gregtech:gt.blockmachines:108" ToolTip="§4This furnace is deprecated use bricked blast furnace"/>
+	<ToolTip ItemName="gregtech:gt.blockmachines:1154" ToolTip="§4Hot coolant steam output is increased by 10x"/>
+		
+//Enhanced Lootbags	
 	<ToolTip ItemName="enhancedlootbags:lootbag" ToolTip="§3Enchant with a Fortune III Book"/>
 	<ToolTip ItemName="enhancedlootbags:lootbag:1" ToolTip="§3Enchant with a Fortune III Book"/>
 	<ToolTip ItemName="enhancedlootbags:lootbag:2" ToolTip="§3Enchant with a Fortune III Book"/>
@@ -70,8 +88,7 @@
 	<ToolTip ItemName="enhancedlootbags:lootbag:33" ToolTip="§3Enchant with a Fortune III Book"/>
 	<ToolTip ItemName="enhancedlootbags:lootbag:34" ToolTip="§3Enchant with a Fortune III Book"/>
 	<ToolTip ItemName="enhancedlootbags:lootbag:35" ToolTip="§3Enchant with a Fortune III Book"/>
-												
-		
+														
 //Buildcraft
 	<ToolTip ItemName="BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond" ToolTip="§310240 RF/t"/>
 	<ToolTip ItemName="BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald" ToolTip="§22560 RF/t"/>
@@ -93,13 +110,13 @@
 	<ToolTip ItemName="IronChest:BlockIronChest:6" ToolTip="12*9 Inventory - 108 Slots §4Blast Proof"/>
 	
 //Iron Tanks
-	<ToolTip ItemName="BuildCraft|Factory:tankBlock" ToolTip="Stores up to 16 Buckets of one Liquid"/>
-	<ToolTip ItemName="irontank:ironTank" ToolTip="Stores up to 32 Buckets of one Liquid"/>
-	<ToolTip ItemName="irontank:goldTank" ToolTip="Stores up to 48 Buckets of one Liquid"/>
-	<ToolTip ItemName="irontank:diamondTank" ToolTip="Stores up to 64 Buckets of one Liquid"/>
-	<ToolTip ItemName="irontank:obsidianTank" ToolTip="Stores up to 64 Buckets of one Liquid §4Blast Proof"/>
-	<ToolTip ItemName="irontank:copperTank" ToolTip="Stores up to 27 Buckets of one Liquid"/>
-	<ToolTip ItemName="irontank:silverTank" ToolTip="Stores up to 43 Buckets of one Liquid"/>
+	<ToolTip ItemName="BuildCraft|Factory:tankBlock" ToolTip="Stores up to 16 Buckets of one Liquid §4Not portable use a dolly"/>
+	<ToolTip ItemName="irontank:ironTank" ToolTip="Stores up to 32 Buckets of one Liquid §4Not portable use a dolly"/>
+	<ToolTip ItemName="irontank:goldTank" ToolTip="Stores up to 48 Buckets of one Liquid §4Not portable use a dolly"/>
+	<ToolTip ItemName="irontank:diamondTank" ToolTip="Stores up to 64 Buckets of one Liquid §4Not portable use a dolly"/>
+	<ToolTip ItemName="irontank:obsidianTank" ToolTip="Stores up to 64 Buckets of one Liquid §4Blast Proof, not portable use a dolly"/>
+	<ToolTip ItemName="irontank:copperTank" ToolTip="Stores up to 27 Buckets of one Liquid §4Not portable use a dolly"/>
+	<ToolTip ItemName="irontank:silverTank" ToolTip="Stores up to 43 Buckets of one Liquid §4Not portable use a dolly"/>
 	
 //Bags
 	<ToolTip ItemName="Backpack:backpack" ToolTip="4*9 Inventory - 36 Slots"/>
@@ -189,4 +206,39 @@
 	<ToolTip ItemName="TConstruct:SearedBlock:2" ToolTip="§3Some metals processed in smeltery don't meet the purity requirement for GregTech processing."/>
 	<ToolTip ItemName="TConstruct:CastingChannel" ToolTip="§3Some metals processed in smeltery don't meet the purity requirement for GregTech processing."/>
 	<ToolTip ItemName="TConstruct:SearedBlock:1" ToolTip="§3Some metals processed in smeltery don't meet the purity requirement for GregTech processing."/>
+
+//Thaumic Tinkers
+	<ToolTip ItemName="ThaumicTinkerer:fireFire" ToolTip="§4ELEMENTAL firespread disabled"/>
+	<ToolTip ItemName="ThaumicTinkerer:fireOrder" ToolTip="§4ELEMENTAL firespread disabled"/>        
+	<ToolTip ItemName="ThaumicTinkerer:fireEarth" ToolTip="§4ELEMENTAL firespread disabled"/>	
+	<ToolTip ItemName="ThaumicTinkerer:fireWater" ToolTip="§4ELEMENTAL firespread disabled"/>		
+	<ToolTip ItemName="ThaumicTinkerer:fireChaos" ToolTip="§4ELEMENTAL firespread disabled"/>
+	<ToolTip ItemName="ThaumicTinkerer:fireAir" ToolTip="§4ELEMENTAL firespread disabled"/>
+	
+//Gendustry Bee Combs
+
+	<ToolTip ItemName="gendustry:HoneyComb:202" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:203" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:204" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:206" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:207" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:301" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:303" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:603" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:605" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:607" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:609" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:610" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:611" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:700" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:701" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:702" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:703" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:800" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:801" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:1000" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:1001" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:1002" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:1003" ToolTip="§4Forestry can't process it"/>
+	<ToolTip ItemName="gendustry:HoneyComb:1004" ToolTip="§4Forestry can't process it"/>
 </CustomToolTips>

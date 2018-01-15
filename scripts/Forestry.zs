@@ -12,7 +12,7 @@ import mods.ic2.Compressor;
 import mods.gregtech.Fuels;
 import mods.gregtech.FluidSolidifier;
 import mods.ic2.SemiFluidGenerator;
-
+import mods.nei.NEI;
 
 
 // --- Remove Recipes ---
@@ -71,6 +71,9 @@ recipes.remove(<Forestry:mail>);
 
 // --- Trade Station
 recipes.remove(<Forestry:mail:1>);
+
+// --- Mulch
+recipes.remove(<Forestry:mulch>);
 
 
 // --- Engines ---
@@ -599,6 +602,41 @@ recipes.addShaped(<Forestry:apiculture:2>, [
 [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
 [<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
 [<ore:beeComb>, <ore:slabWood>, <ore:beeComb>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<MagicBees:comb:1>, <ore:slabWood>, <MagicBees:comb:1>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<MagicBees:comb:2>, <ore:slabWood>, <MagicBees:comb:2>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<MagicBees:comb:3>, <ore:slabWood>, <MagicBees:comb:3>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<MagicBees:comb:4>, <ore:slabWood>, <MagicBees:comb:4>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<MagicBees:comb:5>, <ore:slabWood>, <MagicBees:comb:5>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<MagicBees:comb:6>, <ore:slabWood>, <MagicBees:comb:6>]]);
+// -
+recipes.addShaped(<Forestry:apiculture:2>, [
+[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+[<Forestry:frameUntreated>, <dreamcraft:item.WoodenCasing>, <Forestry:frameUntreated>],
+[<computronics:computronics.partsForestry>, <ore:slabWood>, <computronics:computronics.partsForestry>]]);
 
 // --- Apiary
 mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 1000, 
@@ -702,6 +740,8 @@ mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576,
 <IC2:itemCasing:1>, <IC2:itemPartCircuit>, <IC2:itemCasing:1>, 
 <gregtech:gt.metaitem.01:27500>, <IC2:itemCasing:1>, <gregtech:gt.metaitem.01:27500>], 
 <dreamcraft:item.Display>, <Forestry:beealyzer>);
+// -
+recipes.addShapeless(<Forestry:beealyzer>, [<Forestry:beealyzer>]);
 
 // --- Treealyzer
 mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576, 
@@ -709,6 +749,8 @@ mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576,
 <IC2:itemCasing>, <IC2:itemPartCircuit>, <IC2:itemCasing> , 
 <gregtech:gt.metaitem.01:27500>, <IC2:itemCasing>, <gregtech:gt.metaitem.01:27500>], 
 <dreamcraft:item.Display>, <Forestry:treealyzer>);
+// -
+recipes.addShapeless(<Forestry:treealyzer>, [<Forestry:treealyzer>]);
 
 // --- Flutterlyzer
 mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576, 
@@ -1226,28 +1268,28 @@ mods.forestry.Carpenter.addRecipe(10, <liquid:molten.redstone> * 1152,
 [<gregtech:gt.metaitem.01:27032>, <gregtech:gt.metaitem.01:29032>, <gregtech:gt.metaitem.01:27032>, 
 <gregtech:gt.metaitem.01:32700>, <gregtech:gt.metaitem.02:19032>, <gregtech:gt.metaitem.01:32700>, 
 <gregtech:gt.metaitem.01:27032>, <gregtech:gt.metaitem.01:29032>, <gregtech:gt.metaitem.01:27032>],
-<gregtech:gt.metaitem.01:32710>, <Forestry:chipsets>);
+<gregtech:gt.metaitem.03:32100>, <Forestry:chipsets>);
 
 // --- Enhanced Circuit Board
 mods.forestry.Carpenter.addRecipe(20, <liquid:molten.redstone> * 1152, 
 [<gregtech:gt.metaitem.01:27300>, <gregtech:gt.metaitem.01:29300>, <gregtech:gt.metaitem.01:27300>, 
-<gregtech:gt.metaitem.01:32700>, <gregtech:gt.metaitem.02:19300>, <gregtech:gt.metaitem.01:32700>, 
+<IC2:itemPartCircuit>, <gregtech:gt.metaitem.02:19300>, <IC2:itemPartCircuit>, 
 <gregtech:gt.metaitem.01:27300>, <gregtech:gt.metaitem.01:29300>, <gregtech:gt.metaitem.01:27300>],
-<gregtech:gt.metaitem.01:32710>, <Forestry:chipsets:1>);
+<gregtech:gt.metaitem.03:32100>, <Forestry:chipsets:1>);
 
 // --- Refined Circuit Board
 mods.forestry.Carpenter.addRecipe(30, <liquid:molten.redstone> * 1152, 
 [<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:29305>, <gregtech:gt.metaitem.01:27305>, 
-<gregtech:gt.metaitem.01:32715>, <gregtech:gt.metaitem.02:19305>, <gregtech:gt.metaitem.01:32715>, 
+<gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.02:19305>, <gregtech:gt.metaitem.01:32702>, 
 <gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:29305>, <gregtech:gt.metaitem.01:27305>],
-<gregtech:gt.metaitem.01:32711>, <Forestry:chipsets:2>);
+<gregtech:gt.metaitem.03:32101>, <Forestry:chipsets:2>);
 
 // --- Intricate Circuit Board
 mods.forestry.Carpenter.addRecipe(40, <liquid:molten.redstone> * 1152, 
 [<gregtech:gt.metaitem.01:27303>, <gregtech:gt.metaitem.01:29303>, <gregtech:gt.metaitem.01:27303>, 
-<gregtech:gt.metaitem.01:32715>, <gregtech:gt.metaitem.02:19303>, <gregtech:gt.metaitem.01:32715>, 
+<gregtech:gt.metaitem.03:32079>, <gregtech:gt.metaitem.02:19303>, <gregtech:gt.metaitem.03:32079>, 
 <gregtech:gt.metaitem.01:27303>, <gregtech:gt.metaitem.01:29303>, <gregtech:gt.metaitem.01:27303>],
-<gregtech:gt.metaitem.01:32711>, <Forestry:chipsets:3>);
+<gregtech:gt.metaitem.03:32101>, <Forestry:chipsets:3>);
 
 // --- Copper Electron Tubes
 mods.forestry.ThermionicFabricator.addCast(<liquid:glass> * 2000, [
@@ -2736,7 +2778,7 @@ Assembler.addRecipe(<Forestry:sturdyMachine>, <gregtech:gt.blockcasings:1>, <IC2
 Assembler.addRecipe(<Forestry:hardenedMachine>, <Forestry:sturdyMachine>, <gregtech:gt.metaitem.01:17500> * 8, 1200, 120);
 
 // --- Peat Fireed Engine
-Assembler.addRecipe(<Forestry:engine:1>, <dreamcraft:item.EngineCore>, <Railcraft:part.plate> * 10, 800, 256);
+Assembler.addRecipe(<Forestry:engine:1>, <dreamcraft:item.EngineCore>, <gregtech:gt.metaitem.01:17032> * 10, 800, 256);
 
 // --- Biogas Engine
 Assembler.addRecipe(<Forestry:engine:2>, <dreamcraft:item.EngineCore>, <gregtech:gt.metaitem.01:17300> * 10, 800, 256);
@@ -2783,3 +2825,36 @@ mods.gregtech.Centrifuge.addRecipe([<Forestry:propolis>], null, <BiomesOPlenty:h
 
 // --- Honey Drops
 FluidSolidifier.addRecipe(<Forestry:honeyDrop>, <gregtech:gt.metaitem.01:32309> * 0, <liquid:for.honey> * 200, 400, 8);
+
+
+
+
+// --- Ordict support ---
+
+
+// --- Honey Drop
+oreDict.foodHoneydrop.add(<Forestry:honeyDrop>);
+// -
+oreDict.listAllsugar.add(<Forestry:honeyDrop>);
+
+
+// --- Renaming Stuff ---
+
+
+// --- Swarmer
+NEI.overrideName(<Forestry:alveary:2>, "Swarmer");
+
+// --- Swarmer
+NEI.overrideName(<Forestry:alveary:3>, "Alveary Fan");
+
+// --- Swarmer
+NEI.overrideName(<Forestry:alveary:4>, "Alveary Heater");
+
+// --- Swarmer
+NEI.overrideName(<Forestry:alveary:5>, "Alveary Hygroregulator");
+
+// --- Swarmer
+NEI.overrideName(<Forestry:alveary:6>, "Alveary Stabiliser");
+
+// --- Swarmer
+NEI.overrideName(<Forestry:alveary:7>, "Alveary Sieve");

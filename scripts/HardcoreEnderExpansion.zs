@@ -11,7 +11,7 @@ import mods.gregtech.Centrifuge;
 import mods.gregtech.CuttingSaw;
 import mods.ic2.Extractor;
 import mods.gregtech.Lathe;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
 
 
 
@@ -467,12 +467,12 @@ Lathe.addRecipe([<HardcoreEnderExpansion:obsidian_rod>], <HardcoreEnderExpansion
 
 
 
-// --- Macerator Recipes ---
+// --- Pulverizer Recipes ---
 
 
 
+// --- Ender Powder Dust
+Pulverizer.addRecipe([<HardcoreEnderExpansion:end_powder> * 4], <HardcoreEnderExpansion:end_powder_ore>, [10000], 300, 2);
 
-// --- Endium Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2770> * 9, <HardcoreEnderExpansion:endium_block>);
-// -
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2770>, <HardcoreEnderExpansion:endium_ingot>);
+// --- Igneous Rock
+Pulverizer.addRecipe([<HardcoreEnderExpansion:igneous_rock> * 2], <HardcoreEnderExpansion:igneous_rock_ore>, [10000], 300, 2);

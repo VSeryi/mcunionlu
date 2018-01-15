@@ -10,7 +10,7 @@ import mods.gregtech.Canner;
 import mods.gregtech.ChemicalBath;
 import mods.ic2.Compressor;
 import mods.gregtech.FormingPress;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
 import mods.gregtech.Mixer;
 import mods.gregtech.Packer;
 import mods.gregtech.Unpacker;
@@ -542,7 +542,7 @@ recipes.addShaped(<ProjRed|Exploration:projectred.exploration.peridotleggings>, 
 // --- Null Logic Routing Chip
 recipes.addShaped(<ProjRed|Core:projectred.core.part:44>, [
 [<ore:wireGt01Gold>, <ProjRed|Core:projectred.core.part>, <ProjRed|Core:projectred.core.part>],
-[<ore:wireGt01Gold>, <ore:circuitPrimitive>, <ore:circuitPrimitive>],
+[<ore:wireGt01Gold>, <ore:circuitBasic>, <ore:wireGt01Gold>],
 [<ore:screwSteel>, <ore:craftingToolScrewdriver>, <ore:screwSteel>]]);
 
 // --- RX Upgarde
@@ -859,13 +859,13 @@ recipes.addShapeless(<ProjRed|Expansion:projectred.expansion.machine2:11>, [<Bui
 // --- Upgrade Creative Mode
 mods.avaritia.ExtremeCrafting.addShaped(<ProjRed|Fabrication:projectred.fabrication.icchip:1>, [
 [<ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.PikoCircuit>, <dreamcraft:item.QuantumCircuit>, <dreamcraft:item.PikoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.QuantumCircuit>, <OpenComputers:item:43>, <dreamcraft:item.QuantumCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.PikoCircuit>, <dreamcraft:item.QuantumCircuit>, <dreamcraft:item.PikoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.NanoCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
-[<ore:plateNeutronium>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <dreamcraft:item.HighEnergyFlowCircuit>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitUltimate>, <ore:circuitSuperconductor>, <ore:circuitInfinite>, <ore:circuitSuperconductor>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitUltimate>, <ore:circuitInfinite>, <OpenComputers:item:43>, <ore:circuitInfinite>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitUltimate>, <ore:circuitSuperconductor>, <ore:circuitInfinite>, <ore:circuitSuperconductor>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:plateNeutronium>],
+[<ore:plateNeutronium>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:plateNeutronium>],
 [<ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>, <ore:plateNeutronium>]]);
 
 
@@ -942,22 +942,22 @@ Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:4>, <
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:6>, <ProjRed|Transportation:projectred.transportation.pipe:1>, <minecraft:magma_cream> * 4, <liquid:lava> * 4000, 400, 30);
 
 // --- Pressure Tube
-Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:7>, <ProjRed|Transportation:projectred.transportation.pipe>, <Railcraft:part.plate>, 200, 30);
+Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:7>, <ProjRed|Transportation:projectred.transportation.pipe>, <gregtech:gt.metaitem.01:17032>, 200, 30);
 
 // --- Pressure Resistance Tube
-Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:8>, <ProjRed|Transportation:projectred.transportation.pipe:7>, <Railcraft:part.plate:1>, 300, 30);
+Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:8>, <ProjRed|Transportation:projectred.transportation.pipe:7>, <gregtech:gt.metaitem.01:17305>, 300, 30);
 
 // --- Network Vave Pipe
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:9>, <ProjRed|Transportation:projectred.transportation.pipe>, <StevesCarts:ModuleComponents:60>, 200, 30);
 
 // --- Network Latency Pipe
-Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:10>, <ProjRed|Transportation:projectred.transportation.pipe>, <dreamcraft:item.StonePlate> * 4, 200, 30);
+Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:10>, <ProjRed|Transportation:projectred.transportation.pipe>, <gregtech:gt.metaitem.01:17299> * 4, 200, 30);
 
 // --- IC Chip
 Assembler.addRecipe(<ProjRed|Fabrication:projectred.fabrication.icchip>, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:17526>, <liquid:molten.redstone> * 144, 300, 30); 
 
 // --- IC Blue Print
-Assembler.addRecipe(<ProjRed|Fabrication:projectred.fabrication.icblueprint>, <gregtech:gt.metaitem.01:32712>, <gregtech:gt.metaitem.01:17526> * 4, <liquid:molten.redstone> * 144, 600, 30);
+Assembler.addRecipe(<ProjRed|Fabrication:projectred.fabrication.icblueprint>, <gregtech:gt.metaitem.01:32711>, <gregtech:gt.metaitem.01:17526> * 4, <liquid:molten.redstone> * 144, 600, 30);
 
 // --- Recipe Plan
 Assembler.addRecipe(<ProjRed|Expansion:projectred.expansion.plan>, <gregtech:gt.metaitem.01:18879>, <gregtech:gt.integrated_circuit:1> * 0, 100, 8);
@@ -1088,7 +1088,7 @@ Compressor.addRecipe(<ProjRed|Core:projectred.core.part:55>, <ProjRed|Core:proje
 
 
 // --- Circuit Plate
-FormingPress.addRecipe(<ProjRed|Core:projectred.core.part>, <minecraft:stone_pressure_plate>, <dreamcraft:item.SimpleCircuitBoard>, 100, 16);
+FormingPress.addRecipe(<ProjRed|Core:projectred.core.part> * 4, <minecraft:stone_pressure_plate> * 4, <IC2:itemPartCircuit>, 400, 16);
 
 // --- Silicon Ship
 FormingPress.addRecipe(<ProjRed|Core:projectred.core.part:7>, <ProjRed|Core:projectred.core.part>, <ProjRed|Core:projectred.core.part:13>, 600, 30);
@@ -1111,11 +1111,11 @@ FormingPress.addRecipe(<ProjRed|Core:projectred.core.part:59>, <ProjRed|Core:pro
 
 
 
-// --- Macerator Recipes --- 
+// --- Pulverizer Recipes --- 
 
 
 // --- Electrotine Dust
-Macerator.addRecipe(<ProjRed|Core:projectred.core.part:56> * 9, <ProjRed|Exploration:projectred.exploration.stone:11>);
+Pulverizer.addRecipe([<ProjRed|Core:projectred.core.part:56> * 9], <ProjRed|Exploration:projectred.exploration.stone:11>, [10000], 300, 2);
 
 
 
@@ -1341,6 +1341,8 @@ Unpacker.addRecipe(<dreamcraft:item.ElectrotineWire>, <gregtech:gt.metaitem.01:1
 mods.chisel.Groups.addVariation("ruby", <BiomesOPlenty:gemOre:3>);
 // -
 mods.chisel.Groups.addVariation("ruby", <gregtech:gt.blockgem1:9>);
+// -
+mods.chisel.Groups.addVariation("ruby", <gregtech:gt.blockgem2:11>);
 // -
 mods.chisel.Groups.addVariation("ruby", <ProjRed|Exploration:projectred.exploration.stone:5>);
 

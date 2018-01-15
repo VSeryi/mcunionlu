@@ -731,11 +731,11 @@ recipes.addShaped(<StorageDrawers:upgrade:6>, [
 [<StorageDrawers:upgradeTemplate>, <ore:plateTitanium>, <StorageDrawers:upgradeTemplate>],
 [<ore:plateEmerald>, <ore:stickEmerald>, <ore:plateEmerald>]]);
 
-// --- Compressed Drawers
-recipes.addShaped(<StorageDrawers:compDrawers>, [
-[<ore:plateStone>, <ore:plateStone>, <ore:plateStone>], 
-[<minecraft:piston>, <ore:drawerBasic>, <minecraft:piston>], 
-[<ore:plateObsidian>, <ore:plateIron>, <ore:plateObsidian>]]);
+// --- Compacting Drawers
+//recipes.addShaped(<StorageDrawers:compDrawers>, [
+//[<ore:plateStone>, <ore:plateStone>, <ore:plateStone>], 
+//[<minecraft:piston>, <ore:drawerBasic>, <minecraft:piston>], 
+//[<ore:plateObsidian>, <ore:plateIron>, <ore:plateObsidian>]]);
 
 // --- Controler
 recipes.addShaped(<StorageDrawers:controller>, [
@@ -1032,6 +1032,12 @@ for i, logs in slabsV {
     recipes.remove(plank);
     recipes.addShaped(plank, [[<ore:stickWood>, logs, <ore:stickWood>],[logs, logs, logs],[<ore:stickWood>, logs, <ore:stickWood>]]);
 }
+
+// --- Upgrade Template
+recipes.addShaped(<StorageDrawers:upgradeTemplate>, [
+[<ore:screwSteel>, <minecraft:piston>, <ore:screwSteel>],
+[<ore:screwSteel>, <ore:drawerBasic>, <ore:screwSteel>],
+[null, <ore:craftingToolScrewdriver>, null]]);
 
 
 // --- Assembler recipes ---

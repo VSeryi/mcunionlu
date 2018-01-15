@@ -434,8 +434,8 @@ mods.thaumcraft.Research.addResearch("INFUSEDPOTIONS", "TT_CATEGORY", "auram 15,
 mods.thaumcraft.Research.addPrereq("INFUSEDPOTIONS", "INFUSION", false);
 mods.thaumcraft.Research.addPrereq("INFUSEDPOTIONS", "INFUSEDSEED", false);
 mods.thaumcraft.Research.setConcealed("INFUSEDPOTIONS", true);
-game.setLocalization("tc.research_name.INFUSEDPOTIONS", "Infused Poitions");
-game.setLocalization("tc.research_text.INFUSEDPOTIONS", "[TT] Grwoing your Poitions.");
+game.setLocalization("tc.research_name.INFUSEDPOTIONS", "Infused Potions");
+game.setLocalization("tc.research_text.INFUSEDPOTIONS", "[TT] Growing your Potions.");
 mods.thaumcraft.Research.addPage("INFUSEDPOTIONS", "tt.research.page.INFUSEDPOTIONS.1");
 game.setLocalization("tt.research.page.INFUSEDPOTIONS.1", "Crops will also drain tendencies from nearby crops. A crop will drain points from an adjacent crop with an equal or greater number of points. Some plants will create special grain, which can be made into potions. <BR> Earth infused potions summons barriers between mobs that attack you. <BR> Fire infused potions trap your enemies in a sphere of fire. <BR> Air infused potions send your enemies up in the air. <BR> Water infused potions chill surrounding lava.");
 mods.thaumcraft.Crucible.addRecipe("INFUSEDPOTIONS", <ThaumicTinkerer:infusedPotion>, <ThaumicTinkerer:infusedGrain>, "auram 16, aer 16, praecantatio 8");
@@ -466,7 +466,7 @@ mods.thaumcraft.Research.setComplexity("FUNNEL", 3);
 // --- Thaumic Restorer
 mods.thaumcraft.Research.addPrereq("REPAIRER", "INFUSION", false);
 mods.thaumcraft.Infusion.addRecipe("REPAIRER", <Thaumcraft:blockCosmeticSolid:4>,
-[<gregtech:gt.metaitem.01:17330>, <Railcraft:part.plate>, <dreamcraft:item.ReinforcedGlassPlate>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <gregtech:gt.metaitem.01:17500>, <dreamcraft:item.ReinforcedGlassPlate>, <gregtech:gt.metaitem.01:17086>],
+[<gregtech:gt.metaitem.01:17330>, <gregtech:gt.metaitem.01:17032>, <dreamcraft:item.ReinforcedGlassPlate>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <gregtech:gt.metaitem.01:17500>, <dreamcraft:item.ReinforcedGlassPlate>, <gregtech:gt.metaitem.01:17086>],
 "fabrico 32, instrumentum 32, ordo 16, praecantatio 16, potentia 8", <ThaumicTinkerer:repairer>, 8);
 // -
 mods.thaumcraft.Research.setAspects("REPAIRER", "instrumentum 15, fabrico 12, ordo 9, potentia 6, praecantatio 3");

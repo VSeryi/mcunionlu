@@ -10,7 +10,7 @@ import mods.gregtech.Centrifuge;
 import mods.gregtech.FluidExtractor;
 import mods.gregtech.FluidCanner;
 import mods.gregtech.FluidSolidifier;
-import mods.ic2.Macerator;
+import mods.gregtech.Pulverizer;
 
 
 
@@ -105,6 +105,9 @@ recipes.addShapeless(<BiomesOPlenty:planks:14> * 2, [<BiomesOPlenty:logs4:3>]);
 // --- Barley
 recipes.removeShaped(<minecraft:wheat>, [[<BiomesOPlenty:plants:6>, <BiomesOPlenty:plants:6>, <BiomesOPlenty:plants:6>]]);
 
+// --- Bucket Glitch
+recipes.addShapeless(<minecraft:bucket>, [<BiomesOPlenty:bopBucket>]); 
+
 // --- Lime Stone
 recipes.addShaped(<BiomesOPlenty:rocks> * 8, [
 [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
@@ -115,6 +118,19 @@ recipes.addShapeless(<BiomesOPlenty:rocks:1>, [<BiomesOPlenty:rocks>]);
 
 // --- Polish Lime Stone
 recipes.addShapeless(<BiomesOPlenty:rocks>, [<BiomesOPlenty:rocks:1>]);
+
+// --- Glowing Coral
+recipes.addShapeless(<BiomesOPlenty:coral1:15>, [<BiomesOPlenty:coral2:8>, <ore:dustGlowstone>]);
+
+// --- Pink Coral
+recipes.addShapeless(<BiomesOPlenty:coral1:12>, [<BiomesOPlenty:coral2:8>, <ore:dustGlowstone>, <ore:dyePink>]);
+
+// --- Orange Coral
+recipes.addShapeless(<BiomesOPlenty:coral1:13>, [<BiomesOPlenty:coral2:8>, <ore:dustGlowstone>, <ore:dyeOrange>]);
+
+// --- Blue Coral
+recipes.addShapeless(<BiomesOPlenty:coral1:14>, [<BiomesOPlenty:coral2:8>, <ore:dustGlowstone>, <ore:dyeBlue>]);
+
 
 
 
@@ -151,9 +167,13 @@ mods.gregtech.Centrifuge.addRecipe([<Forestry:beeswax>, <Forestry:honeyDrop>], n
 
 
 // --- Hardened Ice
-
 Compressor.addRecipe(<BiomesOPlenty:hardIce>, <minecraft:packed_ice> * 16);
 
+// --- Medium Bone Segment
+Compressor.addRecipe(<BiomesOPlenty:bones:1>, <BiomesOPlenty:bones> * 2);
+
+// --- Large Bone Segment
+Compressor.addRecipe(<BiomesOPlenty:bones:2>, <BiomesOPlenty:bones:1> * 2);
 
 
 // --- Fluid Extractor Recipes ---
@@ -187,15 +207,15 @@ FluidSolidifier.addRecipe(<BiomesOPlenty:honeyBlock>, <gregtech:gt.metaitem.01:3
 
 
 
-// --- Macerator Recipes ---
+// --- Pulverizer Recipes ---
 
 
 
 // --- Small Bone Segment
-Macerator.addRecipe(<minecraft:dye:15> * 5, <BiomesOPlenty:bones>);
+Pulverizer.addRecipe([<minecraft:dye:15> * 5], <BiomesOPlenty:bones>, [10000], 300, 2);
 
 // --- Medium Bone Segment
-Macerator.addRecipe(<minecraft:dye:15> * 10, <BiomesOPlenty:bones:1>);
+Pulverizer.addRecipe([<minecraft:dye:15> * 10], <BiomesOPlenty:bones:1>, [10000], 300, 2);
 
 // --- Large Bone Segment
-Macerator.addRecipe(<minecraft:dye:15> * 15, <BiomesOPlenty:bones:2>);
+Pulverizer.addRecipe([<minecraft:dye:15> * 15], <BiomesOPlenty:bones:2>, [10000], 300, 2);
