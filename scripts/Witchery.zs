@@ -64,7 +64,7 @@ mods.thaumcraft.Research.addTab("WITHERY", "dreamcraft", "textures/thaumcraft/ic
 game.setLocalization("tc.research_category.WITHERY", "Witchery");
 
 // --- Warmwood
-recipes.addShaped(<witchery:ingredient:111>, [
+recipes.addShaped(<witchery:seedswormwood>, [
 [<witchery:mutator>.transformDamage(), <witchery:somniancotton>, null],
 [<witchery:somniancotton>, <minecraft:wheat>, <witchery:somniancotton>],
 [null, <witchery:somniancotton>, null]]);
@@ -103,7 +103,7 @@ game.setLocalization("Witchery.research_page.OVEN.2", "Clay jars must be placed 
 mods.thaumcraft.Arcane.addShaped("OVEN", <witchery:witchesovenidle>, "aer 25, ignis 25, terra 25", [
 [<ore:plateSteel>, <ore:plateThaumium>, <ore:plateSteel>],
 [<dreamcraft:item.SteelBars>, <Thaumcraft:blockMetalDevice>, <dreamcraft:item.SteelBars>],
-[<ExtraUtilities:microblocks:1>.withTag({mat: "Railcraft:cube_2"}), <IC2:blockMachine:1>, <ExtraUtilities:microblocks:1>.withTag({mat: "Railcraft:cube_2"})]]);
+[<IC2:blockFenceIron>, <IC2:blockMachine:1>, <IC2:blockFenceIron>]]);
 mods.thaumcraft.Research.addArcanePage("OVEN", <witchery:witchesovenidle>);
 
 // --- Kettle

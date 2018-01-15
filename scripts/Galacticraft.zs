@@ -708,15 +708,15 @@ recipes.addShaped(<GalacticraftCore:item.basicItem:1>, [
 
 // --- Energy Storage Module
 recipes.addShaped(<GalacticraftCore:tile.machineTiered>, [
-[CompressedSteel, <IC2:itemBatChargeRE:*>, CompressedSteel],
+[CompressedSteel, <IC2:itemBatChargeRE:26>, CompressedSteel],
 [<ore:cableGt01AnyCopper>, <gregtech:gt.blockmachines:11>, <ore:cableGt01AnyCopper>],
-[BWafer, <IC2:itemBatChargeRE:*>, BWafer]]);
+[BWafer, <IC2:itemBatChargeRE:26>, BWafer]]);
 
 // --- Energy Storage Cluster
 recipes.addShaped(<GalacticraftCore:tile.machineTiered:8>, [
-[CompressedTi, <IC2:itemBatChargeAdv:*>, CompressedTi],
+[CompressedTi, <IC2:itemBatChargeAdv:26>, CompressedTi],
 [<ore:cableGt02Gold>, <gregtech:gt.blockmachines:12>, <ore:cableGt02Gold>],
-[AdvWafer, <IC2:itemBatChargeAdv:*>, AdvWafer]]);
+[AdvWafer, <IC2:itemBatChargeAdv:26>, AdvWafer]]);
 
 // --- Spin Truster
 recipes.addShaped(<GalacticraftCore:tile.spinThruster>, [
@@ -1031,12 +1031,12 @@ recipes.addShaped(<GalacticraftCore:item.buggymat:2>, [
 recipes.addShaped(<GalacticraftCore:item.basicItem:19>, [
 [CompressedAl, <gregtech:gt.metaitem.01:32690>, CompressedAl],
 [BWafer, <gregtech:gt.metaitem.01:32740>, BWafer],
-[CompressedTin, <GalacticraftCore:item.battery:100>, CompressedTin]]);
+[CompressedTin, <GalacticraftCore:item.battery>, CompressedTin]]);
 // -
 recipes.addShaped(<GalacticraftCore:item.basicItem:19>, [
 [CompressedAl, <gregtech:gt.metaitem.01:32690>, CompressedAl],
 [BWafer, <gregtech:gt.metaitem.01:32740>, BWafer],
-[CompressedTin, <GalacticraftCore:item.battery:1>, CompressedTin]]);
+[CompressedTin, <GalacticraftCore:item.battery:100>, CompressedTin]]);
 
 // --- Walk away
 recipes.addShaped(<GalacticraftMars:tile.walkway> * 2, [

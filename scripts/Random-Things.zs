@@ -151,9 +151,6 @@ recipes.addShaped(<RandomThings:dyeingMachine>, [
 // --- Player Interface
 recipes.addShapeless(<RandomThings:playerinterface>, [<RIO:tile.remote_interface>, <RandomThings:ingredient>]);
 
-// --- Void Filer
-recipes.addShapeless(<RandomThings:dropFilter:1>, [<OpenBlocks:devnull>]);
-
 // --- Void Stone
 recipes.addShapeless(<RandomThings:voidStone>, [<ExtraUtilities:trashcan>, <minecraft:ender_pearl>]);
 
@@ -176,16 +173,16 @@ Assembler.addRecipe(<RandomThings:fluidDisplay> * 8, <TConstruct:GlassPane> * 16
 Assembler.addRecipe(<RandomThings:advancedFluidDisplay>, <RandomThings:fluidDisplay>, <gregtech:gt.integrated_circuit:1> * 0, <liquid:refinedglue> * 144, 200, 30);
 
 // --- Block Filter
-Assembler.addRecipe(<RandomThings:filter>, <minecraft:iron_bars>, <minecraft:stone>, 200, 30);
+Assembler.addRecipe(<RandomThings:filter>, <gregtech:gt.metaitem.01:32729>, <minecraft:stone>, 200, 30);
 
 // --- Item Filter
-Assembler.addRecipe(<RandomThings:filter:1>, <minecraft:iron_bars>, <minecraft:iron_ingot>, 200, 30);
+Assembler.addRecipe(<RandomThings:filter:1>, <gregtech:gt.metaitem.01:32729>, <minecraft:iron_ingot>, 200, 30);
 
 // --- Entity Filter
-Assembler.addRecipe(<RandomThings:filter:2>, <minecraft:iron_bars>, <minecraft:porkchop>, 200, 30);
+Assembler.addRecipe(<RandomThings:filter:2>, <gregtech:gt.metaitem.01:32729>, <minecraft:porkchop>, 200, 30);
 
 // --- Position Filter
-Assembler.addRecipe(<RandomThings:filter:3>, <minecraft:iron_bars>, <minecraft:ender_pearl>, 200, 120);
+Assembler.addRecipe(<RandomThings:filter:3>, <gregtech:gt.metaitem.01:32729>, <minecraft:ender_pearl>, 200, 120);
 
 // --- Wireless Lever
 Assembler.addRecipe(<RandomThings:wirelessLever>, <minecraft:lever>, <minecraft:redstone_block>, <liquid:ender> * 1000, 300, 30);
@@ -193,11 +190,14 @@ Assembler.addRecipe(<RandomThings:wirelessLever>, <minecraft:lever>, <minecraft:
 // --- Whitestone
 Assembler.addRecipe(<RandomThings:whitestone>, <TwilightForest:item.charmOfKeeping3> * 4, <gregtech:gt.integrated_circuit:4> * 0,  <liquid:ender> * 4000, 1200, 480);
 
-// --- Whitestone
-Assembler.addRecipe(<RandomThings:bloodStone>, <Railcraft:firestone.refined>, <gregtech:gt.integrated_circuit:1> * 0,  <liquid:molten.blaze> * 1296, 1200, 30);
+// --- Bloodstone
+//Assembler.addRecipe(<RandomThings:bloodStone>, <Railcraft:firestone.refined>, <gregtech:gt.integrated_circuit:1> * 0,  <liquid:molten.blaze> * 1296, 1200, 30);
 
 // --- Spectre Iron
 Assembler.addRecipe(<RandomThings:ingredient:4>, <minecraft:iron_ingot>, <RandomThings:ingredient:3>, 600, 120);
+
+// --- Void Filer
+Assembler.addRecipe(<RandomThings:dropFilter:1>, <ExtraUtilities:trashcan>, <gregtech:gt.integrated_circuit:1> * 0, <liquid:ender> * 250, 300, 30);
 
 
 

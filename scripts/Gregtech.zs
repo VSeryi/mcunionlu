@@ -444,41 +444,41 @@ recipes.removeShapeless(<gregtech:gt.metaitem.01:2536> * 9, [<gregtech:gt.blockg
 // --- Diamond Sword Blade
 recipes.addShaped(<gregtech:gt.metaitem.02:500>, [
 [null, <gregtech:gt.metaitem.01:17500>, null],
-[<gregtech:gt.metatool.01:18>, <gregtech:gt.metaitem.01:17500>, <gregtech:gt.metatool.01:12>],
+[<ore:craftingToolFile>, <gregtech:gt.metaitem.01:17500>, <ore:craftingToolHardHammer>],
 [null, null, null]]);
 
 // --- Diamond Pickaxe Head
 recipes.addShaped(<gregtech:gt.metaitem.02:1500>, [
 [<gregtech:gt.metaitem.01:17500>, <ore:gemDiamond>, <ore:gemDiamond>],
-[<gregtech:gt.metatool.01:18>, null, <gregtech:gt.metatool.01:12>],
+[<ore:craftingToolFile>, null, <ore:craftingToolHardHammer>],
 [null, null, null]]);
 
 // --- Diamond Shovel Head
 recipes.addShaped(<gregtech:gt.metaitem.02:2500>, [
-[<gregtech:gt.metatool.01:18>, <gregtech:gt.metaitem.01:17500>, <gregtech:gt.metatool.01:12>],
+[<ore:craftingToolFile>, <gregtech:gt.metaitem.01:17500>, <ore:craftingToolHardHammer>],
 [null, null, null],
 [null, null, null]]);
 
 // --- Diamond Axe Head
 recipes.addShaped(<gregtech:gt.metaitem.02:3500>, [
-[<gregtech:gt.metaitem.01:17500>, <ore:gemDiamond>, <gregtech:gt.metatool.01:12>],
+[<gregtech:gt.metaitem.01:17500>, <ore:gemDiamond>, <ore:craftingToolHardHammer>],
 [<gregtech:gt.metaitem.01:17500>, null, null],
-[<gregtech:gt.metatool.01:18>, null, null]]);
+[<ore:craftingToolFile>, null, null]]);
 
 // --- Diamond Hoe Head
 recipes.addShaped(<gregtech:gt.metaitem.02:4500>, [
-[<gregtech:gt.metaitem.01:17500>, <ore:gemDiamond>, <gregtech:gt.metatool.01:12>],
-[<gregtech:gt.metatool.01:18>, null, null],
+[<gregtech:gt.metaitem.01:17500>, <ore:gemDiamond>, <ore:craftingToolHardHammer>],
+[<ore:craftingToolFile>, null, null],
 [null, null, null]]);
 
 // --- Wood Ring
 recipes.addShaped(<gregtech:gt.metaitem.01:28809>, [
-[<gregtech:gt.metatool.01:34>, null, null],
+[<ore:craftingToolKnife>, null, null],
 [null, <gregtech:gt.metaitem.01:17809>, null]]);
 
 // --- Glass Dust
-recipes.addShapeless(<gregtech:gt.metaitem.01:2890>, [<gregtech:gt.metatool.01:24>, <TConstruct:GlassBlock>]);
-recipes.addShapeless(<gregtech:gt.metaitem.01:1890>, [<gregtech:gt.metatool.01:24>, <TConstruct:GlassPane>]);
+recipes.addShapeless(<gregtech:gt.metaitem.01:2890>, [<ore:craftingToolMortar>, <TConstruct:GlassBlock>]);
+recipes.addShapeless(<gregtech:gt.metaitem.01:1890>, [<ore:craftingToolMortar>, <TConstruct:GlassPane>]);
 
 // --- Flient Sword
 recipes.addShaped(<gregtech:gt.metatool.01>.withTag({ench: [{lvl: 1 as short, id: 20 as short}], "GT.ToolStats": {PrimaryMaterial: "Flint", MaxDamage: 6400 as long, SecondaryMaterial: "Wood"}}), [
@@ -1318,9 +1318,6 @@ mods.tconstruct.Casting.addTableRecipe(<gregtech:gt.metaitem.01:32375>, <liquid:
 // --- Circuit Tooltips for Tiers ---
 
 
-
-
-
 // --- LV Tier
 <IC2:itemPartCircuit>.addTooltip(format.red("LV-tier"));
 <gregtech:gt.metaitem.01:32701>.addTooltip(format.gold("LV-tier"));
@@ -1362,5 +1359,87 @@ mods.tconstruct.Casting.addTableRecipe(<gregtech:gt.metaitem.01:32375>, <liquid:
 <gregtech:gt.metaitem.03:32091>.addTooltip(format.blue("UV-tier"));
 <gregtech:gt.metaitem.03:32094>.addTooltip(format.darkPurple("UV-tier"));
 
-// --- MAX Tier
-<gregtech:gt.metaitem.03:32095>.addTooltip(format.darkPurple("MAX-tier"));
+// --- UHV Tier
+<gregtech:gt.metaitem.03:32095>.addTooltip(format.darkPurple("UHV-tier"));
+
+
+
+// --- Batteries Tooltips for Tiers ---
+
+
+// --- LV Tier
+<gregtech:gt.metaitem.01:32510>.addTooltip(format.red("LV-tier"));
+<gregtech:gt.metaitem.01:32511>.addTooltip(format.gold("LV-tier"));
+<gregtech:gt.metaitem.01:32517>.addTooltip(format.yellow("LV-tier"));
+<gregtech:gt.metaitem.01:32518>.addTooltip(format.darkRed("LV-tier"));
+<gregtech:gt.metaitem.01:32519>.addTooltip(format.green("LV-tier"));
+
+// --- MV Tier
+<gregtech:gt.metaitem.01:32520>.addTooltip(format.red("MV-tier"));
+<gregtech:gt.metaitem.01:32521>.addTooltip(format.gold("MV-tier"));
+<gregtech:gt.metaitem.01:32527>.addTooltip(format.yellow("MV-tier"));
+<gregtech:gt.metaitem.01:32528>.addTooltip(format.darkRed("MV-tier"));
+<gregtech:gt.metaitem.01:32529>.addTooltip(format.green("MV-tier"));
+
+// --- HV Tier
+<gregtech:gt.metaitem.01:32530>.addTooltip(format.red("HV-tier"));
+<gregtech:gt.metaitem.01:32531>.addTooltip(format.gold("HV-tier"));
+<gregtech:gt.metaitem.01:32537>.addTooltip(format.yellow("HV-tier"));
+<gregtech:gt.metaitem.01:32538>.addTooltip(format.darkRed("HV-tier"));
+<gregtech:gt.metaitem.01:32539>.addTooltip(format.green("HV-tier"));
+<IC2:itemBatCrystal:*>.addTooltip(format.darkBlue("HV-tier"));
+
+// --- EV Tier
+<gregtech:gt.metaitem.01:32540>.addTooltip(format.green("EV-tier"));
+<IC2:itemBatLamaCrystal:*>.addTooltip(format.darkBlue("EV-tier"));
+
+// --- IV Tier
+<gregtech:gt.metaitem.01:32545>.addTooltip(format.green("IV-tier"));
+<gregtech:gt.metaitem.01:32597>.addTooltip(format.gold("IV-tier"));
+
+// --- LuV Tier
+<gregtech:gt.metaitem.01:32550>.addTooltip(format.green("LuV-tier"));
+<gregtech:gt.metaitem.01:32599>.addTooltip(format.gold("LuV-tier"));
+
+// --- ZPM Tier
+<gregtech:gt.metaitem.01:32555>.addTooltip(format.green("ZPM-tier"));
+<gregtech:gt.metaitem.01:32736>.addTooltip(format.gold("ZPM-tier"));
+<gregtech:gt.metaitem.01:32598>.addTooltip(format.red("ZPM-tier"));
+
+// --- UV Tier
+<gregtech:gt.metaitem.01:32560>.addTooltip(format.green("UV-tier"));
+<gregtech:gt.metaitem.01:32737>.addTooltip(format.gold("UV-tier"));
+<gregtech:gt.metaitem.01:32605>.addTooltip(format.red("UV-tier"));
+
+// --- UHV Tier
+<gregtech:gt.metaitem.01:32570>.addTooltip(format.green("UHV-tier"));
+
+// --- UEV Tier
+<gregtech:gt.metaitem.01:32575>.addTooltip(format.green("UEV-tier"));
+
+// --- UIV Tier
+<gregtech:gt.metaitem.01:32580>.addTooltip(format.green("UIV-tier"));
+
+// --- UMV Tier
+<gregtech:gt.metaitem.01:32585>.addTooltip(format.green("UMV-tier"));
+<gregtech:gt.metaitem.01:32609>.addTooltip(format.gold("UMV-tier"));
+
+// --- UXV Tier
+<gregtech:gt.metaitem.01:32590>.addTooltip(format.green("UXV-tier"));
+
+
+
+// --- Seismic Prospector Tooltips ---
+
+
+//--- Seismic Prospector LV
+<gregtech:gt.blockmachines:1156>.addTooltip("Work Area 16 Blocks Radius = 4 Chunks");
+
+//--- Seismic Prospector MV
+<gregtech:gt.blockmachines:2100>.addTooltip("Work Area 32 Blocks Radius = 16 Chunks");
+
+//--- Seismic Prospector HV
+<gregtech:gt.blockmachines:2101>.addTooltip("Work Area 48 Blocks Radius = 36 Chunks");
+
+//--- Seismic Prospector EV
+<gregtech:gt.blockmachines:1173>.addTooltip("Work Area 128 Blocks Radius = 256 Chunks");

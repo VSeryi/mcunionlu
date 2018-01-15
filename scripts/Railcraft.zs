@@ -569,6 +569,15 @@ mods.railcraft.BlastFurnace.removeRecipe(<gregtech:gt.metaitem.01:11322>);
 // --- Magnetic Steel
 mods.railcraft.BlastFurnace.removeRecipe(<gregtech:gt.metaitem.01:11355>);
 
+// --- Electric Steel
+mods.railcraft.BlastFurnace.removeRecipe(<gregtech:gt.metaitem.01:11365>);
+
+// --- Redstonealloy
+mods.railcraft.BlastFurnace.removeRecipe(<gregtech:gt.metaitem.01:11381>);
+
+// --- Soularium
+mods.railcraft.BlastFurnace.removeRecipe(<gregtech:gt.metaitem.01:11379>);
+
 // --- All Recipes
 mods.railcraft.RockCrusher.removeRecipe(<*>);
 
@@ -1033,11 +1042,11 @@ recipes.addShaped(<Railcraft:machine.gamma:5>, [
 recipes.addShaped(<Railcraft:machine.gamma:6>, [
 [SteelPlate, <gregtech:gt.blockmachines:1426>, SteelPlate],
 [RedAlloyPlate, <Railcraft:detector:10>, RedAlloyPlate],
-[SteelPlate, <IC2:itemBatLamaCrystal:*>, SteelPlate]]);
+[SteelPlate, <IC2:itemAdvBat:26>, SteelPlate]]);
 
 // --- Energy Unloder ---
 recipes.addShaped(<Railcraft:machine.gamma:7>, [
-[SteelPlate, <IC2:itemBatLamaCrystal:*>, SteelPlate],
+[SteelPlate, <IC2:itemAdvBat:26>, SteelPlate],
 [RedAlloyPlate, <Railcraft:detector:10>, RedAlloyPlate],
 [SteelPlate, <gregtech:gt.blockmachines:1426>, SteelPlate]]);
 
@@ -1066,9 +1075,9 @@ recipes.addShaped(<Railcraft:machine.epsilon:4>, [
 
 // --- Force Track Emitter ---
 recipes.addShaped(<Railcraft:machine.epsilon:3>, [
-[IridiumPlate, DiamondLens, IridiumPlate],
-[DiamondLens, <ore:batteryUltimate>, DiamondLens],
-[IridiumPlate, DiamondLens, IridiumPlate]]);
+[DiamondLens, <ore:circuitAdvanced>, DiamondLens],
+[<gregtech:gt.metaitem.01:32682>, <gregtech:gt.blockmachines:13>, <gregtech:gt.metaitem.01:32682>],
+[<ore:cableGt01Gold>, <ore:circuitAdvanced>, <ore:cableGt01Gold>]]);
 
 // --- Work Cart ---
 recipes.addShaped(<Railcraft:cart.work>, [
@@ -1342,7 +1351,7 @@ recipes.addShaped(<Railcraft:brick.infernal:2> * 2, [
 // --- Lapatron Loader Upgrade
 recipes.addShaped(<Railcraft:upgrade.lapotron>, [
 [<dreamcraft:item.AluminiumItemCasing>, <ore:circuitAdvanced>, <dreamcraft:item.AluminiumItemCasing>],
-[<ore:cableGt02Platinum>, <IC2:itemBatLamaCrystal:*>, <ore:cableGt02Platinum>],
+[<ore:cableGt02Platinum>, <IC2:itemBatLamaCrystal:26>, <ore:cableGt02Platinum>],
 [<dreamcraft:item.AluminiumItemCasing>, <ore:circuitAdvanced>, <dreamcraft:item.AluminiumItemCasing>]]);
 
 // --- Cargo Cart
@@ -1555,7 +1564,7 @@ Compressor.addRecipe(CoalCokeBlock, CoalCoke * 9);
 Compressor.addRecipe(ConcreteBlock, ConcreteSlab * 2);
 
 // --- Creosote Wood Slab ---
-Compressor.addRecipe(CreosoteWood, CreosoteWoodSlab * 2);
+Compressor.addRecipe(CreosoteWood, CreosoteWoodSlab * 4);
 
 // --- Advanced Coke Oven Bricks ---
 Compressor.addRecipe(<Railcraft:machine.alpha:12>, <dreamcraft:item.AdvancedCokeOvenBrick> * 4);
