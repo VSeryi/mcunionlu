@@ -8,14 +8,14 @@ guiScale:0
 particles:2
 bobView:true
 anaglyph3d:false
-advancedOpengl:false
+advancedOpengl:true
 maxFps:260
 fboEnable:true
 difficulty:2
 fancyGraphics:false
 ao:0
 clouds:true
-resourcePacks:[]
+resourcePacks:["HEE Music v1.0.zip"]
 lastServer:
 lang:en_US
 chatVisibility:0
@@ -39,7 +39,7 @@ chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
 showInventoryAchievementHint:false
-mipmapLevels:4
+mipmapLevels:0
 anisotropicFiltering:1
 streamBytesPerPixel:0.5
 streamMicVolume:1.0
@@ -106,8 +106,8 @@ key_HoloInventory:0
 key_openblocks.keybind.vario_switch:47
 key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0
-key_keys.adventureBackpack.openBackpackInventory:48
-key_keys.adventureBackpack.switchHoseTank:49
+key_keys.adventureBackpack.openInventory:48
+key_keys.adventureBackpack.toggleActions:49
 key_Baubles Inventory:48
 key_Change Wand Focus:33
 key_Activate Hover Harness:35
@@ -118,13 +118,13 @@ key_waila.keybind.liquid:80
 key_waila.keybind.recipe:81
 key_waila.keybind.usage:75
 key_Automagy.key.focusCrafting:46
-key_bbw.key.mode:50
-key_bbw.key.fluidmode:33
-key_ttmisc.toggleArmor:22
 key_key.tarmor:24
 key_key.tgoggles:34
 key_key.tbelt:48
 key_key.tzoom:44
+key_bbw.key.mode:50
+key_bbw.key.fluidmode:33
+key_ttmisc.toggleArmor:22
 key_Glider Toggle:34
 key_Sound Locator:38
 key_Night Vision:25
@@ -137,6 +137,7 @@ key_Toggle Electromagnet:0
 key_[GC] Galaxy Map:50
 key_[GC] Open Spaceship Inventory:33
 key_[GC] Toggle Sensor Goggles Mode:37
+key_key.craftingGrid:46
 key_key.materialCosts:56
 key_key.clipboardPaste:210
 key_key.placeItem:25
@@ -150,7 +151,6 @@ key_Change Arcane Lens:47
 key_Activate Morphic Fingers:49
 key_Toggle Spider Climb:46
 key_Toggle Chameleon Skin:45
-key_key.craftingGrid:46
 key_key.cofh.empower:47
 key_key.cofh.multimode:46
 key_key.control:29
@@ -161,7 +161,7 @@ key_railcraft.keybind.loco.whistle:49
 key_key.journeymap.map_toggle:36
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
-key_key.journeymap.minimap_type:26
+key_key.journeymap.minimap_type:27
 key_key.journeymap.minimap_type:27
 key_key.journeymap.minimap_preset:43
 key_key.journeymap.create_waypoint:78
