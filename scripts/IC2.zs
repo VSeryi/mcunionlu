@@ -845,7 +845,7 @@ recipes.addShaped(<IC2:blockElectric>, [
 // --- CESU
 recipes.addShaped(<IC2:blockElectric:7>, [
 [<ore:cableGt01AnyCopper>, <ore:plateBronze>, <ore:cableGt01AnyCopper>],
-[<IC2:itemAdvBat:26>, <gregtech:gt.blockmachines:12>, <IC2:itemAdvBat:261>],
+[<IC2:itemAdvBat:26>, <gregtech:gt.blockmachines:12>, <IC2:itemAdvBat:26>],
 [<ore:plateBronze>, <IC2:itemAdvBat:26>, <ore:plateBronze>]]);
 
 // --- MFE
@@ -1200,7 +1200,7 @@ recipes.addShaped(<IC2:itemArmorAlloyChestplate>, [
 [<ore:plateAlloyAdvanced>, <Railcraft:armor.steel.plate>, <ore:plateAlloyAdvanced>]]);
 
 // --- CF Backpack
-recipes.addShaped(<IC2:itemArmorCFPack>, [
+recipes.addShaped(<IC2:itemArmorCFPack:26>, [
 [<IC2:itemCasing:5>, <ore:craftingToolHardHammer>, <IC2:itemCasing:5>],
 [<BuildCraft|Factory:tankBlock>, <ore:screwSteel>, <BuildCraft|Factory:tankBlock>],
 [<IC2:itemCasing:5>, <ore:craftingToolScrewdriver>, <IC2:itemCasing:5>]]);
@@ -1723,9 +1723,9 @@ Assembler.addRecipe(<IC2:blockReactorAccessHatch>, <IC2:blockreactorvessel>, <gr
 Assembler.addRecipe(<IC2:blockReactorRedstonePort>, <IC2:blockreactorvessel>, <gregtech:gt.metaitem.01:32731>, 400, 120);
 
 // --- Luminator
-Assembler.addRecipe(<IC2:blockLuminatorDark> * 8, <gregtech:gt.metaitem.01:30087>, <gregtech:gt.blockmachines:1360> * 8, <liquid:molten.glass> * 8000, 600, 30);
+Assembler.addRecipe(<IC2:blockLuminatorDark> * 8, <gregtech:gt.metaitem.01:30087>, <gregtech:gt.blockmachines:1360> * 8, <liquid:molten.glass> * 1152, 600, 30);
 // -
-Assembler.addRecipe(<IC2:blockLuminatorDark> * 16, <gregtech:gt.metaitem.01:30004>, <gregtech:gt.blockmachines:1360> * 16, <liquid:molten.glass> * 8000, 400, 64);
+Assembler.addRecipe(<IC2:blockLuminatorDark> * 16, <gregtech:gt.metaitem.01:30004>, <gregtech:gt.blockmachines:1360> * 16, <liquid:molten.glass> * 1152, 400, 64);
 
 // --- Iron Furnace
 Assembler.addRecipe(IronFurnace, <minecraft:furnace>, <gregtech:gt.metaitem.01:17032> * 5, 400, 16);

@@ -1253,6 +1253,13 @@ Assembler.addRecipe(<appliedenergistics2:item.ItemMultiPart:100>, <appliedenergi
 Assembler.addRecipe(FluixGlassCable * 3, QuartzFiber * 3, FluixDust * 2, 100, 120);
 
 // --- Fluix Covered Cable
+Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.metaitem.01:1633>, <liquid:molten.silicone> * 36, 150, 120);
+Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.metaitem.01:1633>, <liquid:molten.styrenebutadienerubber> * 36, 150, 120);
+Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.metaitem.01:1649>, <liquid:molten.silicone> * 36, 150, 120);
+Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.metaitem.01:1649>, <liquid:molten.styrenebutadienerubber> * 36, 150, 120);
+
+Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.integrated_circuit:24> * 0, <liquid:molten.silicone> * 72, 150, 120);
+Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.integrated_circuit:24> * 0, <liquid:molten.styrenebutadienerubber> * 108, 150, 120);
 Assembler.addRecipe(FluixCoveredC, FluixGlassCable, <gregtech:gt.integrated_circuit:24> * 0, <liquid:molten.rubber> * 144, 150, 120);
 
 // --- ME Dense Cable Fluix
@@ -1293,9 +1300,9 @@ Centrifuge.addRecipe([TinyTNT, TinyTNT], ITNT, 0, 600);
 ChemicalReactor.addRecipe(<dreamcraft:item.ChargedCertusQuartzDust>, <gregtech:gt.metaitem.01:2516> , <minecraft:redstone>, 600);
 
 // --- Charged Certus Quartz Dust
-ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, <liquid:water> * 1000, <dreamcraft:item.ChargedCertusQuartzDust> * 3, <gregtech:gt.metaitem.01:2017>, null, 900, 30);
+ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, null, <dreamcraft:item.ChargedCertusQuartzDust> * 3, <gregtech:gt.metaitem.01:2017>, <liquid:water> * 1000, 900, 30);
 // -
-ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, <liquid:ic2distilledwater> * 1000, <dreamcraft:item.ChargedCertusQuartzDust> * 3, <gregtech:gt.metaitem.01:2017>, null, 700, 30);
+ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, null, <dreamcraft:item.ChargedCertusQuartzDust> * 3, <gregtech:gt.metaitem.01:2017>, <liquid:ic2distilledwater> * 1000, 700, 30);
 
 
 

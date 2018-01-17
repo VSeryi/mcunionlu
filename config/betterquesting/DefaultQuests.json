@@ -427,7 +427,7 @@
               "tag": {
                 "GT.ToolStats:10": {
                   "PrimaryMaterial:8": "Flint",
-                  "MaxDamage:4": 6400,
+                  "MaxDamage:4": 12800,
                   "SecondaryMaterial:8": "Wood"
                 }
               }
@@ -446,7 +446,7 @@
                 ],
                 "GT.ToolStats:10": {
                   "PrimaryMaterial:8": "Flint",
-                  "MaxDamage:4": 6400,
+                  "MaxDamage:4": 12800,
                   "SecondaryMaterial:8": "Wood"
                 }
               }
@@ -459,7 +459,7 @@
               "tag": {
                 "GT.ToolStats:10": {
                   "PrimaryMaterial:8": "Flint",
-                  "MaxDamage:4": 6400,
+                  "MaxDamage:4": 12800,
                   "SecondaryMaterial:8": "Wood"
                 }
               }
@@ -1026,7 +1026,7 @@
                 ],
                 "GT.ToolStats:10": {
                   "PrimaryMaterial:8": "Flint",
-                  "MaxDamage:4": 6400,
+                  "MaxDamage:4": 12800,
                   "SecondaryMaterial:8": "Wood"
                 }
               }
@@ -21484,7 +21484,7 @@
     {
       "questID": 241,
       "name": "Not for soup",
-      "description": "At least not for edible soup, but for essentia slurry. Get yourself a Cauldron and give it a solid whack with your wand. Place the netherrack under the crucible and enlighted it with the flint and steel. now you nned to fill water in it (works with pipes too \u003d auto refill)",
+      "description": "At least not for edible soup, but for essentia slurry. Get yourself a Cauldron and give it a solid whack with your wand. Place the netherrack under the crucible and set it on fire with the flint and steel. Now you need to fill it with water (works with pipes too \u003d auto refill)",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -41217,7 +41217,7 @@
     {
       "questID": 481,
       "name": "Creosote oil",
-      "description": "I guess you already processed a bit of wood into charcoal and wonder what you can do with all this creosote oil?\nWell you can burn it in the normal furnace to cook your food or you can make more torches with it. Later in the LV age you probably should run diesel generators with it.",
+      "description": "I guess you already processed a bit of wood into charcoal and wonder what you can do with all this creosote oil?\nWell you can burn it in the normal furnace to cook your food or you can make more torches with it. Later in the LV age you probably should run combustion generators with it.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -41350,7 +41350,7 @@
               "Damage": 0
             },
             {
-              "id": "minecraft:egg",
+              "id": "minecraft:feather",
               "Count": 100,
               "OreDict": "",
               "Damage": 0
@@ -46045,7 +46045,7 @@
     {
       "questID": 532,
       "name": "Diesel, oil or maybe creosote?",
-      "description": "You probably collected a ton of creosote and maybe even have built your first \u0027electric\u0027 blast furnace. creosote will be a good fuel for the moment. So try to build a few of the diesel generators and use them besides steam as a secondary power source.",
+      "description": "You probably collected a ton of creosote and maybe even have built your first \u0027electric\u0027 blast furnace. creosote will be a good fuel for the moment. So try to build a few of the combustion generators and use them besides steam as a secondary power source.",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -47444,7 +47444,7 @@
     {
       "questID": 546,
       "name": "Hello Baron, how is your black gold today?",
-      "description": "During your travels you may have seen some of these huge oil wells. Now it\u0027s time to go make a pump and put this black gold into tanks. Oil can be burned in a diesel generator or be refined. \n\nBring a diesel generator with you to power the pump. (Thanks to the advancement of technology the pumping machine can auto output on top.)",
+      "description": "During your travels you may have seen some of these huge oil wells. Now it\u0027s time to go make a pump and put this black gold into tanks. Oil can be burned in a combustion generator or be refined. \nMining pipes are needed for pumping the oil.\n\nBring a combustion generator with you to power the pump. (Thanks to the advancement of technology the pumping machine can auto output on top.)",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -47536,7 +47536,7 @@
     {
       "questID": 547,
       "name": "Your oil is too Crude? Refine it!",
-      "description": "Burning oil in the diesel generator is a very inefficient way of producing power. Every bucket/cell of oil only gives you 20,000 EU. Time to try and refine it...",
+      "description": "Burning oil in the combustion generator is a very inefficient way of producing power. Every bucket/cell of oil only gives you 20,000 EU. Time to try and refine it...",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -47690,7 +47690,7 @@
     {
       "questID": 549,
       "name": "Light fuel",
-      "description": "By adding hydrogen to sulfuric light fuel in a chemical reactor you can produce some light fuel with the very high burn value of 320,000 EU.\n\nThe remaining hydrogen sulfide cells can be used later to produce some sulfuric acid for your TNT/iTNT or acid batteries.\n\nIn mv age you can make diesel out of light and heavy fuel.",
+      "description": "By adding hydrogen to sulfuric light fuel in a chemical reactor you can produce some light fuel with the very high burn value of 320,000 EU.\n\nThe remaining hydrogen sulfide cells can be used later to produce some sulfuric acid for your TNT/iTNT or acid batteries.\n\nIn MV age you can make diesel out of light and heavy fuel.",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -47929,7 +47929,7 @@
     {
       "questID": 552,
       "name": "Heavy fuel",
-      "description": "By adding hydrogen to sulfuric heavy fuel in a chemical reactor you can produce some heavy fuel with the burn value of 200,000 EU.\n\nThe remaining hydrogen sulfide cells can be used later to produce some sulfuric acid for your TNT/iTNT or acid batteries.\n\nIn mv age you can make diesel out of heavy and light fuel.",
+      "description": "By adding hydrogen to sulfuric heavy fuel in a chemical reactor you can produce some heavy fuel with the burn value of 200,000 EU.\n\nThe remaining hydrogen sulfide cells can be used later to produce some sulfuric acid for your TNT/iTNT or acid batteries.\n\nIn MV age you can make diesel out of heavy and light fuel.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -48014,7 +48014,7 @@
     {
       "questID": 553,
       "name": "Diesel fuel",
-      "description": "Mixing your light and heavy fuel together gives you some diesel. You need the mv Mixer for it. It burns very well in the diesel generator with a burn value of 480,000 EU per cell.",
+      "description": "Mixing your light and heavy fuel together gives you some diesel. You need the MV mixer for it. It burns very well in the combustion generator with a burn value of 480,000 EU per cell.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -48335,7 +48335,7 @@
     {
       "questID": 557,
       "name": "NITRO! (Cetane-boosted diesel)",
-      "description": "720,000 EU per cell. Yes, yes, this is very good! Make some cetane-boosted diesel fuel and power yourDiesel Engine with it.",
+      "description": "720,000 EU per cell. Yes, yes, this is very good! Make some cetane-boosted diesel fuel and power your Combustion Engine with it.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -60812,7 +60812,7 @@
     {
       "questID": 676,
       "name": "Crowbar",
-      "description": "The crowbar comes in a Railcraft and a gregtech variant. It is used to manipulate machines from railcraft, remove plates and any other covers (pumps, conveyor belts, etc.) from gregtech pipes and machines as well as breaking certain objects faster, such as tracks. This tool is also used to access certain inventories from Railcraft.\n\nThe crowbar can be used as a weapon, though it costs twice as much durability on attack (just like any other non weapon tool...).",
+      "description": "The crowbar comes in a Railcraft and a gregtech variant. It is used to manipulate machines from railcraft, remove plates and any other covers (pumps, conveyor belts, etc.) from gregtech pipes and machines as well as breaking certain objects faster, such as tracks. This tool is also used to access certain inventories from Railcraft.\nHoldi a crowbar and shift + right click to attach carts. Click the starting cart then continue to click to add more carts to the link. Carts will act slower the more connections are made.\n\nThe crowbar can be used as a weapon, though it costs twice as much durability on attack (just like any other non weapon tool...).",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -68443,7 +68443,7 @@
           "requiredItems": [
             {
               "id": "gregtech:gt.metaitem.02",
-              "Count": 8,
+              "Count": 16,
               "OreDict": "",
               "Damage": 19035
             }
@@ -68458,7 +68458,7 @@
           "requiredItems": [
             {
               "id": "gregtech:gt.metaitem.01",
-              "Count": 2,
+              "Count": 4,
               "OreDict": "",
               "Damage": 1980
             }
@@ -73754,7 +73754,7 @@
             },
             {
               "id": "IC2:reactorHeatSwitchSpread",
-              "Count": 2,
+              "Count": 4,
               "OreDict": "",
               "Damage": 1
             }
@@ -82124,13 +82124,7 @@
           "requiredItems": [
             {
               "id": "minecraft:rail",
-              "Count": 384,
-              "OreDict": "",
-              "Damage": 0
-            },
-            {
-              "id": "minecraft:golden_rail",
-              "Count": 96,
+              "Count": 512,
               "OreDict": "",
               "Damage": 0
             },
@@ -82142,21 +82136,6 @@
               "tag": {
                 "track:8": "railcraft:track.buffer.stop"
               }
-            }
-          ],
-          "taskID": "bq_standard:retrieval"
-        },
-        {
-          "partialMatch": true,
-          "ignoreNBT": false,
-          "consume": true,
-          "autoConsume": false,
-          "requiredItems": [
-            {
-              "id": "gregtech:gt.metaitem.01",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 26086
             }
           ],
           "taskID": "bq_standard:retrieval"
@@ -82211,8 +82190,8 @@
         }
       ],
       "preRequisites": [
-        667,
-        97
+        97,
+        667
       ]
     },
     {
@@ -99227,7 +99206,7 @@
         "id": "gregtech:gt.metaitem.03",
         "Count": 1,
         "OreDict": "",
-        "Damage": 32018
+        "Damage": 32020
       },
       "visibility": "UNLOCKED",
       "tasks": [
@@ -110172,6 +110151,12 @@
               "Damage": 27306
             },
             {
+              "id": "gregtech:gt.metaitem.02",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 20306
+            },
+            {
               "id": "IC2:itemBatREDischarged",
               "Count": 1,
               "OreDict": "",
@@ -113530,7 +113515,7 @@
               "id": "gregtech:gt.metaitem.01",
               "Count": 64,
               "OreDict": "",
-              "Damage": 11335
+              "Damage": 11305
             }
           ],
           "rewardID": "bq_standard:item"
@@ -113669,7 +113654,7 @@
     {
       "questID": 1177,
       "name": "Thaumium cooking",
-      "description": "Now it is time to cook your first thaumium ingots. After you researched it you need iron ingots and praecantatio aspect for it. ",
+      "description": "Now it is time to cook your first thaumium ingots. After you researched it you need iron ingots and praecantatio aspect to make it. ",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -113781,7 +113766,7 @@
     {
       "questID": 1178,
       "name": "Food 2.0",
-      "description": "Forget everything you know about food and values. With you new canning machine you be able to fillfood in tin cans and make early game op food. This food can be consumed in milliseconds and make you full and happy.",
+      "description": "Forget everything you know about food and values. With your new canning machine you are able to fill tin cans with very nourishing food. This food can be consumed in milliseconds and makes you full and happy.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -113906,7 +113891,7 @@
     {
       "questID": 1179,
       "name": "EBF Infos",
-      "description": "You can build you a scanner to check every time how your ebf works or you can make an Informations panel from nuclear control. Make a gt sonsor kit and place the sensor card in your info panel. With redstone you can enable it.",
+      "description": "You can use a scanner to manually check how your EBF works, or you can make an informations panel from nuclear control and always see the status. Make a GT sensor kit and place the sensor card in your info panel. Enable it with a redstone signal.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -114032,7 +114017,7 @@
     {
       "questID": 1180,
       "name": "Chunckloading",
-      "description": "After the mv bnder you can pressing dense plate finaly. Lets craft some chunkloader.\n3x3 chuncks are loaded. You need coins to feed the chunckloader. Personal and passive anchors can be loaded with ender pearls for 1h time.",
+      "description": "Using the MV bender you can finally press dense plates. Let\u0027s craft some chunkloaders.\n3x3 chunks are loaded. You need coins to power the chunkloader. Personal and passive anchors can be powered with ender pearls for 1 hour per pearl.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
@@ -114104,6 +114089,1108 @@
       ],
       "preRequisites": [
         1081
+      ]
+    },
+    {
+      "questID": 1181,
+      "name": "Minecart with Tank, Workbench or Furnace",
+      "description": "You want to transport oil or other fluids, have a portable crafting table or a portable chest? Then you need to craft some minecarts with tanks, mhests or crafting tables.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:cart.tank",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:cart.tank",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:cart.work",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:chest_minecart",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Railcraft:cart.cargo",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:minecart",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 32
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventure",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnician",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        677
+      ]
+    },
+    {
+      "questID": 1182,
+      "name": "Fluid loader and unloder",
+      "description": "If you plan to automate the oil transport from your oil field far away, you need a fluid loader and unloader. A locking track will stop the train as long as oil is loaded or unloaded.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:machine.gamma",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 4
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:machine.gamma",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 4
+            },
+            {
+              "id": "Railcraft:machine.gamma",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 5
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:track",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 20176,
+              "tag": {
+                "track:8": "railcraft:track.locking"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "gregtech:gt.blockmachines",
+              "Count": 128,
+              "OreDict": "",
+              "Damage": 5103
+            },
+            {
+              "id": "gregtech:gt.metaitem.01",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 32610
+            },
+            {
+              "id": "minecraft:rail",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 32
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventure",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnician",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        866
+      ]
+    },
+    {
+      "questID": 1183,
+      "name": "Locomotive 0.1 Alpha",
+      "description": "The furnace cart is a cheaper locomotive. Click with coal or charcoal on the cart and and it will start moving. ",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "minecraft:furnace_minecart",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:furnace_minecart",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "minecraft:coal",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "minecraft:coal",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 32
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventure",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnician",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1181
+      ]
+    },
+    {
+      "questID": 1184,
+      "name": "Steam Locomotive",
+      "description": "The steam locomotive is much better than the furnace cart. You can control the speed and the direction the locomotive will move. You need to put water and coal inside to make steam to power the locomotive.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:cart.loco.steam.solid",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0,
+        "tag": {
+          "model:8": "railcraft:default"
+        }
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:cart.loco.steam.solid",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "model:8": "railcraft:default"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "minecraft:coal",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "Railcraft:cart.tank",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 32
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventure",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnician",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1183,
+        65
+      ]
+    },
+    {
+      "questID": 1185,
+      "name": "Electric Locomotive",
+      "description": "Electric Locomotives are much better than steam ones. You need electric rail for it.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:cart.loco.electric",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0,
+        "tag": {
+          "model:8": "railcraft:default"
+        }
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:cart.loco.electric",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "model:8": "railcraft:default"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.electric"
+              }
+            },
+            {
+              "id": "Railcraft:track",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 816,
+              "tag": {
+                "track:8": "railcraft:track.speed"
+              }
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 33
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventureI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnicianI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1184,
+        89
+      ]
+    },
+    {
+      "questID": 1186,
+      "name": "Boost your speed",
+      "description": "If you decide to not use a locomotive and drive with one or two carts only, you can use some booster tracks. Activate them with a lever or a redstone torch.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "minecraft:golden_rail",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:golden_rail",
+              "Count": 128,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "minecraft:rail",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "Railcraft:part.rail",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:redstone_torch",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 32
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventure",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnician",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        866
+      ]
+    },
+    {
+      "questID": 1187,
+      "name": "The transcontinental railroad in high speed",
+      "description": "Did you ever dream of driving in a railcart at high speeds? Well your dreams can come true with the high speed tracks. Be careful though; you need to lower the speed when you rails change direction or when the track ends.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:track",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 816,
+        "tag": {
+          "track:8": "railcraft:track.speed"
+        }
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:track",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 816,
+              "tag": {
+                "track:8": "railcraft:track.speed"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.speed.boost"
+              }
+            },
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 26865,
+              "tag": {
+                "track:8": "railcraft:track.speed.transition"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 816,
+              "tag": {
+                "track:8": "railcraft:track.speed"
+              }
+            },
+            {
+              "id": "Railcraft:part.rail",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "Railcraft:part.railbed",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 33
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventureI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnicianI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        866,
+        77
+      ]
+    },
+    {
+      "questID": 1188,
+      "name": "The transcontinental railroad blast proof",
+      "description": "Railroads in the nether are dangerous. The reinforced tracks are blast proof. Hope you are blast proof too. \nYou can move 25% faster than with normal tracks.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:track",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0,
+        "tag": {
+          "track:8": "railcraft:track.reinforced"
+        }
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:track",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.reinforced"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.reinforced.boost"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.reinforced"
+              }
+            },
+            {
+              "id": "Railcraft:part.rail",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 4
+            },
+            {
+              "id": "Railcraft:part.railbed",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 33
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventureI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnicianI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        866,
+        1176
+      ]
+    },
+    {
+      "questID": 1189,
+      "name": "The transcontinental railroad electrical",
+      "description": "Electrical tracks are used together with your electrical locomotive. You need to power the rails with energy.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:track",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0,
+        "tag": {
+          "track:8": "railcraft:track.electric"
+        }
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:track",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.electric"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Railcraft:track",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.electric"
+              }
+            },
+            {
+              "id": "Railcraft:part.rail",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 5
+            },
+            {
+              "id": "Railcraft:part.railbed",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 33
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventureI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnicianI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        77,
+        866
+      ]
+    },
+    {
+      "questID": 1190,
+      "name": "Electric feeder Unit",
+      "description": "To get your tracks electrified you need an electric feeding unit, shunting wires and some support frames. You can use an MFE or a transformer to get GT energy into the feeder unit.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:machine.epsilon",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:machine.epsilon",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Railcraft:machine.delta",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "Railcraft:frame",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Railcraft:track",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 32363,
+              "tag": {
+                "track:8": "railcraft:track.buffer.stop"
+              }
+            },
+            {
+              "id": "Railcraft:track",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "track:8": "railcraft:track.gated.oneway"
+              }
+            },
+            {
+              "id": "minecraft:detector_rail",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 33
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        },
+        {
+          "rewards": [
+            {
+              "id": "dreamcraft:item.CoinAdventureI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "dreamcraft:item.CoinTechnicianI",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1189
       ]
     }
   ],
@@ -118777,18 +119864,18 @@
         },
         {
           "id": 674,
-          "x": 312,
+          "x": 408,
           "y": 36
         },
         {
           "id": 675,
-          "x": 264,
-          "y": 72
+          "x": 360,
+          "y": 36
         },
         {
           "id": 676,
-          "x": 264,
-          "y": 36
+          "x": 384,
+          "y": 72
         },
         {
           "id": 490,
@@ -118809,6 +119896,56 @@
           "id": 874,
           "x": 132,
           "y": 48
+        },
+        {
+          "id": 1181,
+          "x": 264,
+          "y": 0
+        },
+        {
+          "id": 1182,
+          "x": 264,
+          "y": 96
+        },
+        {
+          "id": 1183,
+          "x": 312,
+          "y": 0
+        },
+        {
+          "id": 1184,
+          "x": 360,
+          "y": 0
+        },
+        {
+          "id": 1185,
+          "x": 408,
+          "y": 0
+        },
+        {
+          "id": 1186,
+          "x": 168,
+          "y": 96
+        },
+        {
+          "id": 1187,
+          "x": 216,
+          "y": 168
+        },
+        {
+          "id": 1188,
+          "x": 168,
+          "y": 168
+        },
+        {
+          "id": 1189,
+          "x": 264,
+          "y": 168
+        },
+        {
+          "id": 1190,
+          "x": 312,
+          "y": 168
         }
       ]
     },
