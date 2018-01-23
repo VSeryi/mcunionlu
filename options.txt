@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:false
 ao:0
 clouds:true
-resourcePacks:["HEE Music v1.0.zip"]
+resourcePacks:["HEE Music v1.0.zip", "Realistic Sky GT New Horizons.zip"]
 lastServer:
 lang:en_US
 chatVisibility:0
