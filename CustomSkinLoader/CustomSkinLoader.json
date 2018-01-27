@@ -10,10 +10,10 @@
     "ignoreHttpsCertificate": false,
     "loadlist": [
         {
-            "cape": "http://unionlu.duckdns.org/getcape.php?user={USERNAME}",
+            "cape": "https://unionlu.duckdns.org/getcape.php?user={USERNAME}",
             "checkPNG": true,
             "name": "unionlu",
-            "skin": "http://unionlu.duckdns.org/getskin.php?user={USERNAME}",
+            "skin": "https://unionlu.duckdns.org/getskin.php?user={USERNAME}",
             "type": "Legacy"
         },
         {
